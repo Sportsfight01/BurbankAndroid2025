@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_3.1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/tool_home" />
+
+        <LinearLayout
+            android:id="@+id/signINLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_38dp"
+            android:layout_marginRight="@dimen/_38dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/_22dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textAppearance="@style/FontMedium"
+                    android:text="Sign"
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="@dimen/header_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textAppearance="@style/FontMedium"
+                    android:lineSpacingExtra="6sp"
+                    android:text="In"
+                    android:textColor="@color/grey_text_font_3.1"
+                    android:textSize="@dimen/header_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/_22dp"
+                android:text="Enter your email or job number"
+                android:textColor="@color/black_bg_3.1"
+                android:textSize="@dimen/sub_header_size"
+                />
+
+
+            <common.CustomEditText
+                android:id="@+id/emailOrJobNumberEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:hint="Enter Email "
+                android:textColor="@color/black_bg_3.1"
+                android:textCursorDrawable="@null"
+                android:textSize="14sp" />
+
+            <common.CustomEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editTextSize"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:hint="Password"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/next_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/rectangle_orange_bg"
+                 android:textAppearance="@style/FontMedium"
+                android:onClick="onClick"
+                android:textSize="@dimen/default_text_size"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/nextTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                     android:textAppearance="@style/FontMedium"
+                    android:gravity="center"
+                    android:text="Next"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forgotPasswordTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+               android:textAppearance="@style/FontMedium"
+                android:gravity="center"
+                android:onClick="onClick"
+                android:padding="5dp"
+                android:paddingStart="@dimen/_22dp"
+                android:text="Forgot password"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <Button
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/rectangel_black_button"
+                android:drawableRight="@drawable/nextt"
+                android:drawablePadding="-25dp"
+                android:onClick="onClick"
+                android:paddingRight="10dp"
+                android:stateListAnimator="@null"
+                android:textAllCaps="false"
+                android:textSize="@dimen/sixteen"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_38dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                             android:textAppearance="@style/FontExtraBold"
+                            android:text="Forgot"
+                            android:textColor="@color/black_bg_3.1"
+                            android:textSize="33sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                             android:textAppearance="@style/FontExtraBold"
+                            android:text="Password"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="33sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/emailHeadingTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5dp"
+                       android:textAppearance="@style/FontRegular"
+                        android:gravity="center|start"
+                        android:text="Enter registered email assigned to the job number "
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <common.CustomEditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/white_roundedcorners_drawable"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:hint="Enter EmailID"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/submitBT"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/rectangel_black_button"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                     android:textAppearance="@style/FontRegular"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+

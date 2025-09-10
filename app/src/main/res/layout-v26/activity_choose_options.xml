@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.ChooseOptionsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGrey"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130dp"
+            android:layout_alignParentTop="true"
+
+            android:paddingStart="25dp"
+            android:background="@color/header_footer_bg_3.1"
+            android:paddingEnd="5dp">
+
+            <ImageView
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/burbank_header_logo" />
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/logo_myplace" />
+
+            <TextView
+                android:id="@+id/tv_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/disable_rectangle_new"
+                android:textAppearance="@style/FontRegular"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text="@string/myprofile"
+
+                android:textAllCaps="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white_3.1"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_content"
+            android:orientation="vertical"
+            android:background="@color/body_bg_3.1"
+            android:weightSum="2">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/body_bg_3.1"
+                android:paddingTop="@dimen/dp_8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/dp_32"
+                    android:paddingEnd="@dimen/dp_32"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/FontMedium"
+                        android:text="Welcome to"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_14sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="My"
+                            android:textAppearance="@style/FontRegular"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Place"
+                            android:textAppearance="@style/FontMedium"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="40sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_13"
+                        android:id="@+id/tv_content"
+                        android:justificationMode="inter_word"
+                        android:textAppearance="@style/FontRegular"
+                        android:overScrollMode="ifContentScrolls"
+                        android:scrollbars="vertical"
+                        android:text="@string/find_your_perfect_home_on_burbank_homes_app_the_only_property_app"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_how_does_it"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_16"
+                        android:background="@drawable/rectangel_line"
+                        android:textAppearance="@style/FontMedium"
+                        android:lineSpacingExtra="2sp"
+                        android:paddingStart="@dimen/dp_22"
+                        android:paddingTop="@dimen/dp_8"
+                        android:paddingEnd="@dimen/dp_22"
+                        android:paddingBottom="@dimen/dp_8"
+                        android:text="How Does it Work"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sp"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:background="@color/body_bg_3.1"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_opt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/tv_continue"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:weightSum="2.3">
+
+                    <com.dmss.burbankapp.utility.SqureRelative
+                        android:id="@+id/rl_just"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_check_just"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/unchecked"
+                            />
+
+                        <ImageView
+                            android:id="@+id/iv_just"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_below="@+id/iv_check_just"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="7dp"
+                            android:src="@drawable/just_looking_144"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_just"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_just"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="24dp"
+                            android:textAppearance="@style/FontMedium"
+                            android:includeFontPadding="false"
+                            android:text="@string/iam_looking"
+                            android:textColor="@color/black_bg_3.1"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_iam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_just"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="12dp"
+                            android:gravity="center"
+                            android:textAppearance="@style/FontRegular"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.02"
+                            android:lineSpacingExtra="2sp"
+                            android:text="I am shopping"
+                            android:visibility="invisible"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_iam"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="around"
+                            android:visibility="invisible"
+                            android:textAppearance="@style/FontRegular"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="11sp" />
+                    </com.dmss.burbankapp.utility.SqureRelative>
+
+                    <com.dmss.burbankapp.utility.SqureRelative
+                        android:id="@+id/rl_deposite"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+                        <ImageView
+                            android:id="@+id/iv_check_deposit"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/unchecked"
+                            />
+                        <ImageView
+                            android:id="@+id/iv_deposite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_below="@+id/iv_check_deposit"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/customer_192"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_deposite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_deposite"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="22dp"
+                            android:textAppearance="@style/FontMedium"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="2sp"
+                            android:text="@string/iam_building"
+                            android:textColor="@color/black_bg_3.1"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_iam_binding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_deposite"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="12dp"
+                            android:visibility="invisible"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="I am building"
+                            android:textAlignment="center"
+                            android:textAppearance="@style/FontRegular"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_iam_binding"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="1dp"
+                            android:gravity="center"
+                            android:textAppearance="@style/FontRegular"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.02"
+                            android:visibility="invisible"
+                            android:lineSpacingExtra="2sp"
+                            android:text="with Burbank"
+                            android:textAlignment="center"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="11sp" />
+                    </com.dmss.burbankapp.utility.SqureRelative>
+
+
+                    <com.dmss.burbankapp.utility.SqureRelative
+                        android:id="@+id/rl_finish"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/iv_check_finish"
+                            android:layout_width="17dp"
+                            android:layout_height="17dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/unchecked" />
+
+                        <ImageView
+                            android:id="@+id/iv_finish"
+                            android:layout_width="60dp"
+                            android:layout_height="33dp"
+                            android:layout_below="@+id/iv_check_finish"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:src="@mipmap/finished" />
+
+                        <TextView
+                            android:id="@+id/tv_finish"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/iv_finish"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:textAppearance="@style/FontExtraBold"
+                            android:includeFontPadding="false"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Finished"
+                            android:textColor="#010101"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:id="@+id/tv_warranties"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_finish"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.03"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Warranties &amp;"
+
+                            android:textColor="#58595b"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_warranties"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="1dp"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:letterSpacing="0.03"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Manuals"
+                            android:textColor="#58595b"
+                            android:textSize="11sp" />
+                    </com.dmss.burbankapp.utility.SqureRelative>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_continue"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rectangel_skip"
+                    android:textAppearance="@style/FontExtraBold"
+                    android:gravity="center"
+                    android:text="Continue"
+                    android:visibility="gone"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_15dp"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18sp"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

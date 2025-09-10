@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/body_bg_3.1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_10sp"
+        android:background="@color/white_3.1">
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/_25dp"
+        android:layout_height="@dimen/_25dp"
+         android:textAppearance="@style/FontExtraBold"
+        android:layout_gravity="right"
+        android:src="@drawable/close_white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/_24sp"
+        app:tint="@color/grey_text_font_3.1" />
+    <TextView
+        android:id="@+id/tv_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textAppearance="@style/FontMedium"
+        android:text="Houses in group"
+        android:textAllCaps="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/grey_text_font_3.1"
+        android:textSize="@dimen/_24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_house_count"
+        android:text="19 houses"
+        android:background="@color/white_3.1"
+        android:paddingLeft="@dimen/_10sp"
+        android:textSize="@dimen/sub_header_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="@dimen/_5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/_10sp"
+        android:paddingBottom="@dimen/_10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_house" />
+
+</LinearLayout>

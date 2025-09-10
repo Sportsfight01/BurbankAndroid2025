@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_10sdp">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:src="@drawable/info_center_home_image"
+        android:id="@+id/infoImage"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_75sdp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:textSize="@dimen/default_text_size"
+        android:textAppearance="@style/FontMedium"
+        android:text="What is PCI and what can you do?"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

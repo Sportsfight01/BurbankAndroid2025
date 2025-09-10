@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_3.1"
+    android:paddingBottom="@dimen/_33dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rr_back"
+
+        >
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="@dimen/back_icon_height_width"
+        android:layout_height="@dimen/back_icon_height_width"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="25dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back_png_grey"
+        app:tint="@color/black" />
+
+
+    </RelativeLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_profile_pic"
+        android:layout_width="@dimen/login_logo"
+        android:layout_height="@dimen/login_logo"
+        android:layout_marginRight="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/rr_back"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:visibility="visible"
+        android:src="@mipmap/logo_myplace" />
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                android:lineSpacingExtra="6sp"
+                android:text="Sign"
+                android:textColor="@color/black_bg_3.1"
+                android:textSize="@dimen/header_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                android:lineSpacingExtra="6sp"
+                android:text="Up"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="@dimen/header_size" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:textAppearance="@style/FontMedium"
+            android:text="@string/fill_out_this_form_to_save_your_progress"
+            android:textColor="@color/black_bg_3.1"
+            android:textSize="@dimen/sub_header_size"
+           />
+
+        <LinearLayout
+            android:id="@+id/ll_social"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_fill"
+            android:layout_marginTop="40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editetxtHeight"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="start|center"
+                android:hint="First Name"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_field_size" />
+
+
+            <EditText
+                android:id="@+id/et_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editetxtHeight"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="start|center"
+                android:hint="Last Name"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_field_size" />
+
+            <EditText
+                android:id="@+id/et_lastName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editetxtHeight"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangel_shape"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="start|center"
+                android:hint="Last Name "
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textSize="@dimen/text_field_size"
+                android:textCursorDrawable="@null"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editetxtHeight"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="start|center"
+                android:hint="Email"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_field_size" />
+
+            <EditText
+                android:id="@+id/et_newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="start|center"
+                android:hint="New Password"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_field_size"/>
+
+            <EditText
+                android:id="@+id/et_ConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/editetxtHeight"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="start|center"
+                android:hint="Confirm Password"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_field_size" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_already"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_above="@+id/tv_signup"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_2dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_already"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textAppearance="@style/FontMedium"
+            android:gravity="center"
+            android:textColor="@color/grey_text_font_3.1"
+            android:includeFontPadding="false"
+            android:text="Already have an account? "
+            android:textSize="@dimen/sub_header_size"
+             />
+
+        <TextView
+
+            android:id="@+id/tv_sign_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/tv_already"
+            android:textAppearance="@style/FontSemiBold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/sign_in"
+            android:textColor="@color/grey_text_font_3.1"
+            android:textSize="@dimen/sub_header_size"
+           />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/rectangle_orange_bg"
+         android:textAppearance="@style/FontMedium"
+        android:gravity="center"
+        android:lineSpacingExtra="3sp"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text_size" />
+
+</RelativeLayout>
+
+
+

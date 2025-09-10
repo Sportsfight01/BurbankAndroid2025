@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.dmss.burbankappold"
+    tools:targetApi="o">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="common.AppController"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_circle"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeOld"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+        <activity
+            android:name=".dashboard.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".homecare.HomeCareDashboardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".dashboard.ui.sideMenu.VideoWebViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.PrivacyPolicyActivity"
+            android:exported="false"
+            android:label="@string/title_activity_privacy_policy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.TermsOfUseActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.support.infoCentre.InfoCentreDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.support.infoCentre.InfoCentreActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.support.faq.FAQsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.contactUs.ContactUsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.MyNotificationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.MyContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.details.DetailsFragment"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.MyHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.MyAppointmentsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.support.SupportActivity"
+            android:exported="false"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.sideMenu.MySettingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.ui.documents.WebViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".dashboard.DashboardNewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dashboard_new"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MaintenanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent_black" />
+        <activity
+            android:name=".MyAppointments"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".FirstClass"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".Splash"
+            android:exported="false"
+            android:screenOrientation="portrait">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".SetPassword"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".MyPlaceLogin"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".Login"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".DashBoard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".EmptyDashboard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld" />
+        <activity
+            android:name=".ZoomImageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeOld.NoActionBar" />
+        <activity
+            android:name=".FeedBackActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".AboutBurbank"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".ContactUs"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".FAQ"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".Co_Burbank"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".ValidateEmailId"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".MyPlaceTabActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+
+        <receiver
+            android:name="common.Receiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MyPlaceSettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".Privacy"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".Terms_Conditions"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".UpdatePassword"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+        <activity
+            android:name=".VirtualToursActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_Transparent" />
+    </application>
+
+</manifest>

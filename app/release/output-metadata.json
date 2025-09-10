@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.dmss.burbankapp",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 53,
+      "versionName": "3.13",
+      "outputFile": "Burbank-release.apk"
+    }
+  ],
+  "elementType": "File"
+}

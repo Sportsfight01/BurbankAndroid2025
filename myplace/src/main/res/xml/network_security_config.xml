@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+<domain-config cleartextTrafficPermitted="true">
+    <domain includeSubdomains="true">https://nationalclickhome.burbankgroup.com.au/</domain>
+    <domain includeSubdomains="true">https://nationalclickhome.burbankgroup.com.au/clickhome3webservice/</domain>
+    <domain includeSubdomains="true">https://nationalclickhome.burbankgroup.com.au/clickhome3webservice/myhome/</domain>
+    <domain includeSubdomains="true">https://nationalclickhome.burbankgroup.com.au/clickhome3webservice/myhome/v3/</domain>
+
+    <domain includeSubdomains="true">http://graph.facebook.com</domain>
+    <domain includeSubdomains="true">http://172.17.0.40:7777</domain>
+    <domain includeSubdomains="true">www.burbank.com.au</domain>
+    <domain includeSubdomains="true">www.burbank.com.au/CentralLogin.WebApi/api/</domain>
+    <domain includeSubdomains="true">https://nationalclickhome.burbankgroup.com.au/clickhome3webservice/ClickHome.myhome/v2/</domain>
+    <domain includeSubdomains="true">https://nationalclickhome.burbankgroup.com.au/clickhome3webservice/V2/</domain>
+</domain-config>
+</network-security-config>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_designs"
+        android:actionLayout="@layout/footer_image_layout"
+        android:icon="@drawable/design_bottom_svg"
+        android:title="@string/designs" />
+
+    <item
+        android:id="@+id/navigation_homeandland"
+        android:icon="@drawable/houseland_48"
+        android:title="@string/home_amp_land" />
+
+
+
+    <item
+        android:id="@+id/navigation_display"
+        android:icon="@drawable/displayhoms_48"
+        android:title="@string/display_homes" />
+   <!-- <item
+        android:id="@+id/navigation_myday"
+        android:icon="@drawable/myday_bottom_svg"
+        android:title="@string/myday" />-->
+   <item
+        android:id="@+id/navigation_myfav"
+        android:icon="@drawable/favourite_12_12_svg"
+        android:title="@string/FAVOURITES" />
+
+</menu>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent">
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/custom_dashboard_toolbar" />
+    </LinearLayout>
+       <LinearLayout
+           android:id="@+id/ll_tabs_content"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/ll_header"
+           android:orientation="vertical"
+           android:visibility="gone"
+           android:layout_above="@+id/bottom_navigation">
+
+           <include
+               android:id="@+id/tabs_body_content"
+               layout="@layout/content_main" />
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_7sdp"
+               android:id="@+id/line"
+               app:layout_constraintBottom_toTopOf="@+id/ll_bottom_nav_view"
+               android:background="@color/orange_bg_3.1"
+               />
+       </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_header"
+        android:visibility="visible"
+        android:layout_above="@+id/bottom_navigation">
+
+        <include
+            android:id="@+id/slider"
+            layout="@layout/welcome_slider" />
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="visible"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom"
+        app:itemPaddingBottom="@dimen/_12sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white_3.1"
+        app:labelVisibilityMode="labeled"
+        android:paddingTop="@dimen/_3sdp"
+        app:itemIconTint="@color/homecare_bottom_tab_item_foreground"
+        app:itemTextAppearanceActive="@style/HomeCareBottomNavigationViewActiveTextStylemyplace"
+        app:itemTextAppearanceInactive="@style/BottomNavigationViewInActiveTextStylemyplace"
+        app:menu="@menu/menu_main"
+        />
+   </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

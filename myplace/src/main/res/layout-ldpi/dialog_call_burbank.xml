@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_set_password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_16dp"
+    android:background="@drawable/support_rectangel_white_corners"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/callLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Enquire now"
+            android:textColor="@color/fontColorOrange"
+            android:textSize="20sp"
+            android:textAppearance="@style/FontMedium"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightGrey" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="+61 3 9328 0222"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/greyborder_btn"
+                    android:stateListAnimator="@null"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/default_text_size"
+                    android:textColor="@color/black"
+                    android:textAppearance="@style/FontRegular"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/sendButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/orange_color_btn"
+                    android:stateListAnimator="@null"
+                    android:text="Call"
+                    android:textSize="@dimen/default_text_size"
+                    android:textAllCaps="false"
+                    android:textColor="@color/fontColorOrange"
+                    android:textAppearance="@style/FontRegular"
+                    android:visibility="visible" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/emailCallLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_16dp"
+            android:background="@drawable/orange_top_rounded_corners"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/supportHelpHeadingTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="SUPPORT/HELP - JOB NO.:"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/closeButton"
+                android:layout_width="@dimen/_24dp"
+                android:layout_height="@dimen/_24dp"
+                android:layout_gravity="center"
+                android:background="@drawable/invitation_close"
+                android:gravity="center"
+                android:text="x"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/support_profile" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/supportUserNameTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Desiee Laplage"
+                     android:textAppearance="@style/FontRegular"
+                    android:textColor="@color/headerTextColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/supportRoleTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:textAppearance="@style/FontRegular"
+                    android:text="New Home Co-ordinator"
+                    android:textColor="@color/headerTextColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/supporterEmailTextView"
+                    android:layout_width="match_parent"
+                     android:textAppearance="@style/FontRegular"
+                    android:layout_height="wrap_content"
+                    android:text="D.D@burbank.com.au"
+                    android:textColor="@color/headerTextColor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/supporterMobileTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+61 393 280 222"
+                     android:textAppearance="@style/FontRegular"
+                    android:textColor="@color/headerTextColor"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <Button
+                android:id="@+id/emailButton"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/rectangel_black_button"
+                android:stateListAnimator="@null"
+                android:text="Email"
+                android:textAllCaps="false"
+                android:textSize="@dimen/default_text_size"
+                android:textColor="@color/white"
+                android:textAppearance="@style/FontRegular"
+                android:visibility="visible" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/callButton"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@drawable/rectangel_black_button"
+                android:stateListAnimator="@null"
+                android:text="Call"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_text_size"
+                android:textAppearance="@style/FontRegular"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

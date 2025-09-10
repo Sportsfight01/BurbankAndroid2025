@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangel_ten_radious_white"
+    android:orientation="vertical"
+    android:padding="@dimen/_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/questionNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:text="Q1 :"
+             android:textAppearance="@style/FontExtraBold"
+            android:textColor="@color/appColor"
+            android:textSize="@dimen/_20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="top"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/close"
+                android:paddingStart="10dp"
+                 android:textAppearance="@style/FontRegular"
+                android:text="What is your Name ?"
+                android:textColor="@color/appColor"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/close" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <common.JustifiedTextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/_20sp"
+        android:paddingStart="@dimen/_5dp"
+        android:paddingEnd="@dimen/_5dp"
+         android:textAppearance="@style/FontRegular"
+        android:textColor="@color/dark_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangel_black_button"
+             android:textAppearance="@style/FontRegular"
+            android:gravity="center"
+            android:padding="@dimen/_10dp"
+            android:text="Previous"
+            android:textSize="@dimen/default_text_size"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_weight="1"
+            android:background="@drawable/orange_rectangel_save"
+             android:textAppearance="@style/FontRegular"
+            android:gravity="center"
+            android:text="Next"
+            android:textSize="@dimen/default_text_size"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

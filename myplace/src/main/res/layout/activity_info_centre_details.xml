@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard.ui.sideMenu.support.infoCentre.InfoCentreDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_dashboard_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="end"
+                 android:textAppearance="@style/FontMedium"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_20ssp"
+                tools:text="Using the MyPlace App"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:visibility="gone"
+                android:text="@string/lorem_ipsum_text"
+                android:justificationMode="inter_word"
+                android:textSize="@dimen/_12ssp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clVideoView"
+                android:layout_width="match_parent"
+                android:background="@drawable/video_bg"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+                <WebView
+                    android:id="@+id/videoImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    android:scaleType="fitXY"
+                    />
+                <ImageView
+                    android:id="@+id/Imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_play"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:src="@drawable/contact_edit_bg"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:lineSpacingMultiplier="1.2"
+                android:textAppearance="@style/FontMedium"
+                android:textSize="@dimen/default_text_size"
+                tools:text="@string/lorem_ipsum_text"
+                android:paddingBottom="@dimen/_35sdp"
+                android:layout_margin="@dimen/_15sdp"/>
+            <!--<WebView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:paddingBottom="@dimen/_35sdp"
+                android:layout_margin="@dimen/_15sdp"
+                />-->
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

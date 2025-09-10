@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    tools:context=".ui.designs.MyCollectionPlacesFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/inclue_tool_design" />
+
+        <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/fav_header"
+    android:background="@color/white_3.1"
+    android:paddingTop="@dimen/_5dp"
+    android:paddingBottom="@dimen/_5dp">
+    <ImageView
+        android:id="@+id/iv_home_design"
+        android:layout_width="@dimen/favourite_indicate_width_height"
+        android:layout_height="@dimen/favourite_indicate_width_height"
+        android:layout_marginStart="13dp"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/iv_homedesign_notification"
+        android:src="@drawable/design_bottom_svg"
+        app:tint="@color/grey_text_font_3.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/iv_home_design"
+         android:textAppearance="@style/FontMedium"
+        android:text="Home Designs"
+        android:textColor="@color/grey_text_font_3.1"
+        android:textSize="@dimen/_18sp" />
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_places"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="5"
+
+        tools:listitem="@layout/list_collection_item" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_parent"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="5"
+        tools:listitem="@layout/list_collection_item" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_no_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/no_saved_designs"
+        android:textColor="@color/dark_grey_bg_3.1"
+         android:textAppearance="@style/FontMedium"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/_20sp"
+        android:paddingBottom="@dimen/_10sp"
+        android:paddingTop="@dimen/_10sp"
+        android:visibility="gone" />
+</RelativeLayout>

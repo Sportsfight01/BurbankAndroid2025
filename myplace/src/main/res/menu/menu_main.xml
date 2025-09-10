@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/manuals"
+        android:icon="@drawable/manual_48"
+        android:title="@string/manuals" />
+
+    <item
+        android:id="@+id/documents"
+        android:icon="@drawable/documents_48"
+        android:title="@string/documents" />
+
+    <item
+        android:id="@+id/warranties"
+        android:icon="@drawable/report_48"
+        android:title="@string/warranties" />
+
+    <item
+        android:id="@+id/report"
+        android:icon="@drawable/warranties_48"
+        android:title="@string/report" />
+    <item
+        android:id="@+id/help_section"
+        android:icon="@drawable/help_48"
+        android:title="@string/help_section" />
+
+
+</menu>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    tools:context=".ui.mydisplay.MyDisplayHomeFragment">
+
+    <include layout="@layout/homeland_tool" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_top"
+        android:paddingStart="@dimen/_10dp"
+        android:paddingEnd="@dimen/_10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_nearby"
+                app:tint="@color/grey_text_font_3.1" />
+
+            <TextView
+                android:id="@+id/tv_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Nearby"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="@dimen/_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_designs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10dp"
+            app:layout_constraintEnd_toStartOf="@+id/ll_regions"
+            app:layout_constraintStart_toEndOf="@+id/ll_nearby"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_designs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_designs"
+                app:tint="@color/grey_text_font_3.1" />
+
+            <TextView
+                android:id="@+id/tv_designs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Designs"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="@dimen/_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_regions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10dp"
+            app:layout_constraintEnd_toStartOf="@+id/ll_map"
+            app:layout_constraintStart_toEndOf="@+id/ll_designs"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_regions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_display_regions"
+                app:tint="@color/grey_text_font_3.1" />
+
+            <TextView
+                android:id="@+id/tv_regions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Regions"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="@dimen/_14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_display_map"
+                app:tint="@color/grey_text_font_3.1" />
+
+            <TextView
+                android:id="@+id/tv_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Map"
+                android:textAllCaps="true"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="@dimen/_14sp" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:layout_below="@+id/header"
+        android:background="@color/orange_bg_3.1" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:visibility="visible" />
+
+</RelativeLayout>

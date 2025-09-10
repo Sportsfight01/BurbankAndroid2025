@@ -1,0 +1,262 @@
+<resources>
+    <string name="app_name">MyPlace</string>
+    <string name="email_Id">Enter your email</string>
+    <string name="welcome_text">Enter Email or Job Number</string>
+    <string name="forget_pass">Forgot Password </string>
+    <string name="single">Single</string>
+    <string name="myplace_heading">A house is made of walls and beams,<br /> a home is made of love and dreams.</string>
+    <string name="myplace_app_message">MyPlace App Message</string>
+
+    <string name="use_fingerprint_to_authenticate_key">use_fingerprint_to_authenticate_key</string>
+    <string name="cancel">Cancel</string>
+    <string name="use_password">Use password</string>
+    <string name="sign_in">Use FingerPrint Authentication</string>
+    <string name="ok">Ok</string>
+    <string name="burbank_homes">Burbank Homes</string>
+    <string name="my">Burbank Homes</string>
+
+    <string name="password_description">Enter your store password to continue</string>
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="fingerprint_hint">Use Touch sensor</string>
+    <string name="password">Password</string>
+    <string name="no_records_found">No records found</string>
+    <string name="fingure_print"><u>Use FingerPrint</u></string>
+
+    <string name="Terms">All photos and illustrations are representative and are to be used as a guide only. Floorplans
+        and specifications may be varied by Burbank without notice, the dimensions are diagrammatic only and a Building
+        Contract with final drawings will display the final dimensions and detail. The inclusion of furniture, floor coverings,
+        wall paper, artwork, curtains, light fittings, lawns, planter boxes, fences, driveways, footpaths, patios and pergolas
+        are intended merely as a guide and are not included in the price unless otherwise listed independently. All designs are
+        the property of Burbank Group and must not be used, reproduced, copied or varied, wholly or in part without written permission
+        from an authorised Burbank representative. All information provided on Burbank Group websites is provided for information
+        purposes only and does not constitute a legal contract between Burbank Australia and any person or entity unless otherwise specified.
+        This information is subject to change without prior notice. And while every reasonable effort is made to ensure current and accurate
+        information is presented, Burbank Australia makes no guarantees of any kind. At times sites under Burbank Australia’s control may
+        link to external sites or may contain community-based forums. Burbank Australia does not control, monitor or guarantee the
+        information contained in these sites or information contained in links to other external websites, and does not endorse any
+        views expressed or products or services offered therein. In no event shall Burbank Australia be responsible or liable,
+        directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or
+        reliance on any such content, goods, or services available on or through any such site or resource.</string>
+
+    <string name="aboutBurbankText">Password</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="partner">Partner</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="progress">PROGRESS</string>
+    <string name="details">DETAILS</string>
+    <string name="photos">PHOTOS</string>
+    <string name="documents">DOCUMENTS</string>
+    <string name="finance">FINANCE</string>
+    <string name="title_activity_dashboard_new">DashboardNewActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu">Menu</string>
+    <string name="dashboard_app_name">BURBANK MYPLACE</string>
+
+    <string name="bottom_progress">Progress</string>
+    <string name="bottom_details">Details</string>
+    <string name="bottom_photos">Photos</string>
+    <string name="bottom_documents">Documents</string>
+    <string name="bottom_finance">Finance</string>
+    <string name="myprogress">MyProgress</string>
+    <string name="mydetails">MyDetails</string>
+
+    <string name="your_home_is_currently">Your home is currently <b>%s</b> \n completed.\n Swipe to see your stages.</string>
+    <string name="text_desc">Lorem ipsum dolor sit amet, consector adipiscing elisted</string>
+    <string name="see_more">SEE MORE</string>
+    <string name="progress_percentage">%s Progress</string>
+    <string name="your_overall_progress">Your Overall Progress</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="what_is_the">What is the %s?</string>
+    <string name="lorem_ipsum_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="completion_date">Completion Date</string>
+    <string name="completed">Completed</string>
+    <string name="complete">Complete</string>
+    <string name="three_dots">…</string>
+    <string name="my_build_details">My Build Details</string>
+    <string name="my_build_details_information">Job Number %s\nFull Job Address\n%s</string>
+    <string name="my_contract_details">My Contract Details</string>
+    <string name="contract_status">Contract Status</string>
+    <string name="contract_value">Contract Value : </string>
+    <string name="supervisor">Supervisor</string>
+    <string name="new_home_consultant">New Home Consultant</string>
+    <string name="site_start_date">Site Start Date</string>
+    <string name="something_went_wrong">Something went wrong due to server problem</string>
+    <string name="my_details">MyDetails</string>
+    <string name="phone_s">Phone %s</string>
+    <string name="mobile_s">Mobile %s</string>
+    <string name="work_s">Work %s</string>
+    <string name="email_s">Email %s</string>
+    <string name="job_number">Job Number</string>
+    <string name="full_job_address">Full Job Address</string>
+    <string name="home_design">Home Design</string>
+    <string name="facade">Facade</string>
+    <string name="my_photos">MyPhotos</string>
+    <string name="my_photos_details">Here\'s your most recent site photos.\nTab below to see all.</string>
+    <string name="no_photos_details">No photos available for this job number.</string>
+    <string name="No_recent_photos">No recent photos</string>
+
+    <string name="see_all_photos">See all photos</string>
+    <string name="view_favourites">View Favourites</string>
+    <string name="search">Search</string>
+    <string name="my_documents">MyDocuments</string>
+    <string name="my_document_details">Find all the documents relate to your home build.</string>
+    <string name="logout">LogOut</string>
+    <string name="tap_for_more_information">Tap for more information</string>
+    <string name="load_more">LOAD MORE</string>
+    <string name="my_finance">MyFinance</string>
+    <string name="variations_to_date">Variations to Date</string>
+    <string name="approved_variations">Approved Variations :</string>
+    <string name="adjusted_contract_value">Adjusted Contract Value :</string>
+    <string name="claims_to_date">Claims to Date</string>
+    <string name="receipts_to_date">Receipts to Date</string>
+    <string name="total_received">Total Received :</string>
+    <string name="total_claimed">Total Claimed :</string>
+    <string name="balance_due">Balance Due : </string>
+    <string name="myappointments">MyAppointments</string>
+    <string name="my_appointments_details">Find all the appointments related to your home build.</string>
+    <string name="myhistory">MyHistory</string>
+    <string name="myhistory_desc">Find all the history related to your home build.</string>
+    <string name="mycontacts">MyContacts</string>
+    <string name="mycontact_desc">Find all the contacts related to your home build.</string>
+    <string name="mysupport">MySupport</string>
+    <string name="mynotifications">MyNotifications</string>
+    <string name="mysettings">MySettings</string>
+    <string name="MyJobNumber">MyHomes</string>
+    <string name="your_home_is_currently_completed">is currently\n</string>
+    <string name="settings_header_desc">Find all the settings related to\nyour home build.</string>
+    <string name="save">Save</string>
+    <string name="info_centre">Info Centre</string>
+    <string name="info_centre_description">Helpful videos and information to explain some of the stages in your build and what you need to know.</string>
+    <string name="faqs">FAQs</string>
+    <string name="faqs_description">Find answers to our most Frequently Asked Questions.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="select_job_number">ASSOCIATED JOB NUMBERS</string>
+    <string name="select_job_number_helptext">* Access other job numbers from menu option \"MyHomes\"</string>
+    <string name="what_would_you_like_to_do_today">What would you like to do today</string>
+    <string name="build_process">Build Process</string>
+    <string name="home_care">Home Care</string>
+    <string name="REPORT_MINOR_DEFECTS">REPORT MINOR DEFECTS</string>
+    <string name="REPORT_OTHER_ISSUES">REPORT OTHER ISSUES</string>
+    <string name="SELECT_YOUR_ISSUE_TYPE">SELECT YOUR ISSUE TYPE</string>
+    <string name="PRODUCT_WARRANTY">PRODUCT WARRANTY</string>
+    <string name="STRUCTURAL_ISSUE">STRUCTURAL ISSUE</string>
+    <string name="OTHER_ISSUE">OTHER ISSUE</string>
+    <string name="notes">notes</string>
+    <string name="list">list</string>
+    <string name="login_user_data">LoginUserData</string>
+
+    <string name="view_the_status_of">View the status of</string>
+    <string name="my_home_building">my home building</string>
+    <string name="access_my">Access my</string>
+    <string name="home_care_tool">home care tool</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="manuals">MANUALS</string>
+    <string name="warranties">WARRANTIES</string>
+    <string name="report">REPORT</string>
+    <string name="help_section">HELP SECTION</string>
+    <string name="my_home_care">MyHomeCare</string>
+    <string name="congratulation_text">Congratulations on the completion of \n your new Burbank home. </string>
+    <string name="center">BOTTOM</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="manual_sub_header_text">All the guides to the great appliances and services in your new home.</string>
+    <string name="document_sub_header_text">All the guides to the great appliances and services in your new home.</string>
+    <string name="warranty_sub_header_text">All the guides to the great appliances and services in your new home.</string>
+    <string name="report_sub_header_text">Your guide to the issue reporting with you new Burbank home.</string>
+    <string name="my_manuals">MyManuals</string>
+    <string name="my_warranties">MyWarranties</string>
+    <string name="report_issue">Report Issue</string>
+    <string name="contacts">CONTACTS</string>
+    <string name="no_data">--</string>
+
+    <string name="contact_us_description">Or simply get in touch here so we can help you directly.</string>
+    <string name="my_support_heading_desc">Your hub for tips and answers to your build questions. How can we help?</string>
+    <string name="add_minus_apporved">Add/Minus Approved Variation :</string>
+    <string name="total_amount_claimed">Total Amount Claimed :</string>
+    <string name="total_amount_received">Total Amount Received :</string>
+    <string name="no_notification_found">No notifications to display</string>
+    <string name="new_message">New Message</string>
+    <string name="search_here">Search By Name, Subject, Date</string>
+    <string name="search_document_here">Search By Name, Date</string>
+    <string name="home_new_home_small_desc">We\'re now on the way to building your new home. All you have to do is swipe to see your build progress.</string>
+    <string name="home_admin_small_desc">We\'re gathering the paperwork ready for approvals.</string>
+    <string name="home_base_small_desc">We will pour the foundation for your new home.</string>
+    <string name="home_frame_small_desc">The frame forms the skeleton of your new home.</string>
+    <string name="home_lockup_small_desc">Your home will now be prepared for locking up.</string>
+    <string name="home_fixing_small_desc">All the internal design features will now be fitted into your home.</string>
+    <string name="home_finishing_small_desc">As the name suggests, we\'re almost there.</string>
+
+    <string name="home_admin_large_desc">This is the stage where lots of things happen behind the scenes and where we have to work together to get it all done. Soil reports, Council approvals and everything in between. This may take time, but we’ll have it all ready and finalised ready to build your perfect home.</string>
+    <string name="home_base_large_desc">Base Stage is where we measure out your design on site, turn the sod, pour the footings, under slab drainage and special mesh for termite protection. You’ll also start to see activity on site and the beginning of the exciting times. Once the building foundation is complete, it is inspected by a building surveyor and we’re ready to start framing your home.</string>
+    <string name="home_frame_large_desc">The timber is delivered to site and, following your chosen floorplan, we start to construct the walls along with roof trusses, windows and door frames including the installation of your internal and external support structure. Conduits for electrical and plumbing, will also be installed. A building inspector will inspect this once it’s all up.</string>
+    <string name="home_lockup_large_desc">Bricks will be delivered and laid, and the windows, doors and walls will be installed. Plumbers, electricians, carpenters and other trades can begin fitting out your dream home ready to start the fixing stage where your internal selections that you chose will start to come to life. There will literally be a roof over your head.</string>
+    <string name="home_fixing_large_desc">This is where all the activity begins to happen behind closed doors. Fixtures and fittings start to come together to form the inside of the home. Features such as cornices, tiling, cabinets and shelving that make your house a home. It’s like the dressing up part.</string>
+    <string name="home_finishing_large_desc">The finishing touches are being made. All the painting, tiling, installations and detailing will be completed with your choices made at selections and your home is pretty much almost ready to move in.</string>
+    <string name="faqs_description_more">Lots of questions arise when you build a new home. Here we answer some of the most common ones. If you have a question that isn’t answered below, please contact us and we’ll be happy to help!</string>
+    <string name="info_center_description">Our Info Centre is the heartbeat of Burbank MyPlace where you can find everything that you need to help you along your journey. It will collate and show you relevant information on your new build. You can even find out how to use the MyPlace app!</string>
+    <string name="title_activity_privacy_policy">PrivacyPolicyActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="privacy_policy_desc_1">Burbank Australia Pty Ltd is committed to ensuring your privacy is protected in accordance with the Privacy Act 1988 and the Australian Privacy Principles. This is Burbank Australia Pty Ltd\'s Privacy Policy and it is to inform you of the following:\n\n • The process in which Burbank Australia Pty Ltd collects and holds your personal information;\n\n • The kind of personal information Burbank Australia Pty Ltd collects and holds about you;\n\n • The purpose for which Burbank Australia Pty Ltd collects, holds, uses and discloses your personal information;\n\n • How you can access, correct or update any personal information Burbank Australia Pty Ltd holds about you;\n\n • How you may complain about a breach of the Australian Privacy Principles and how Burbank Australia Pty Ltd will deal with such complaint; and\n\n • The potential disclosure of your personal information to an overseas recipient.\n\n\n</string>
+    <string name="privacy_policy_desc_2">By providing us with your personal information, you consent to the collection, use, disclosure and transfer of that information in accordance with this Privacy Policy. By using this website, you also consent to our use of cookies in accordance with this Privacy Policy.</string>
+    <string name="privacy_policy_desc_3">Information about other people which you provide to us</string>
+    <string name="your_consent">Your consent</string>
+    <string name="privacy_policy_desc_4">If you provide personal information to us about someone else you must ensure you are entitled to disclose that information to us without the need for us to take any additional steps in respect to how we use and disclose that information as described in this Privacy Policy. You must also ensure the individual concerned is aware of the details contained in this Privacy Policy and consents to same.</string>
+    <string name="privacy_policy_desc_5">The process in which Burbank Australia Pty Ltd collects and holds your personal information</string>
+    <string name="privacy_policy_desc_6">We may collect information about you in a number of circumstances, including but not limited to: when you make an enquiry on any area of our or our related entities website; when you attend an event provided by us; when you sign up to receive information from us or any of our related entities; or when you apply for employment with us or any of our related entities.</string>
+    <string name="privacy_policy_desc_7">The kinds of personal information Burbank Australia Pty Ltd collects and holds about you</string>
+    <string name="privacy_policy_desc_8">The information we may collect from you includes but is not limited to: your name; postal address; email address; telephone number; information pertaining to your occupation.</string>
+    <string name="privacy_policy_desc_9">The purpose for which Burbank Australia Pty Ltd collects, holds, uses and discloses your personal information</string>
+    <string name="privacy_policy_desc_10">We, our agents, contractors, sub-contractors, external contractors (including but not limited to \"Campaign Monitor Pty Ltd\" and \"National Pacific Finance Pty Ltd\") and any member of our related entities, may use any of the information we have about you which we have collected for the purposes of providing you with our or our related entities services; to send you information about us or our related entities, publications and events; to improve our services and communications to you; for the purposes of employment or the retention of services; to send you invoices or reminder notices; to monitor online activity on Burbank websites and/or applications; to market, improve and ad to Burbank’s products and services (including online); and to process any request f or information from you or any applications submitted by you to us. We may disclose your personal information in any of the following events: If you have provided us with your personal information for the purposes of engaging us for our services then we may disclose your personal information to any of our employees, agents, contractors, sub-contractors and to any members of our related entities; • We may disclose your personal information to any of our agents, consultants and sub-contractors, including IT service providers, to assist us in the operation of our business including updating any of our websites, or to provide any business related services to us, and who are subject to strict security and confidentiality obligations; • we may disclose your personal information between our related entities on a confidential basis for the purposes of internal administration, billing and other business practices; and • we will disclose your personal information to the extent that the law requires us to disclose.</string>
+    <string name="does_burbank_use_cookies">Does Burbank use cookies?</string>
+    <string name="privacy_policy_desc_11">When you use Burbank’s IT services, websites and/or applications, Burbank may obtain information using cookies, tags, web beacons, navigational data collection (such as log files, server logs and clickstream data) or other technologies to collect information including, but not limited to, the date, time, duration of visits and web pages accessed. \nThis information is collected to help us better understand your user experience and is generally not linked to your identity, except where it is accessed via links in a Burbank e-message, or where you have identified yourself. Burbank may use knowledge of your user experience to better understand what products of services may be of interest to you.</string>
+    <string name="how_you_can_access_correct_or_update_any_personal_information_burbank_australia_pty_ltd_holds_about_you">How you can access, correct or update any personal information Burbank Australia Pty Ltd holds about you</string>
+    <string name="privacy_policy_desc_12">You have a right to request a copy of the personal information we have about you or to have any inaccurate personal information corrected or updated or object to our using of your personal information for marketing purposes. Should you chose to exercise any of your rights mentioned herein, please send your request in writing addressed to our Privacy Officer at privacy@burbank.com.au or alternatively, you can write to the Privacy Officer - Burbank Australia Pty Ltd at: \nBurbank Australia Pty Ltd \n36 Aberdeen Road \nAltona Vic 3102 \n\nFacsimile +61 (0)3 9328 0222</string>
+    <string name="privacy_policy_desc_13">How you may complain about a breach of the Australian Privacy Principles and how Burbank Australia Pty Ltd will deal with such complaint</string>
+    <string name="privacy_policy_desc_14">If you believe we have breached the Australian Privacy Principles in respect to our handing of your personal information you should lodge complaint in writing to our Privacy Officer using the details provided above. Upon receipt of your written complaint we shall investigate the complaint and contact you in due course with a view of resolving the issues raised in your complaint. Alternatively, you can make a complaint to the Office of the Australian Information Commissioner (\"OAIC\") in respect to our handling of your personal information. Please refer to OAIC website or contact the OAIC for further information.</string>
+    <string name="privacy_policy_desc_15">The potential disclosure of your personal information to an overseas recipient</string>
+    <string name="privacy_policy_desc_16">We may transfer your personal information between countries if required for a relevant purpose described in this Privacy Policy. We may transfer your personal information to the United States of America, China, Malaysia or India. The laws of these countries may not provide the same level of protection in respect to your personal information as the laws of Australia.</string>
+    <string name="inbox">Inbox</string>
+    <string name="reply">Reply</string>
+    <string name="reply_note">Reply Message</string>
+    <string name="to">To:</string>
+    <string name="subject">Subject:</string>
+    <string name="message">Message</string>
+    <string name="enter_your_message">Enter message</string>
+    <string name="submit">Submit</string>
+    <string name="myPlace_inbox">MyPlace Inbox</string>
+<!--    <string name="contact_us_header_text">We\'re here to help you. Send us a message or reply to an existing message and we\'ll get back to you soon.</string>-->
+    <string name="contact_us_header_text">"If you need to contact us, please email or call your customer care co-ordinator."</string>
+
+    <string name="change_phase"><u>Change Phase</u></string>
+    <string name="structural_issue_are_things_like">Structural issue are things like..</string>
+    <string name="product_warranty_issue_are_things_like">Product warranty issue are things like...</string>
+    <string name="other_issue_are_things_like">Other issue are things like..</string>
+    <string name="new_issue">New Issue</string>
+    <string name="title_of_issue">Title of issue</string>
+    <string name="room_in_the_house">Room in the house</string>
+    <string name="brief_description">Brief description</string>
+    <string name="add_images_s">Add Images(s)</string>
+    <string name="log_issue">LOG ISSUE</string>
+
+</resources>

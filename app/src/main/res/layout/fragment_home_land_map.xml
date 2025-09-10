@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    tools:context=".ui.homeandland.HomeLandMapFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/back_icon_height_width"
+            android:layout_height="@dimen/back_icon_height_width"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:src="@drawable/back_png_grey" />
+
+        <TextView
+            android:id="@+id/tv_tool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_back"
+            android:layout_toEndOf="@+id/iv_back"
+            android:textAppearance="@style/FontMedium"
+            android:gravity="start|center"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/sub_header_size"
+            tools:text="North | Single | 4+ Beds | $420k - $550k " />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tool"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="1dp"
+
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/tv_sort_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/rectangle_orange_bg"
+                    android:textAppearance="@style/FontMedium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="@dimen/_15dp"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="SORT / FILTER"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/tv_sort_filter"
+                    android:background="@drawable/rectangle_orange_bg"
+                    android:textAppearance="@style/FontMedium"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="@dimen/_15dp"
+
+                    android:paddingBottom="6dp"
+                    android:textAllCaps="true"
+                    android:text="LIST"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                     />
+            </LinearLayout>
+          <!--  <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="1dp"
+
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/_17dp"
+                >
+                <TextView
+                    android:id="@+id/tv_sort_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="25dp"
+                    android:background="@drawable/rectangle_orange_bg"
+                     android:textAppearance="@style/FontMedium"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:text="SORT / FILTER"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                     android:textAppearance="@style/FontMedium"/>
+
+                <TextView
+                    android:id="@+id/tv_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/tv_sort_filter"
+                    android:background="@drawable/rectangle_orange_bg"
+                     android:textAppearance="@style/FontMedium"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:textAllCaps="true"
+                    android:text="LIST"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                     android:textAppearance="@style/FontMedium"
+
+                     />
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="1dp"
+                android:gravity="center"
+                >
+
+                <include layout="@layout/profile_with_badge" />
+            </LinearLayout>
+
+
+            <!--   <TextView
+                   android:id="@+id/tv_favorites"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/rl_tool"
+                   android:layout_alignParentEnd="true"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="@dimen/_15dp"
+                   android:layout_marginEnd="7dp"
+                   android:background="@drawable/rectangle_light_orange"
+                   android:gravity="center|end"
+                   android:paddingLeft="15dp"
+                   android:paddingTop="5dp"
+                   android:paddingRight="15dp"
+                   android:paddingBottom="5dp"
+
+                   android:text="@string/myprofile"
+                   android:textAllCaps="true"
+                   android:textColor="@color/white"
+                   android:textSize="13sp"
+                    android:textAppearance="@style/FontMedium" />
+               <TextView
+                   android:id="@+id/profile_notification"
+                   android:layout_width="@dimen/_18sp"
+                   android:layout_height="@dimen/_18sp"
+                   android:layout_below="@+id/rl_tool"
+                   android:layout_alignParentEnd="true"
+                   android:background="@drawable/black_round"
+                   android:gravity="center"
+                   android:includeFontPadding="false"
+                   android:text="0"
+                   android:textSize="@dimen/_7sdp"
+                   android:textColor="@color/white" />-->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+<!--
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_tool"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+             android:textAppearance="@style/FontMedium"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp"
+            tools:text="North | Single | 4+ Beds | $420k - $550k" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tool"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="27dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back"
+                app:tint="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tv_sort_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/iv_back"
+                android:background="@drawable/rectangle_orange_bg"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                     android:textAppearance="@style/FontMedium"
+                android:paddingBottom="5dp"
+                android:text="SORT / FILTER"
+                android:textColor="@color/white_3.1"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toRightOf="@+id/tv_sort_filter"
+                android:background="@drawable/rectangle_orange_bg"
+                android:gravity="center"
+                     android:textAppearance="@style/FontMedium"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="LIST"
+                android:textColor="@color/white_3.1"
+                android:textSize="13sp" />
+
+          &lt;!&ndash;  <TextView
+                android:id="@+id/tv_favorites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rectangle_orange_bg"
+                 android:textAppearance="@style/FontMedium"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/myprofile"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:gravity="center"
+                >
+
+                <include layout="@layout/profile_with_badge" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>-->
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top" />
+
+</RelativeLayout>

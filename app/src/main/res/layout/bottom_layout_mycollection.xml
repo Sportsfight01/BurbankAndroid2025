@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/_10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_design_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/tv_designs"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="?android:attr/selectableItemBackground"
+                 android:textAppearance="@style/FontMedium"
+                android:padding="@dimen/_5dp"
+                android:text="PACKAGES"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="18sp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tv_arrow"
+                android:layout_alignBaseline="@+id/tv_designs"
+                android:layout_alignTop="@+id/tv_designs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_designs"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/tv_designs"
+                android:text=" >"
+                android:textColor="@color/appColor"
+                android:textSize="19sp"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_design_container"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/_30dp">
+
+            <RelativeLayout
+                android:id="@+id/previous"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/enable_orange_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.913"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/guideline">
+
+                <ImageView
+                    android:id="@+id/iv_previos"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:rotation="180"
+                    android:src="@drawable/side_arrow"
+                    app:tint="@color/white" />
+
+
+                <Button
+                    android:id="@+id/button_previous"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/iv_previos"
+                     android:textAppearance="@style/FontMedium"
+                    android:text="Previous"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_3.1"
+                    android:textSize="@dimen/_12sdp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <RelativeLayout
+                android:id="@+id/next"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginStart="@dimen/_8dp"
+                android:background="@drawable/disable_rectangle_new"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/guideline"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_next"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="@dimen/_20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:src="@drawable/side_arrow"
+                    app:tint="@color/white" />
+
+                <Button
+                    android:id="@+id/button_next"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:layout_toStartOf="@+id/iv_next"
+                     android:textAppearance="@style/FontMedium"
+                    android:text="Next"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_3.1"
+                    android:textSize="@dimen/_12sdp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</merge>

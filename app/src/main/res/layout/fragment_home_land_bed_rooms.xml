@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    tools:context=".ui.homeandland.HomeLandBedRoomsFragment">
+
+    <include layout="@layout/homeland_tool" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/rl_top"
+        android:paddingTop="@dimen/_16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                 android:textAppearance="@style/FontMedium"
+                android:text="HOW MANY BEDROOMS"
+                android:textAllCaps="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textSize="@dimen/header_text" />
+
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_first"
+                android:layout_centerHorizontal="true"
+                 android:textAppearance="@style/FontMedium"
+                android:text="@string/are_you_looking_for"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_view"
+                android:layout_below="@+id/tv_second"
+                android:layout_marginTop="@dimen/_40dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_16dp"
+                    android:paddingEnd="@dimen/_16dp"
+                    android:weightSum="3">
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:id="@+id/ll_three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+
+                        <TextView
+                            android:id="@+id/tv_three_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="3"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="@dimen/_28sp" />
+
+                        <TextView
+                            android:id="@+id/tv_three"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/bedrooms"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="16sp" />
+                    </com.dmss.burbankapp.utility.SquareView>
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:id="@+id/ll_four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_four_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="4"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="@dimen/_28sp" />
+
+                        <TextView
+                            android:id="@+id/tv_four"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/bedrooms"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="16sp" />
+                    </com.dmss.burbankapp.utility.SquareView>
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:id="@+id/ll_five"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:id="@+id/tv_five_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="5+"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="@dimen/_28sp" />
+
+                        <TextView
+                            android:id="@+id/tv_five"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="@string/bedrooms"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="16sp" />
+                    </com.dmss.burbankapp.utility.SquareView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dummy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_16dp"
+                    android:paddingEnd="@dimen/_16dp"
+                    android:weightSum="3">
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:id="@+id/ll_notsure"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp">
+
+                        <ImageView
+                            android:id="@+id/img_question"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/group_question"
+                            app:tint="@color/grey_text_font_3.1" />
+
+
+                        <TextView
+                            android:id="@+id/tv_notsure"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:text="@string/not_sure"
+                            android:textAllCaps="false"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="16sp" />
+
+                    </com.dmss.burbankapp.utility.SquareView>
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_30sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="BEDROOMS"
+                            android:textAllCaps="false"
+                            android:textColor="@color/appColor"
+                            android:textSize="12sp" />
+                    </com.dmss.burbankapp.utility.SquareView>
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:visibility="invisible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="5+"
+                            android:textColor="@color/black"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="BEDROOMS"
+                            android:textAllCaps="false"
+                            android:textColor="@color/appColor"
+                            android:textSize="12sp" />
+                    </com.dmss.burbankapp.utility.SquareView>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <include
+                android:id="@+id/bottom_view"
+                layout="@layout/layout_bottom_next_previous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

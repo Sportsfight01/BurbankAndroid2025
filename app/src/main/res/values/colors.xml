@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">@color/white</color>
+    <color name="colorPrimaryDark">@android:color/black</color>
+    <color name="colorAccent">@color/appColor</color>
+
+
+<!--    <color name="appColor">#f68521</color>
+    <color name="skipColor">#F89638</color>-->
+        <color name="appColor">#FF6224</color>
+    <color name="skipColor">#A0A09E</color>
+    <color name="fiftyopacityornage">#80F89638</color>
+    <color name="viewLine">#e6e7e8</color>
+    <color name="box_grey">#5c5e5e</color>
+    <color name="app_background">#f6f6f6</color>
+
+
+
+    <color name="black">@android:color/black</color>
+    <color name="facebook_blue">#4A6EAD</color>
+    <color name="bottom_navigation">#e1e2e1</color>
+    <color name="app_background_light_white">#e1e2e1</color>
+
+
+    <color name="transparent">#00000000</color>
+    <color name="containercolor">#f6F6F6</color>
+
+
+    <color name="button_disabled">#d9d9d9</color>
+    <color name="light_orange">#FF6224</color>
+    <color name="disable_grey">#E5E5EA</color>
+    <color name="disable_grey_new">#FF857B7B</color>
+    <color name="polyline">#00ABF0</color>
+    <color name="dark_grey">#545454</color>
+    <color name="light_grey">#A0A09E</color>
+    <color name="orange">#FF6224</color>
+    <color name="enquire_now_bg_grey">#F2F2F7</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+    <!--3.1 app color codes-->
+    <color name="header_footer_bg_3.1">#FFFFFF</color>
+    <color name="body_bg_3.1">#F6F6F6</color>
+    <color name="light_grey_disabled_bg_3.1">#D1D3D4</color>
+    <color name="grey_text_font_3.1">#5C5E5E</color>
+    <color name="dark_grey_bg_3.1">#A7A9AC</color>
+    <color name="orange_bg_3.1">#FF6224</color>
+    <color name="enabled_orange_bg_3.1">#FAB282</color>
+    <color name="black_bg_3.1">#000000</color>
+    <color name="disabled_footer_icon_grey_3.1">#A2A2A1</color>
+    <color name="white_3.1">#FFFFFF</color>
+    <color name="button_grey_bg_3.1">#333333</color>
+
+
+</resources>

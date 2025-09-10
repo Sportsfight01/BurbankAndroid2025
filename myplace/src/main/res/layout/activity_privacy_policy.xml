@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dashboard.ui.sideMenu.PrivacyPolicyActivity">
+    <include android:id="@+id/toolbar"
+        layout="@layout/custom_dashboard_toolbar" />
+
+    <WebView
+        android:id="@+id/toursWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="@dimen/_5sdp"
+            android:orientation="vertical">
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="@string/privacy_policy_desc_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/your_consent"
+                android:textColor="@color/black"
+               android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/privacy_policy_desc_2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/privacy_policy_desc_3"
+                android:textColor="@color/black"
+               android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/privacy_policy_desc_4"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/privacy_policy_desc_5"
+                android:textColor="@color/black"
+               android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="@string/privacy_policy_desc_6"
+                android:textColor="@color/black"
+                android:lineSpacingMultiplier="1.2"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/privacy_policy_desc_7"
+                android:textColor="@color/black"
+               android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="@string/privacy_policy_desc_8"
+                android:textColor="@color/black"
+                android:lineSpacingMultiplier="1.2"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/privacy_policy_desc_9"
+                android:textColor="@color/black"
+               android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/privacy_policy_desc_10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/does_burbank_use_cookies"
+                android:textColor="@color/black"
+                android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="@string/privacy_policy_desc_11"
+                android:lineSpacingMultiplier="1.2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/how_you_can_access_correct_or_update_any_personal_information_burbank_australia_pty_ltd_holds_about_you"
+                android:textColor="@color/black"
+               android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp" />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/privacy_policy_desc_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/privacy_policy_desc_13"
+                android:textColor="@color/black"
+               android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="@string/privacy_policy_desc_14"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:text="@string/privacy_policy_desc_15"
+                android:textColor="@color/black"
+                android:textAppearance="@style/FontBold"
+                android:textSize="@dimen/_14ssp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:text="@string/privacy_policy_desc_16"
+                android:textColor="@color/black"
+                android:lineSpacingMultiplier="1.2"
+                android:textSize="@dimen/_12ssp" />
+        </LinearLayout>
+    </ScrollView>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/gray_color"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black_bg_3.1"
+        android:textSize="14sp"
+        tools:text="Ben Johnston (New Home Coordinator)" />
+   <!-- <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="ddsddsssssssssssssssssssss"
+        app:fontFamily="@font/montserrat_medium"
+        android:textSize="@dimen/default_text_size"
+        android:textColor="@color/appColor"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        android:layout_marginRight="@dimen/_20sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_marginTop="@dimen/_3sdp"/>-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:ellipsize="end"
+        app:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/appColor"
+        android:paddingBottom="@dimen/_5sdp"
+        android:justificationMode="none"
+        android:textSize="@dimen/default_text_size"
+
+        tools:text="subject"/>
+    <ImageView
+        android:id="@+id/tvDot"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:background="@drawable/contact_us_dot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvSubject"
+        app:layout_constraintBottom_toBottomOf="@id/tvSubject"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubject"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:paddingBottom="@dimen/_5sdp"
+        android:textSize="@dimen/default_text_size"
+        app:fontFamily="@font/montserrat_regular"
+
+        tools:text="Hi (Customer), I am writing to you to let you know that we hav......"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        android:text="12-06-2023"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        app:fontFamily="@font/montserrat_regular"
+
+        android:textColor="@color/disabled_footer_icon_grey_3.1"
+        android:textSize="12sp"
+        />
+   <!-- <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="@id/tvTitle"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="12-07-2023"/>-->
+   <!-- <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/orange_bg_3.1"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_10sdp"
+        tools:text="8 Sep 2021 09:14am"
+        android:paddingBottom="@dimen/_10sdp"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

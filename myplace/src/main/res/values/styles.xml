@@ -1,0 +1,125 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppThemeOld" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/new_gray_color</item>
+        <item name="colorPrimaryDark">@color/new_gray_color</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/montserrat_regular</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="BottomNavigationViewActiveTextStylemyplace">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/appColor</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+    <style name="FontBold">
+        <item name="android:fontFamily">@font/montserrat_bold</item>
+    </style>
+    <style name="FontLight">
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+    <style name="FontMedium">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+    <style name="FontRegular">
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+    <style name="FontSemiBold">
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+    <style name="FontExtraBold">
+        <item name="android:fontFamily">@font/montserrat_extrabold</item>
+    </style>
+    <style name="HomeCareBottomNavigationViewActiveTextStylemyplace">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/black_bg_3.1</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+    <style name="BottomNavigationViewInActiveTextStylemyplace">
+        <item name="android:textSize">@dimen/_10sp</item>
+        <item name="android:textColor">@color/grey_text_font_3.1</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+    <style name="TransparentProgressDialog" parent="AppThemeOld">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme_Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">#ffffff</item>
+        <item name="colorControlHighlight">#ffffff</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+
+    </style>
+
+    <style name="AppTheme_Transparent_black" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/appColor</item>
+
+    </style>
+
+    <style name="AppThemeOld.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="AppThemeOld.WhiteAccent">
+        <item name="colorAccent">@color/fontColorOrange</item> <!-- Whatever color you want-->
+    </style>
+
+    <style parent="@android:style/Widget.Spinner" name="SpinnerAsEditText">
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="countText"      format="string"/>
+        <attr name="definitionText" format="string"/>
+        <attr name="progressColor"  format="color"/>
+        <attr name="rimColor"       format="color"/>
+        <attr name="countTextColor" format="color"/>
+        <attr name="defTextColor"   format="color"/>
+        <attr name="barWidth"       format="dimension"/>
+        <attr name="countTextSize"  format="dimension"/>
+        <attr name="defTextSize"    format="dimension"/>
+        <attr name="marginBtwText"  format="dimension"/>
+        <attr name="percentage"    format="integer"/>
+    </declare-styleable>
+
+    <style name="AppTheme.RadioButtonLikeBottomNavigationView" parent="@android:style/Widget.Button">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/_52sdp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/_16sdp</item>
+    </style>
+    <style name="AppTheme.RadioButtonLikeBottomNavigationViewfive" parent="@android:style/Widget.Button">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/_53sdp</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">@dimen/_5sdp</item>
+    </style>
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+</resources>

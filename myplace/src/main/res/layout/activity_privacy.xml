@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail_screen" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Burbank Australia Pty Ltd is committed to ensuring your privacy is protected in accordance with the Privacy Act 1988 and the Australian Privacy Principles. This is Burbank Australia Pty Ltd's Privacy Policy and it is to inform you of the following:\n\n
+\u2022   The process in which Burbank Australia Pty Ltd collects and holds your personal information;\n\n
+\u2022   The kind of personal information Burbank Australia Pty Ltd collects and holds about you;\n\n
+\u2022   The purpose for which Burbank Australia Pty Ltd collects, holds, uses and discloses your personal information;\n\n
+\u2022   How you can access, correct or update any personal information Burbank Australia Pty Ltd holds about you;\n\n
+\u2022   How you may complain about a breach of the Australian Privacy Principles and how Burbank Australia Pty Ltd will deal with such complaint; and\n\n
+\u2022   The potential disclosure of your personal information to an overseas recipient.\n\n\n"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Your consent"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                 android:textAppearance="@style/FontMedium"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="By providing us with your personal information, you consent to the collection, use, disclosure and transfer of that information in accordance with this Privacy Policy. By using this website, you also consent to our use of cookies in accordance with this Privacy Policy."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Information about other people which you provide to us"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                 android:textAppearance="@style/FontMedium"
+                 />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="If you provide personal information to us about someone else you must ensure you are entitled to disclose that information to us without the need for us to take any additional steps in respect to how we use and disclose that information as described in this Privacy Policy. You must also ensure the individual concerned is aware of the details contained in this Privacy Policy and consents to same."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="The process in which Burbank Australia Pty Ltd collects and holds your personal information"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                 android:textAppearance="@style/FontMedium"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="We may collect information about you in a number of circumstances, including but not limited to: when you make an enquiry on any area of our or our related entities website; when you attend an event provided by us; when you sign up to receive information from us or any of our related entities; or when you apply for employment with us or any of our related entities."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="The kinds of personal information Burbank Australia Pty Ltd collects and holds about you"
+                android:textColor="@color/white"
+                 android:textAppearance="@style/FontMedium"
+                android:textSize="16sp"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="The information we may collect from you includes but is not limited to: your name; postal address; email address; telephone number; information pertaining to your occupation."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="The purpose for which Burbank Australia Pty Ltd collects, holds, uses and discloses your personal information"
+                android:textColor="@color/white"
+                 android:textAppearance="@style/FontMedium"
+                android:textSize="16sp"
+                 />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="We, our agents, contractors, sub-contractors, external contractors (including but not limited to &quot;Campaign Monitor Pty Ltd&quot; and &quot;National Pacific Finance Pty Ltd&quot;) and any member of our related entities, may use any of the information we have about you which we have collected for the purposes of providing you with our or our related entities services; to send you information about us or our related entities, publications and events; to improve our services and communications to you; for the purposes of employment or the retention of services; to send you invoices or reminder notices; to monitor online activity on Burbank websites and/or applications; to market, improve and ad to Burbank’s products and services (including online); and to process any request f or information from you or any applications submitted by you to us.
+We may disclose your personal information in any of the following events:
+
+If you have provided us with your personal information for the purposes of engaging us for our services then we may disclose your personal information to any of our employees, agents, contractors, sub-contractors and to any members of our related entities;
+•	We may disclose your personal information to any of our agents, consultants and sub-contractors, including IT service providers, to assist us in the operation of our business including updating any of our websites, or to provide any business related services to us, and who are subject to strict security and confidentiality obligations;
+•	we may disclose your personal information between our related entities on a confidential basis for the purposes of internal administration, billing and other business practices; and
+•	we will disclose your personal information to the extent that the law requires us to disclose."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Does Burbank use cookies?"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                 android:textAppearance="@style/FontMedium"
+                 />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="When you use Burbank’s IT services, websites and/or applications, Burbank may obtain information using cookies, tags, web beacons, navigational data collection (such as log files, server logs and clickstream data) or other technologies to collect information including, but not limited to, the date, time, duration of visits and web pages accessed.
+\nThis information is collected to help us better understand your user experience and is generally not linked to your identity, except where it is accessed via links in a Burbank e-message, or where you have identified yourself. Burbank may use knowledge of your user experience to better understand what products of services may be of interest to you."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="How you can access, correct or update any personal information Burbank Australia Pty Ltd holds about you"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                 android:textAppearance="@style/FontMedium"
+                />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="You have a right to request a copy of the personal information we have about you or to have any inaccurate personal information corrected or updated or object to our using of your personal information for marketing purposes. Should you chose to exercise any of your rights mentioned herein, please send your request in writing addressed to our Privacy Officer at privacy@burbank.com.au or alternatively, you can write to the Privacy Officer - Burbank Australia Pty Ltd at:
+\nBurbank Australia Pty Ltd
+\n36 Aberdeen Road
+\nAltona Vic 3102
+\n\nFacsimile +61 (0)3 9328 0222"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="How you may complain about a breach of the Australian Privacy Principles and how Burbank Australia Pty Ltd will deal with such complaint"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                 />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="If you believe we have breached the Australian Privacy Principles in respect to our handing of your personal information you should lodge complaint in writing to our Privacy Officer using the details provided above. Upon receipt of your written complaint we shall investigate the complaint and contact you in due course with a view of resolving the issues raised in your complaint.
+
+Alternatively, you can make a complaint to the Office of the Australian Information Commissioner (&quot;OAIC&quot;) in respect to our handling of your personal information. Please refer to OAIC website or contact the OAIC for further information."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="The potential disclosure of your personal information to an overseas recipient"
+                android:textColor="@color/white"
+                 android:textAppearance="@style/FontMedium"
+                android:textSize="16sp"
+                 />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:text="We may transfer your personal information between countries if required for a relevant purpose described in this Privacy Policy. We may transfer your personal information to the United States of America, China, Malaysia or India. The laws of these countries may not provide the same level of protection in respect to your personal information as the laws of Australia."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

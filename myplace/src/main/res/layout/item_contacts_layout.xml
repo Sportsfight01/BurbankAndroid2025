@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_5sdp"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_human"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/profile_edit"
+         android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_details"/>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintStart_toEndOf="@+id/iv_human"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/llContact">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Site Supervisor"
+            android:textColor="@color/appColor"
+            android:textAppearance="@style/FontMedium"
+            android:textSize="@dimen/_13ssp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Rose Amenta"
+            android:textColor="@color/new_gray_color"
+            android:layout_marginTop="@dimen/_5sdp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Rose.Amenta@burbank.com.au"
+            android:textColor="@color/new_gray_color"
+            android:layout_marginTop="@dimen/_5sdp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="04287436343"
+            android:textColor="@color/new_gray_color"
+            android:layout_marginTop="@dimen/_5sdp"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/llContact"
+        android:layout_width="40dp"
+        android:orientation="vertical"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_details"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_details">
+        <ImageView
+            android:id="@+id/imgMail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_email_contacts"
+            android:visibility="visible" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_8sdp" />
+
+        <ImageView
+            android:id="@+id/imgCall"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_mobile"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_color"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_details"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

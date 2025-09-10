@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_text_font_3.1"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:layout_centerInParent="true"
+        android:background="@color/white_3.1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <RadioButton
+
+            android:id="@+id/nav_home_button"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/bottom_radio_progress"
+            android:checked="false" />
+
+        <RadioButton
+
+            android:id="@+id/nav_details_button"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_radio_details"
+            android:checked="false" />
+
+        <RadioButton
+
+            android:id="@+id/nav_photos_button"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_radio_photos"
+            android:checked="false" />
+
+        <RadioButton
+
+            android:id="@+id/nav_documents_button"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView"
+            android:layout_gravity="center"
+            android:background="@drawable/bottom_radio_documents"
+            android:checked="false" />
+
+        <RadioButton
+
+            android:id="@+id/nav_finance_button"
+            style="@style/AppTheme.RadioButtonLikeBottomNavigationView"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_radio_finance"
+            android:checked="false"
+            android:visibility="gone" />
+
+    </RadioGroup>
+</RelativeLayout>

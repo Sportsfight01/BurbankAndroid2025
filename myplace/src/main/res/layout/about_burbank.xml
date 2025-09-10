@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail_screen" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Stay Connected with Burbank Team !!"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                 android:textAppearance="@style/FontMedium"
+               />
+
+            <common.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="20dp"
+                android:text="Burbank App help you stay updated with your Burbank Home faster and easier than ever.\n\nGet Notified with the progress of your home."
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <common.JustifyTextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingBottom="20dp"
+                android:text="Features on the Burbank App Include:\n\n\u2022\t\t\t\tGet Stage wise Progress of your Burbank Home.\n\n\u2022\t\t\t\tSee updated photo of your Burbank Home.\n\n\u2022\t\t\t\tKeep updated about finance details and dues.\n\n\u2022\t\t\t\tAdd family / friends to share information about your home construction journey.\n\n\u2022\t\t\t\tProvide feedback easily and help Burbank team to take corrective action.\n\n\u2022\t\t\t\tManage your profile, settings and notifications easily.\n\n\u2022\t\t\t\tAccess contact list and stay connected with Burbank team.\n\n\u2022\t\t\t\tSupport and Help\n\n"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <WebView
+        android:id="@+id/aboutBurbankWV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </WebView>
+</LinearLayout>

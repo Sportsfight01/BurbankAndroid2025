@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangel_map_info_background"
+    android:padding="@dimen/_16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textAppearance="@style/FontMedium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="4sp"
+            android:text="$434,296"
+            android:textColor="#f68b21"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginTop="8dp"
+             android:textAppearance="@style/FontMedium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3sp"
+            android:text="Chatﬁeld 206"
+            android:textColor="#5c5e5e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="8dp"
+             android:textAppearance="@style/FontRegular"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="3sp"
+            android:text="Lot 1535 Grainger Parade, Lucas"
+            android:textColor="#818181"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_choose"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/tv_area"
+            android:layout_marginTop="10dp"
+            android:gravity="center|start">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/third_eminities" />
+
+            <TextView
+                android:id="@+id/tv_bedrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                 android:textAppearance="@style/FontRegular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="2"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/bath_eminities" />
+
+            <TextView
+                android:id="@+id/tv_bathrooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                 android:textAppearance="@style/FontRegular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/car_eminities" />
+
+            <TextView
+                android:id="@+id/tv_carspaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                 android:textAppearance="@style/FontRegular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="4"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_below="@+id/ll_choose"
+            android:background="@drawable/rectangel_skip"
+             android:textAppearance="@style/FontMedium"
+            android:gravity="center"
+            android:text="View"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

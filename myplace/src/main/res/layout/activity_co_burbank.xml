@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail_screen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/opacity_orange"
+
+        android:padding="@dimen/_18dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:src="@drawable/notification_key_icon" />
+
+        <TextView
+            android:id="@+id/jobNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_gravity="center_vertical"
+             android:textAppearance="@style/FontExtraBold"
+            android:textSize="@dimen/_22sp"
+            android:text="13771"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/coBurbankInviteButton"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:background="@color/appColor"
+            android:divider="@null"
+            android:scrollbars="none"
+            tools:listitem="@layout/co_burbank_row" />
+
+        <TextView
+            android:id="@+id/coBurbankInviteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_30dp"
+            android:paddingEnd="@dimen/_30dp"
+            android:paddingTop="@dimen/_10dp"
+            android:paddingBottom="@dimen/_10dp"
+             android:textAppearance="@style/FontRegular"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/invitation_drawable"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Invite"
+            android:textAllCaps="false"
+            android:textSize="@dimen/default_text_size"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>

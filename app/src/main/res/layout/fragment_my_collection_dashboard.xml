@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    android:orientation="vertical"
+    tools:context=".ui.designs.MyCollectionDashboardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/inclue_tool_design" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_parent"
+                android:background="@color/body_bg_3.1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/_20dp"
+                    android:paddingEnd="@dimen/_20dp">
+
+                    <TextView
+                        android:id="@+id/tv_answer_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                         android:textAppearance="@style/FontRegular"
+                        android:gravity="center"
+                        android:text="Answer a few questions to get you closer to your perfect design."
+                        android:textAllCaps="false"
+                        android:textColor="@color/black_bg_3.1"
+                        android:textSize="@dimen/_16sp"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_header_question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_20dp"
+                         android:textAppearance="@style/FontMedium"
+                        android:gravity="center"
+                        android:text="How wide is your LOT"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black_bg_3.1"
+                        android:textSize="@dimen/header_text"
+                        />
+
+                </LinearLayout>
+
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constrainView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/ll_container"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_16dp"
+                    android:paddingEnd="@dimen/_16dp"
+                    android:weightSum="3">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5"  />
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:id="@+id/iDontHaveLand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_20dp"
+                        app:layout_constraintDimensionRatio="w,1:1"
+                        app:layout_constraintEnd_toStartOf="@+id/guide"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_goneMarginEnd="@dimen/_10dp">
+
+                        <ImageView
+                            android:id="@+id/into"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/group_question"
+                            app:tint="@color/grey_text_font_3.1" />
+
+                        <TextView
+                            android:id="@+id/tv_iDontHave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:includeFontPadding="false"
+                            android:text="I Don't Have\nLand Yet"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="16sp" />
+                    </com.dmss.burbankapp.utility.SquareView>
+
+                    <com.dmss.burbankapp.utility.SquareView
+                        android:id="@+id/IHaveLand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_5dp"
+                        android:layout_marginEnd="@dimen/_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/rectangel_shape"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_20dp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/iDontHaveLand"
+                        app:layout_constraintStart_toEndOf="@+id/guide"
+                        app:layout_constraintTop_toTopOf="@id/iDontHaveLand"
+                        app:layout_goneMarginStart="@dimen/_10dp">
+
+                        <ImageView
+                            android:id="@+id/right"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/right"
+                            android:tint="@color/grey_text_font_3.1"/>
+
+                        <TextView
+                            android:id="@+id/tv_IHave"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:textAllCaps="true"
+                            android:includeFontPadding="false"
+                            android:text="I Have Land\n "
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="16sp" />
+                    </com.dmss.burbankapp.utility.SquareView>
+
+                    <androidx.constraintlayout.widget.Group
+                        android:id="@+id/groupView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        app:constraint_referenced_ids="etMeters,tvMeters" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/etMeters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15dp"
+                        android:background="@drawable/rectangel_white_button"
+                         android:textAppearance="@style/FontMedium"
+                        android:gravity="center"
+                        android:hint="E.g 12.5"
+                        android:textCursorDrawable="@null"
+                        android:maxLength="5"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:paddingStart="@dimen/_20dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="@dimen/_20dp"
+                        android:paddingBottom="@dimen/_5dp"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textColorHint="@color/light_grey_disabled_bg_3.1"
+                        android:textSize="@dimen/_16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/IHaveLand" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvMeters"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8dp"
+                         android:textAppearance="@style/FontMedium"
+                        android:text="Metres"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/etMeters" />
+
+                    <TextView
+                        android:id="@+id/proceedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:background="@drawable/rectangel_skip"
+                        android:paddingStart="@dimen/_5dp"
+                        android:textAppearance="@style/FontMedium"
+                        android:paddingTop="@dimen/_3dp"
+                        android:paddingEnd="@dimen/_5dp"
+                        android:paddingBottom="@dimen/_3dp"
+                        android:text="Proceed"
+                        android:textSize="@dimen/default_text_size"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/etMeters"
+                        app:layout_constraintStart_toEndOf="@+id/etMeters"
+                        app:layout_constraintTop_toTopOf="@+id/etMeters" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/constrainView"
+            android:layout_alignParentBottom="true"
+            >
+
+            <include layout="@layout/bottom_layout_mycollection" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

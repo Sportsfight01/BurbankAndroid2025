@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "109308252538",
+    "firebase_url": "https://myplace-8e564.firebaseio.com",
+    "project_id": "myplace-8e564",
+    "storage_bucket": "myplace-8e564.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109308252538:android:956dddd1994c4160ee46c3",
+        "android_client_info": {
+          "package_name": "com.dmss.burbankapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109308252538-angsc2m03nci936mro3fu0n2a01ru79h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZbWnOh3jDGLrsYt0Ov65IqVH8rh6QHNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109308252538-angsc2m03nci936mro3fu0n2a01ru79h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "109308252538-7ha0gp9d58tg6dd9fhparkofp1if13ub.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dmss.MyPlace"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:109308252538:android:06ad5b3e6bef9671ee46c3",
+        "android_client_info": {
+          "package_name": "com.dmss.burbankappv2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "109308252538-angsc2m03nci936mro3fu0n2a01ru79h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZbWnOh3jDGLrsYt0Ov65IqVH8rh6QHNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "109308252538-angsc2m03nci936mro3fu0n2a01ru79h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "109308252538-7ha0gp9d58tg6dd9fhparkofp1if13ub.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dmss.MyPlace"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

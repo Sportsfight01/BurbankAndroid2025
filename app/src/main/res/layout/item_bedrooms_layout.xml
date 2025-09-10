@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.dmss.burbankapp.utility.SquareView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnBedroom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="@dimen/_10dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:background="@drawable/rectangel_shape">
+    <ImageView
+        android:id="@+id/imgNotSure"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/group_question"
+        app:tint="@color/black_bg_3.1" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+         android:textAppearance="@style/FontMedium"
+        android:gravity="center"
+        android:textColor="@color/grey_text_font_3.1"
+        android:textSize="@dimen/_28sp"
+        tools:text="3" />
+    <TextView
+        android:id="@+id/tvBedRoomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+         android:textAppearance="@style/FontMedium"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:includeFontPadding="false"
+        android:text="@string/not_sure"
+        android:textColor="@color/grey_text_font_3.1"
+        android:textSize="16sp" />
+
+</com.dmss.burbankapp.utility.SquareView>

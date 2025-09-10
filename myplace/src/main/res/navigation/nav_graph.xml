@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/ManualsFragment"
+        android:name="com.dmss.burbankappold.homecare.manuals.ManualsFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_manuals">
+
+        <!--<action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/DocumentsFragment"
+        android:name="com.dmss.burbankappold.homecare.documents.DocumentsHomeCareFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_homecare_documents">
+
+     <!--   <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/WarrantiesFragment"
+        android:name="com.dmss.burbankappold.homecare.warranties.WarrantiesFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_warranties">
+
+        <!--   <action
+               android:id="@+id/action_SecondFragment_to_FirstFragment"
+               app:destination="@id/FirstFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/ReportsFragment"
+        android:name="com.dmss.burbankappold.homecare.reports.ReportHomeFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_report_home">
+
+         <!--<action
+               android:id="@+id/action_SecondFragment_to_FirstFragment"
+               app:destination="@id/action_SecondFragment_to_FirstFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/SelectYourIssueTypeFragmetn"
+        android:name="com.dmss.burbankappold.homecare.reports.SelectYourIssueTypeFragmetn"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_select_your_issue_type_fragmetn">
+    </fragment>
+    <fragment
+        android:id="@+id/NewIssueFragment"
+        android:name="com.dmss.burbankappold.homecare.reports.NewIssueFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_new_issue">
+
+        <!--<action
+              android:id="@+id/action_SecondFragment_to_FirstFragment"
+              app:destination="@id/action_SecondFragment_to_FirstFragment" />-->
+    </fragment>
+</navigation>

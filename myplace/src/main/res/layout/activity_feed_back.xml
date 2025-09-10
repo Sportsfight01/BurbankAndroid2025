@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myplace_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context="com.dmss.burbankappold.FeedBackActivity">
+
+
+    <!--<TextView
+        android:id="@+id/provideCircleBlock"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:text="Provide a Feedback"
+        android:textColor="@color/white" />-->
+    <LinearLayout
+        android:id="@+id/feedBackCircleBlocks"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circle"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/headingFieldIcon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/feedback_icon" />
+
+        <TextView
+            android:id="@+id/customHeadingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Survey"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

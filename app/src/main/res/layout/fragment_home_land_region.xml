@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    tools:context=".ui.homeandland.HomeLandRegionFragment"
+    >
+
+    <include layout="@layout/homeland_tool" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top"
+        android:paddingTop="@dimen/_16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingEnd="@dimen/_16dp">
+
+                <TextView
+                    android:id="@+id/tv_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                     android:textAppearance="@style/FontMedium"
+                    android:lineSpacingExtra="3sp"
+                    android:text="@string/what_region_are_you"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="@dimen/header_text" />
+
+                <TextView
+                    android:id="@+id/tv_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                     android:textAppearance="@style/FontMedium"
+                    android:text="@string/lookin_for_your_new_home"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="@dimen/header_text" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_recycler"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_view"
+                android:layout_below="@+id/ll_header"
+                android:paddingStart="@dimen/_30dp"
+                android:paddingTop="@dimen/_10dp"
+                android:paddingEnd="@dimen/_30dp"
+                android:paddingBottom="@dimen/_10dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/regionsRecyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:scrollbars="vertical"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/bottom_view"
+                layout="@layout/layout_bottom_next_previous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

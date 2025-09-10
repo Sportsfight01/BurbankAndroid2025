@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "927901316731",
+    "firebase_url": "https://burbank-homes.firebaseio.com",
+    "project_id": "burbank-homes",
+    "storage_bucket": "burbank-homes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927901316731:android:d4f321b7c50da475",
+        "android_client_info": {
+          "package_name": "com.dmss.burbankappold"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927901316731-kqh0l66fuef00n91ubr62ng9ameebiim.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dmss.burbankappold",
+            "certificate_hash": "7755e897afc235bd36dc7b05c785d40a5e6a6f16"
+          }
+        },
+        {
+          "client_id": "927901316731-cjj76k17q1a0o016lmcmmnakgt0fa8oc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-2El57TJiIpzoF5RS965kipPf1_1jpOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927901316731-cjj76k17q1a0o016lmcmmnakgt0fa8oc.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "927901316731-4l8doh2cmf44rg613k7eh84krva9qt3g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dmss.burbankappold"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

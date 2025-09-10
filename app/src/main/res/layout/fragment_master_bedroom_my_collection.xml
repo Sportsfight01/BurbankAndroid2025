@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/containercolor"
+    tools:context=".ui.designs.MasterBedroomMyCollectionFragment">
+
+    <include layout="@layout/inclue_tool_design" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_parent"
+        android:layout_marginTop="@dimen/_30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:paddingStart="@dimen/_16dp"
+            android:paddingEnd="@dimen/_16dp">
+
+            <TextView
+                android:id="@+id/tv_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="center"
+                android:lineSpacingExtra="3sp"
+                android:text="Do you like the master bedroom at the front of the home?"
+                android:textAllCaps="true"
+                android:textColor="@color/black_bg_3.1"
+                android:textSize="@dimen/header_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:paddingLeft="38dp"
+            android:paddingRight="38dp">
+
+            <TextView
+                android:id="@+id/imusthave"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/i_must_have_this"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/idontmind"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/i_don_t_mind"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/idontWantThis"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rectangle_grey_line"
+                 android:textAppearance="@style/FontMedium"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/i_don_t_want_this"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <include layout="@layout/bottom_layout_mycollection" />
+
+    </RelativeLayout>
+</RelativeLayout>

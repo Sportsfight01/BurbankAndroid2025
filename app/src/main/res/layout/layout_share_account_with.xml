@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appColor"
+    android:paddingTop="@dimen/_10dp"
+    android:paddingBottom="@dimen/_10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrant_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rectangel_white_button"
+        android:padding="@dimen/_15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_share_acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:textAppearance="@style/FontMedium"
+            android:gravity="start"
+            android:text="SHARE ACCOUNT WITH"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_share"
+            android:importantForAutofill="noExcludeDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/rectangle_grey_line"
+            android:hint="Share Account With Email"
+            android:paddingStart="@dimen/_8dp"
+            android:paddingEnd="@dimen/_8dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_share_acc" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/rectangel_skip"
+             android:textAppearance="@style/FontMedium"
+            android:gravity="center"
+            android:text="Share"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_share" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_share_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:background="@drawable/rectangel_white_button"
+        android:padding="@dimen/_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constrant_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/share_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/share_account_list_item" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

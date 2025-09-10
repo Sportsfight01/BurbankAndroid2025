@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_place"
+            android:layout_width="@dimen/_72sdp"
+            android:layout_height="@dimen/_48sdp">
+
+            <ImageView
+                android:id="@+id/iv_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rectangle_test" />
+
+            <ProgressBar
+                android:id="@+id/place_progress"
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/rl_place"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Mendelsohn 267"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_fourth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                tools:text="Mickelham"
+                android:textSize="12sp"
+                android:textColor="@color/grey_text_font_3.1"
+                />
+            <TextView
+                android:id="@+id/tv_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Botanical Estate"
+                android:textColor="@color/orange_bg_3.1"
+                android:textSize="12sp"
+               />
+
+            <TextView
+                android:id="@+id/tv_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Mickelham"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/rl_first"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_first"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_marginEnd="@dimen/_20dp"
+            android:id="@+id/iv_favorite"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/heart_bottom_svg"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/iv_favorite"
+            android:id="@+id/rl_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_bedrooms"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/third_eminities" />
+
+            <TextView
+                android:id="@+id/tv_bed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/iv_bedrooms"
+                 android:textAppearance="@style/FontMedium"
+                android:text="4"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_bathrooms"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="3dp"
+                android:layout_toEndOf="@+id/iv_bedrooms"
+                android:layout_toRightOf="@+id/iv_bedrooms"
+                android:src="@drawable/bath_eminities" />
+
+            <TextView
+                android:id="@+id/tv_bath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@+id/iv_bathrooms"
+                 android:textAppearance="@style/FontMedium"
+                android:text="2"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/iv_car"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_toEndOf="@+id/iv_bathrooms"
+                android:src="@drawable/car_eminities" />
+
+            <TextView
+                android:id="@+id/tvcar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_car"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/_5dp"
+                android:layout_toEndOf="@+id/iv_car"
+                 android:textAppearance="@style/FontMedium"
+                android:text="2"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

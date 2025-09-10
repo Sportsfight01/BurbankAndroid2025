@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail_screen" />
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/appColor"
+        android:alpha="0.7"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/photoPreviousMonthImageView"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back_new_icon" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/photoMonthNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="April"
+                 android:textAppearance="@style/FontMedium"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/photoYearTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2017"
+                android:layout_marginTop="@dimen/_5dp"
+                 android:textAppearance="@style/FontMedium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/photoNextMonthImageView"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:rotation="180"
+            android:src="@drawable/back_new_icon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/jobNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/opacity_orange"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/notification_key_icon" />
+
+            <TextView
+                android:id="@+id/favJobNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Q1022"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textAppearance="@style/FontBold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/photoListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/appColor"
+        android:dividerHeight="1dp"
+        android:scrollingCache="false"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/emptyElement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:background="@color/appColor"
+        android:orientation="vertical"
+        android:padding="@dimen/_16dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:visibility="visible"
+            android:background="@drawable/rectangel_ten_radious_white"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_no_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/no_photos_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:textColor="#231f20"
+                android:textSize="24sp"
+                android:text="No Fav Photos to Display" />
+            <TextView
+                android:id="@+id/retryTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/iv_no_photos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/orange_btn_fullcolor"
+                android:padding="5dp"
+                android:text="Reload"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/twenty">
+
+    <TextView
+        android:id="@+id/addJobHeadingtextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Job"
+        android:textAllCaps="true"
+        android:textColor="@color/fontColorOrange"
+        android:textSize="18sp"
+        android:textAppearance="@style/FontBold" />
+
+    <common.CustomEditText
+        android:id="@+id/addJobNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTextSize"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/grey_border_edittext"
+        android:cursorVisible="true" />
+
+    <common.CustomEditText
+        android:id="@+id/addJobMyPlacePasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTextSize"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grey_border_edittext"
+        android:cursorVisible="true"
+        android:text="@string/email_Id" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addJobCancelButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/rectangel_black_button"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sp"
+            android:textAppearance="@style/FontBold"
+            android:visibility="visible" />
+
+
+
+        <TextView
+            android:id="@+id/addJobButton"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/orange_rectangel_save"
+            android:text="@string/add"
+             android:textAppearance="@style/FontRegular"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen"
+            android:gravity="center"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>

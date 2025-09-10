@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".dashboard.HomeActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_centerInParent="true"
+        android:background="@color/body_bg_3.1"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/ll_sub_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dp_32"
+            android:paddingEnd="@dimen/dp_32"
+            android:layout_marginTop="@dimen/_180sdp"
+            android:paddingBottom="@dimen/_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textAppearance="@style/FontExtraBold"
+                    android:text="Hello, "
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="@dimen/_14sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:textAppearance="@style/FontMedium"
+                    android:text="Michelle"
+                    android:textColor="@color/grey_text_font_3.1"
+                    android:textSize="@dimen/_14sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:autoSizeMaxTextSize="@dimen/_18sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeTextType="uniform"
+                 android:textAppearance="@style/FontRegular"
+                android:justificationMode="inter_word"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbars="vertical"
+                android:text="@string/what_would_you_like_to_do_today"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="@dimen/_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_opt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ll_sub_header"
+            android:gravity="center_horizontal"
+            android:weightSum="2.5">
+
+            <RelativeLayout
+                android:id="@+id/rl__build_process"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_grey_line"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_build_process"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/iv_check_deposit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/build_process_ic"
+                    app:tint="@color/dark_grey" />
+
+                <TextView
+                    android:id="@+id/tv_build_process"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_build_process"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                     android:textAppearance="@style/FontRegular"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/build_process"
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_iam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_build_process"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/view_the_status_of"
+                    android:textColor="@color/grey_text_font_3.1"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_iam"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/my_home_building"
+                    android:textColor="@color/grey_text_font_3.1"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_home_care"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/rectangle_grey_line"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_home_care"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/iv_check_deposit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/home_care_ic"
+                    android:tint="@color/dark_grey" />
+
+                <TextView
+                    android:id="@+id/tv_home_care"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_home_care"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                     android:textAppearance="@style/FontRegular"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/home_care"
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_iam_binding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_home_care"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:text="@string/access_my"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_text_font_3.1"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_iam_binding"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="1dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:letterSpacing="0.02"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/home_care_tool"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_text_font_3.1"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_alignParentTop="true"
+        android:paddingStart="25dp"
+        android:background="@color/white_3.1"
+        android:paddingEnd="5dp">
+        <ImageView
+            android:layout_width="@dimen/_145sdp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/logoutButton"
+            android:layout_centerVertical="true"
+            android:src="@drawable/burbank_banner_new" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/vw_line_1"
+        android:layout_below="@+id/rl_content"
+        android:background="@color/black" />
+
+</RelativeLayout>
+

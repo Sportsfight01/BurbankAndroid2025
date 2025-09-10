@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f6f6f6"
+    tools:context=".ui.mydisplay.favoritesDisplays.FavoriteHomeAndLandFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appColor"
+        android:paddingTop="@dimen/_20dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/appColor"
+            android:paddingStart="16dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="@dimen/_20dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:rotation="180"
+                android:src="@drawable/side_arrow"
+                android:visibility="visible" />
+
+            <RelativeLayout
+                android:id="@+id/rl_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_back"
+                android:layout_alignBottom="@+id/iv_back"
+                android:layout_marginStart="@dimen/_16dp"
+                android:layout_toEndOf="@+id/iv_back"
+                android:gravity="start|center">
+
+                <TextView
+                    android:id="@+id/tvHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:ellipsize="end"
+                    android:textAppearance="@style/FontMedium"
+                    android:gravity="center|start"
+                    android:includeFontPadding="false"
+                    android:maxLines="2"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"
+                    android:visibility="visible"
+                    tools:text="@string/app_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_places"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top"
+        tools:itemCount="15"
+        tools:listitem="@layout/list_item_place" />
+
+</RelativeLayout>

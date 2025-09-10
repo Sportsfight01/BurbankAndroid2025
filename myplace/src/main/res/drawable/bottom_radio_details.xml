@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/footer_contacts_un_selected"
+        android:state_checked="false"
+        android:width="@dimen/_50sdp"
+        android:height="@dimen/_50sdp"/>
+
+    <item android:drawable="@drawable/footer_contacts_selected"
+        android:state_checked="true"
+        android:width="@dimen/_50sdp"
+        android:height="@dimen/_50sdp"/>
+
+</selector>

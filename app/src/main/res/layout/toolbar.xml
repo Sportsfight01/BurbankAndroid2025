@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_3.1">
+
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/profile_pic"
+            android:layout_height="@dimen/profile_pic"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/logo_myplace"
+            app:civ_border_color="@android:color/transparent"
+            app:civ_border_width="0dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_home"
+                android:src="@drawable/ico_home"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_1dp"
+                app:tint="@color/dark_grey"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="My"
+                android:layout_marginLeft="18dp"
+
+                android:textColor="@color/grey_text_font_3.1"
+                 android:textAppearance="@style/FontRegular"
+                android:textSize="@dimen/header_size" />
+
+            <TextView
+                android:id="@+id/tv_header_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                android:includeFontPadding="false"
+                android:text="Collection"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="@dimen/header_size" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

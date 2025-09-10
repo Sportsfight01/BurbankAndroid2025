@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="_50dp">50dp</dimen>
+    <dimen name="_profileImage">37dp</dimen>
+    <dimen name="bigtextSize">64sp</dimen>
+    <dimen name="mediumtextSize">24sp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">9sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">9sp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">60dp</dimen>
+    <dimen name="profile_pic">@dimen/_35sdp</dimen>
+    <dimen name="content_profile_pic">@dimen/_100sdp</dimen>
+    <dimen name="login_logo">@dimen/_60sdp</dimen>
+
+    <dimen name="dots_height">@dimen/_55sdp</dimen>
+    <dimen name="back_icon_height_width">24dp</dimen>
+    <dimen name="sub_header_size">16sp</dimen>
+    <dimen name="header_size">32sp</dimen>
+    <dimen name="button_text_size">18sp</dimen>
+    <dimen name="text_field_size">14sp</dimen>
+    <dimen name="content_header_size">48sp</dimen>
+    <dimen name="favourite_dot_width_height">26dp</dimen>
+    <dimen name="favourite_indicate_width_height">32sp</dimen>
+    <dimen name="profile_dot_width_height">18dp</dimen>
+    <dimen name="profile_indicate_width_height">24sp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="header_text">20sp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_33dp">33dp</dimen>
+    <dimen name="_55dp">55dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_15sp">15sp</dimen>
+    <dimen name="editetxtHeight">45dp</dimen>
+    <dimen name="_160dp">160dp</dimen>
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_23sp">23sp</dimen>
+    <dimen name="_28sp">28sp</dimen>
+    <dimen name="_24sp">24sp</dimen>
+    <dimen name="my_collection_header">22sp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="dp_46">46dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="_19sp">19sp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_350dp">350dp</dimen>
+    <dimen name="_35dp">35dp</dimen>
+    <dimen name="_130dp">130dp</dimen>
+    <dimen name="_90dp">90dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_9dp">9dp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_9">9dp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="_30sp">30sp</dimen>
+    <dimen name="_bargraph">40dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_200">200dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+    <dimen name="dp_130">130dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="dp_250">250dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+    <dimen name="_75dp">75dp</dimen>
+    <dimen name="_65dp">65dp</dimen>
+    <dimen name="_120dp">120dp</dimen>
+    <dimen name="_29dp">29dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+</resources>

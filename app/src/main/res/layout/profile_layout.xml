@@ -1,0 +1,1480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <!-- tools:context=".ui.profile.ProfileFragment"-->
+    <RelativeLayout
+        android:id="@+id/rl_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="14dp"
+        android:paddingTop="24dp"
+        android:paddingRight="24dp"
+        android:visibility="visible">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <ImageView
+                android:id="@+id/profile_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_back_navigation">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6sp"
+                android:layout_toRightOf="@+id/back_image"
+                android:text="My"
+                 android:textAppearance="@style/FontRegular"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/header_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_toEndOf="@+id/tv_my"
+                 android:textAppearance="@style/FontMedium"
+                android:text="Proﬁle"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/header_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_my"
+                android:lineSpacingExtra="2sp"
+                android:text="View your favourites &amp; information"
+                android:textColor="@color/dark_grey"
+                 android:textAppearance="@style/FontRegular"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:textSize="@dimen/text_field_size" />
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/profile_pic"
+            android:layout_height="@dimen/profile_pic"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:src="@mipmap/logo_myplace"
+            android:layout_alignParentRight="true"
+
+            app:civ_border_color="@android:color/transparent"
+            app:civ_border_width="0dp" />
+    <RelativeLayout
+        android:id="@+id/rl_top1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_below="@+id/rl_top"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:id="@+id/iv_my_details_notification"
+                        android:layout_width="@dimen/profile_dot_width_height"
+                        android:layout_height="@dimen/profile_dot_width_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sp"
+                        android:textAppearance="@style/FontSemiBold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white_3.1"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_my_details"
+                        android:layout_width="@dimen/profile_indicate_width_height"
+                        android:layout_height="@dimen/profile_indicate_width_height"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/iv_my_details_notification"
+                        android:src="@drawable/profile_user"
+                        android:tint="@color/grey_text_font_3.1"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_my_details"
+                         android:textAppearance="@style/FontMedium"
+                        android:text="MyDetails"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_18dp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_mydetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp" />
+                </RelativeLayout>
+
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_mydetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+                    <LinearLayout
+                        android:id="@+id/ll_my_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingTop="@dimen/_10dp"
+                        android:paddingEnd="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Name"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_first_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/disable_gery"
+                             android:textAppearance="@style/FontMedium"
+                            android:hint="First Name"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="text"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:textColor="@color/black_bg_3.1"
+                            android:paddingLeft="15dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Last Name"
+                            android:visibility="gone"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_last_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone"
+                            android:background="@drawable/rectangle_grey_line"
+                             android:textAppearance="@style/FontMedium"
+                            android:hint="Last Name"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="text"
+                            android:textColor="@color/black_bg_3.1"
+                            android:paddingStart="15dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Email"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/disable_gery"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                             android:textAppearance="@style/FontMedium"
+                            android:hint="Email"
+                            android:textColor="@color/black_bg_3.1"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="15dp"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                             android:textAppearance="@style/FontMedium"
+                            android:lineSpacingExtra="2sp"
+                            android:text="Phone"
+                            android:textColor="@color/grey_text_font_3.1"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle_grey_line"
+                             android:textAppearance="@style/FontMedium"
+                            android:hint="Phone"
+                            android:textCursorDrawable="@null"
+                            android:maxLength="14"
+                            android:digits="0123456789"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="phone"
+                            android:textColor="@color/black_bg_3.1"
+                            android:paddingStart="15dp"
+                            android:paddingEnd="@dimen/_15dp"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_upload_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="10dp"
+                                 android:textAppearance="@style/FontMedium"
+                                android:lineSpacingExtra="2sp"
+                                android:text="Upload Profile Pic"
+                                android:textColor="#414042"
+                                android:textSize="15sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/rectangel_shape"
+                                    android:editable="false"
+                                    android:focusable="false"
+                                     android:textAppearance="@style/FontMedium"
+                                    android:inputType="textEmailAddress"
+                                    android:paddingLeft="15dp"
+                                    android:text="Upload"
+                                    android:textSize="15sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_select"
+                                    android:layout_width="120dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    android:background="@drawable/rectangel_black"
+                                    android:gravity="center"
+                                    android:text="Select"
+                                    android:textColor="@color/white" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                          >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/rectangle_orange_bg"
+                                 android:textAppearance="@style/FontMedium"
+                                android:gravity="center"
+                                android:letterSpacing="0.02"
+                                android:lineSpacingExtra="3sp"
+                                android:text="UPDATE"
+                                android:layout_marginBottom="@dimen/_25dp"
+                                android:layout_marginLeft="28dp"
+                                android:layout_marginRight="28dp"
+                                android:textColor="@color/white_3.1"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/light_orange" />
+                <RelativeLayout
+                    android:id="@+id/rl_fav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                   >
+
+                    <TextView
+                        android:id="@+id/fav_notification"
+                        android:layout_width="@dimen/profile_dot_width_height"
+                        android:layout_height="@dimen/profile_dot_width_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textAppearance="@style/FontSemiBold"
+                        android:textSize="@dimen/_10sp"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/iv_fav_acc"
+                        android:layout_width="@dimen/profile_indicate_width_height"
+                        android:layout_height="@dimen/profile_indicate_width_height"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/fav_notification"
+                        android:src="@drawable/heart_bottom_svg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_fav_acc"
+                         android:textAppearance="@style/FontMedium"
+
+                        android:text="MyFavourites"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_18dp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_fav"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp" />
+
+                </RelativeLayout>
+
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_myfav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+                    <LinearLayout
+                        android:id="@+id/ll_myfav"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_myfav"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangel_shape"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:text="Favourites"
+                            android:textColor="@color/appColor"
+                            android:textSize="@dimen/_16sp" />
+
+                    </LinearLayout>
+
+
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:background="@color/light_orange" />
+-->
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="visible"
+                android:id="@+id/mydetails_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/light_orange" />
+                <RelativeLayout
+                    android:id="@+id/rl_app_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  >
+
+                    <TextView
+                        android:id="@+id/iv_app_setting_notification"
+                        android:layout_width="@dimen/profile_dot_width_height"
+                        android:layout_height="@dimen/profile_dot_width_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sp"
+                        android:textAppearance="@style/FontSemiBold"
+                        android:includeFontPadding="false"
+                        android:textColor="@color/white"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/iv_app_settings"
+                        android:layout_width="@dimen/profile_indicate_width_height"
+                        android:layout_height="@dimen/profile_indicate_width_height"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/iv_app_setting_notification"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/setting"
+                        android:tint="@color/grey_text_font_3.1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_app_settings"
+                         android:textAppearance="@style/FontMedium"
+                        android:text="AppSettings"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_18dp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_appsettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp" />
+                </RelativeLayout>
+
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_appsettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardElevation="10dp"
+                        app:cardCornerRadius="5dp"
+                        android:layout_margin="2dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true"
+                        >
+                        <LinearLayout
+                            android:id="@+id/ll_app_setting"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangel_shape"
+                                android:orientation="vertical"
+                                android:padding="18dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                     android:textAppearance="@style/FontMedium"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="SERVICES"
+                                    android:textColor="@color/grey_text_font_3.1"
+                                    android:textSize="17sp" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/light_grey_disabled_bg_3.1" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                         android:textAppearance="@style/FontMedium"
+                                        android:text="Notifications"
+                                        android:textColor="@color/orange_bg_3.1"
+                                        android:textSize="17sp" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_gravity="end"
+                                        android:layout_marginStart="10dp"
+                                        android:src="@drawable/toggle" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@color/light_grey_disabled_bg_3.1" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentStart="true"
+                                         android:textAppearance="@style/FontMedium"
+                                        android:text="Location Services"
+                                        android:textColor="@color/orange_bg_3.1"
+                                        android:textSize="17sp" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_gravity="end"
+                                        android:layout_marginLeft="10dp"
+                                        android:src="@drawable/toggle" />
+                                </RelativeLayout>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1px"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@color/light_grey_disabled_bg_3.1" />
+
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rl_logout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/rectangle_orange_bg"
+                                android:orientation="horizontal"
+                                android:paddingStart="18dp"
+                                android:paddingTop="@dimen/_10dp"
+                                android:paddingEnd="@dimen/_10dp"
+                                android:paddingBottom="18dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                     android:textAppearance="@style/FontMedium"
+                                    android:text="LOGOUT"
+                                    android:textColor="@color/white_3.1"
+                                    android:textSize="@dimen/_18sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+<!--
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:id="@+id/appsetting_viewline"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/light_orange" />
+-->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="visible"
+                    android:id="@+id/appsetting_viewline"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/light_orange" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/share_account_notification"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/iv_share_acc"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/share_account_notification"
+                        android:src="@drawable/profile_share" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_share_acc"
+                         android:textAppearance="@style/FontMedium"
+
+                        android:text="Share Account"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_16sp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@color/light_orange" />
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+
+                    <include
+                        android:id="@+id/ll_share_account"
+                        layout="@layout/layout_share_account_with"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_my_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_my_collection_notification"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/iv_my_collection"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/tv_my_collection_notification"
+                        android:src="@drawable/profile_mycollection" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_my_collection"
+                         android:textAppearance="@style/FontMedium"
+                        android:text="My Collection"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_16sp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_mycollection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:backgroundTint="@color/dark_grey"
+                        android:layout_marginStart="20dp" />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:background="@color/light_orange" />
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_mycollection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_collection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_my_collection_save_design"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangel_shape"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:text="DESIGNS"
+                            android:textColor="@color/appColor"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/rectangel_shape"
+                            android:orientation="vertical"
+                            android:padding="18dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:textAppearance="@style/FontMedium"
+                                android:text="RECENT QUIZ"
+                                android:textColor="#5c5e5e"
+                                android:textSize="17sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="15dp">
+
+                                <TextView
+                                    android:id="@+id/tv_my_collection_quiz"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                     android:textAppearance="@style/FontMedium"
+                                    android:gravity="center"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/black"
+                                    tools:text="@string/app_name" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_my_collection_recent_search"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/rectangel_skip"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_search" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+<!--changed by durga-->
+                <RelativeLayout
+                    android:id="@+id/rl_home_and_land"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_homeandland_notification"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/iv_homeandland"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/tv_homeandland_notification"
+                        android:src="@drawable/profile_homeland" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_homeandland"
+                         android:textAppearance="@style/FontMedium"
+                        android:text="Home &amp; Land"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_16sp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_homeandland"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp" />
+
+                </RelativeLayout>
+
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_homeandland"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_home_and_land"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_home_land_save_packages"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangel_shape"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:text="PACKAGES"
+                            android:textColor="@color/appColor"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_home_land_recent_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/rectangel_shape"
+                            android:orientation="vertical"
+                            android:padding="18dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                 android:textAppearance="@style/FontRegular"
+                                android:text="RECENT SEARCH"
+                                android:textColor="#5c5e5e"
+                                android:textSize="17sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+                            <TextView
+                                android:id="@+id/tv_home_land_region"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                 android:textAppearance="@style/FontRegular"
+                                android:lineSpacingExtra="3sp"
+                                android:text="Region"
+                                android:layout_marginTop="10dp"
+                                android:textColor="#f68b21"
+                                android:textSize="17sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                     android:textAppearance="@style/FontRegular"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="Price Range"
+                                    android:textColor="#f68b21"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_home_land_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                     android:textAppearance="@style/FontMedium"
+                                    android:lineSpacingExtra="3sp"
+                                    android:textColor="#5c5e5e"
+                                    android:textSize="16sp"
+                                    tools:text="$110K to $275K" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="151dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="17dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/storey_grey"
+                                        android:tint="#ea8024" />
+
+                                    <TextView
+                                        android:id="@+id/tvStorey"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="8dp"
+                                         android:textAppearance="@style/FontMedium"
+                                        android:includeFontPadding="false"
+                                        android:textSize="17sp"
+                                        tools:text="SINGLE" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="@dimen/_20dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/third_eminities"
+                                        android:tint="#ea8024" />
+
+                                    <TextView
+                                        android:id="@+id/tvBedrooms"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="5dp"
+                                         android:textAppearance="@style/FontMedium"
+                                        android:gravity="center"
+                                        android:includeFontPadding="false"
+                                        android:textSize="17sp"
+                                        tools:text="4" />
+
+                                </LinearLayout>
+
+
+                                <ImageView
+                                    android:layout_width="19dp"
+                                    android:layout_height="17dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/car_eminities"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                     android:textAppearance="@style/FontRegular"
+                                    android:includeFontPadding="false"
+                                    android:text="2"
+                                    android:textSize="17sp"
+                                    android:visibility="gone" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/bath_eminities"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="8dp"
+                                     android:textAppearance="@style/FontRegular"
+                                    android:includeFontPadding="false"
+                                    android:text="ALL"
+                                    android:textSize="17sp"
+                                    android:visibility="gone" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_homandlandsearchview"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/rectangel_skip"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/ic_search" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+
+<!--changed by durga-->
+                <RelativeLayout
+                    android:id="@+id/rl_home_and_design"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/iv_homedesign_notification"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/iv_home_design"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/iv_homedesign_notification"
+                        android:src="@drawable/profile_homedesign" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_home_design"
+                         android:textAppearance="@style/FontMedium"
+                        android:text="Home Design"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_16sp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_homeanddesign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp" />
+                </RelativeLayout>
+
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_homedesign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_home_and_design"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_home_design_saved"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangel_shape"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:text="DESIGNS"
+                            android:textColor="@color/appColor"
+                            android:textSize="@dimen/_16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/rectangel_shape"
+                            android:orientation="vertical"
+                            android:padding="18dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="3sp"
+                                android:text="RECENT SEARCH"
+                                android:textColor="#5c5e5e"
+                                android:textSize="17sp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="Price Range"
+                                    android:textColor="#f68b21"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:lineSpacingExtra="3sp"
+                                    android:text="$110K to $275K"
+                                    android:textColor="#5c5e5e"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="15dp">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/group_single"
+                                    android:tint="@color/orange_bg_3.1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                     android:textAppearance="@style/FontRegular"
+                                    android:includeFontPadding="false"
+                                    android:text="ALL"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/third_eminities" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                     android:textAppearance="@style/FontRegular"
+                                    android:includeFontPadding="false"
+                                    android:text="ALL"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/car_eminities" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                     android:textAppearance="@style/FontRegular"
+                                    android:includeFontPadding="false"
+                                    android:text="2"
+                                    android:textSize="20sp" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/bath_eminities" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                     android:textAppearance="@style/FontRegular"
+                                    android:includeFontPadding="false"
+                                    android:text="ALL"
+                                    android:textSize="20sp" />
+
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginTop="10dp"
+                                android:background="#e6e7e8" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+<!--changedby durga-->
+                <RelativeLayout
+                    android:id="@+id/rl_my_displays"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_mydisplays_notification"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/black_round"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/iv_mydisplay"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/tv_mydisplays_notification"
+                        android:src="@drawable/ic_display_home_notification"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_toEndOf="@+id/iv_mydisplay"
+                         android:textAppearance="@style/FontMedium"
+                        android:text="Display Homes"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/_16sp" />
+
+                    <com.dmss.burbankapp.utils.customviews.SpinnerImage
+                        android:id="@+id/iv_arrow_mydisplay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp" />
+                </RelativeLayout>
+
+                <com.dmss.burbankapp.utility.ExpandableLayout
+                    android:id="@+id/el_mydisplay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:el_expanded="false">
+
+                    <LinearLayout
+                        android:id="@+id/ll_my_saved_displays"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_my_saved_displays"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/rectangel_shape"
+                             android:textAppearance="@style/FontMedium"
+                            android:gravity="center"
+                            android:text="SAVED DISPLAYS"
+                            android:textColor="@color/appColor"
+                            android:textSize="@dimen/_16sp" />
+
+                    </LinearLayout>
+
+                </com.dmss.burbankapp.utility.ExpandableLayout>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/profileProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    tools:context=".ui.designs.StoreysMyCollectionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/inclue_tool_design" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_parent"
+            android:background="#f6F6F6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_20dp"
+                android:paddingEnd="@dimen/_20dp">
+
+
+                <TextView
+                    android:id="@+id/tv_header_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20dp"
+                     android:textAppearance="@style/FontMedium"
+                    android:gravity="center"
+                    android:text="@string/how_many_storeys_are"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="@dimen/header_text"
+                     />
+                <TextView
+                    android:id="@+id/tv_you_are"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_8dp"
+                     android:textAppearance="@style/FontMedium"
+                    android:gravity="center"
+                    android:text="@string/you_looking_for"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black_bg_3.1"
+                    android:textSize="@dimen/header_text"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@+id/ll_top"
+                android:layout_above="@+id/rl_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingEnd="@dimen/_16dp"
+                android:weightSum="3">
+
+                <com.dmss.burbankapp.utility.SquareView
+                    android:id="@+id/ll_single"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangel_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_20dp">
+
+                    <ImageView
+                        android:id="@+id/single_img"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/storeys_double"
+                        app:tint="@color/grey_text_font_3.1" />
+
+                    <TextView
+                        android:id="@+id/tv_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10dp"
+                         android:textAppearance="@style/FontMedium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/single"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="16sp" />
+                </com.dmss.burbankapp.utility.SquareView>
+
+                <com.dmss.burbankapp.utility.SquareView
+                    android:id="@+id/ll_double"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangel_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp">
+
+                    <ImageView
+                        android:id="@+id/double_img"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/storeys_triple"
+                        app:tint="@color/grey_text_font_3.1" />
+
+                    <TextView
+                        android:id="@+id/tv_double"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10dp"
+                         android:textAppearance="@style/FontMedium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/double_text"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="16sp" />
+                </com.dmss.burbankapp.utility.SquareView>
+
+                <com.dmss.burbankapp.utility.SquareView
+                    android:id="@+id/ll_not_sure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangel_shape"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/group_question"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/group_question"
+                        app:tint="@color/grey_text_font_3.1"/>
+
+                    <TextView
+                        android:id="@+id/tv_notsure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10dp"
+                         android:textAppearance="@style/FontMedium"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/not_sure"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="16sp" />
+                </com.dmss.burbankapp.utility.SquareView>
+
+
+            </LinearLayout>
+
+            <include layout="@layout/bottom_layout_mycollection" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

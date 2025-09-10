@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background_image"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_dashboard_new">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/custom_dashboard_toolbar"/>
+
+    <fragment
+        android:id="@+id/nav_host_fragment_content_dashboard_new"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+
+
+        app:navGraph="@navigation/mobile_navigation" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_7sdp"
+        android:id="@+id/line"
+        app:layout_constraintBottom_toTopOf="@+id/ll_bottom_nav_view"
+        android:background="@drawable/top_shadow_gradient"
+        tools:targetApi="lollipop" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_7sdp"
+        android:id="@+id/line2"
+        app:layout_constraintBottom_toTopOf="@+id/ll_bottom_nav_view_five"
+        android:background="@drawable/top_shadow_gradient"
+        tools:targetApi="lollipop" />
+    <LinearLayout
+        android:id="@+id/ll_bottom_nav_view"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="visible"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content">
+    <include android:id="@+id/bottom_nav_view"
+        layout="@layout/bottom_navigation_view"
+        android:visibility="gone"/>
+        <include android:id="@+id/bottom_nav_menu_view"
+            layout="@layout/bottom_navigation_menu_view" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_nav_view_five"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:visibility="gone"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content">
+    <include android:id="@+id/bottom_nav_view_five"
+        android:visibility="gone"
+        layout="@layout/bottom_navigation_view_five" />
+        <include android:id="@+id/bottom_nav_menu_view_five"
+            layout="@layout/bottom_navigation_menu_view_five" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

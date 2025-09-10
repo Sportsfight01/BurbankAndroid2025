@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail_screen" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/appColor"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="25dp">
+
+
+            <common.CustomHeadingTextView
+                android:id="@+id/jobNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/jobAddressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/homeStyleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/facadeStyleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/contractStatusTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/contractValueTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/supervisorTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/liasonTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/siteStartDateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/clientNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/homePhoneNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/mobilePhoneNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/workPhoneNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <common.CustomHeadingTextView
+                android:id="@+id/emailAddressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android"
+    android:animation="@anim/listviewanim"
+    android:animationOrder="normal"
+    android:delay="1" />
+
+
+<!--
+animationOrder : The order is which the animations are applied, can be 
+normal , reverse, or random.
+-->

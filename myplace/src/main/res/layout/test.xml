@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+<!--
+
+    <Button
+        android:id="@+id/notificationBtn"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        android:background="@drawable/notification_btn"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="A house is made of walls and beams,\na home is made of love and dreams."
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Tuesday,March 2017"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/welcomeDescTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Welcome Paul and Natalie"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textAppearance="@style/FontMedium"
+ />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/JobListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/jobNumbersSpinner"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/jobNumbersSpinnerDownImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/black"
+                android:padding="8dp"
+                android:src="@drawable/white_downarrow" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:background="@color/white"></View>
+
+            <ImageView
+                android:id="@+id/addJobNumberImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/black"
+                android:padding="8dp"
+                android:src="@drawable/white_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <common.CustomCircleBlocks
+                    android:id="@+id/lineaLyProgress"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp">
+
+                </common.CustomCircleBlocks>
+
+                <common.CustomCircleBlocks
+                    android:id="@+id/lineaLyPhotos"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp">
+
+
+                </common.CustomCircleBlocks>
+
+                <common.CustomCircleBlocks
+                    android:id="@+id/lineaLyContract"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp">
+
+
+                </common.CustomCircleBlocks>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <common.CustomCircleBlocks
+                    android:id="@+id/lineaLyFinance"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp" />
+
+                <common.CustomCircleBlocks
+                    android:id="@+id/lineaLyDocuments"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp" />
+
+                <common.CustomCircleBlocks
+                    android:id="@+id/lineaLyMore"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+-->
+
+
+    <!--<WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>-->
+    <!--
+        <LinearLayout
+            android:id="@+id/mLLyAdministartion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTxtProgressTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1.5"
+                android:text="ADMINISTRATION PROGRESS"
+                 android:textAppearance="@style/FontMedium"
+                android:textColor="@color/color_green"
+                android:textSize="16dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5">
+
+                <ProgressBar
+                    android:id="@+id/progressBarAdminstration"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:paddingTop="10dp"
+                    android:progress="75"
+                    android:progressDrawable="@drawable/style_circle_green" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="@style/FontMedium"
+                        android:textColor="@color/color_green"
+                        android:textSize="22dp"
+                       />
+
+                    <TextView
+                        android:id="@+id/mTxtPrgCompleted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/progressBar1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:text="Completed"
+                        android:textAppearance="@style/FontMedium"
+                        android:textColor="@color/color_green"
+                        android:textSize="15dp"
+                        a
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/lightGrey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/mList_adminstartion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearLayout2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="3.3"
+                android:dividerHeight="1dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/previousStage"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_progress_btn"
+                    android:text="previous stage"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/nextStage"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner_progress_btn"
+                    android:text="next stage"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/mViewbottom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.07"
+                android:background="@color/white" />
+        </RelativeLayout>-->
+
+</LinearLayout>

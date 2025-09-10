@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/appColor"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/ll_tool"
+        layout="@layout/toolbar_detail_screen" />
+
+    <androidx.core.widget.NestedScrollView
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:layout_below="@+id/ll_tool"
+        android:layout_above="@+id/linearLayout2"
+        android:id="@+id/progressDetailsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/appColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/mLLyAdministartion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appColor"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mTxtProgressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1.5"
+                    android:text="ADMINISTRATION PROGRESS"
+                    android:textAppearance="@style/FontRegular"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                     />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:background="@color/appColor">
+
+                    <common.ProgressWheel
+                        android:id="@+id/progressBarAdminstration"
+                        android:layout_width="190dp"
+                        android:layout_height="190dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10dp"
+                        app:barWidth="17dp"
+                        app:countText=""
+                        app:countTextColor="@color/white"
+                        app:countTextSize="22sp"
+                        app:defTextColor="@color/white"
+                        app:defTextSize="15sp"
+                        app:definitionText=""
+                        app:marginBtwText="15dp"
+                        app:percentage="90"
+                        app:progressColor="@color/white"
+                        app:rimColor="#d1cdce" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewProgress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="0%"
+                            android:textAppearance="@style/FontRegular"
+                            android:textColor="@color/black"
+                            android:textSize="22dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/mTxtPrgCompleted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/progressBar1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="Completed"
+                            android:textAppearance="@style/FontRegular"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ListView
+                    android:id="@+id/mList_adminstartion"
+                    android:background="@drawable/rectangel_white_button"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/custom_list_progressview"
+                    android:layout_height="wrap_content"
+                    android:dividerHeight="1dp"
+                    android:scrollbars="none" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_12dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Space
+            android:id="@+id/spaceLeft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/previousStage"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner_progress_btn"
+            android:text="Previous Stage"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/nextStage"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner_progress_btn"
+            android:text="Next Stage"
+            android:textAllCaps="false" />
+
+        <Space
+            android:id="@+id/spaceRight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:visibility="gone" />
+    </LinearLayout>
+</RelativeLayout>

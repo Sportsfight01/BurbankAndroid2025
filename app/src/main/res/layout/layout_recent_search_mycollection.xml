@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangel_white_button"
+    android:padding="@dimen/_20dp">
+
+    <TextView
+        android:id="@+id/tv_recent_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:textAppearance="@style/FontMedium"
+        android:gravity="center"
+        android:text="@string/recent_search"
+        android:textColor="@color/black_bg_3.1"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/close_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_recent_home_land"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10dp"
+         android:textAppearance="@style/FontRegular"
+        android:gravity="center"
+        android:text="(MyCollection)"
+        android:textColor="@color/grey_text_font_3.1"
+        android:textSize="@dimen/_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recent_search" />
+
+    <TextView
+        android:id="@+id/tv_region_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15dp"
+         android:textAppearance="@style/FontRegular"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_text_font_3.1"
+        android:textSize="@dimen/_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_recent_home_land"
+        tools:text="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_15dp"
+        android:background="@drawable/rectangle_orange_bg"
+         android:textAppearance="@style/FontMedium"
+        android:gravity="center"
+        android:text="@string/start_new"
+        android:textColor="@color/white_3.1"
+        android:textSize="@dimen/_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_region_price" />
+
+    <TextView
+        android:id="@+id/tv_showpackages"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:background="@drawable/disable_rectangle_new"
+         android:textAppearance="@style/FontMedium"
+        android:gravity="center"
+        android:text="Show Designs"
+        android:textColor="@color/white_3.1"
+        android:textSize="@dimen/_18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

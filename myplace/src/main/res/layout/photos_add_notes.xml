@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail_screen" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_16dp"
+        android:background="@color/appColor"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/addNotesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangel_ten_radious_white"
+            android:focusable="true"
+            android:gravity="start"
+            android:layout_above="@+id/ll_bottom"
+            android:hint="Add notes..."
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/headingGrey"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_17dp"
+                android:layout_weight="1"
+                 android:textAppearance="@style/FontRegular"
+                android:layout_width="0dp"
+                android:background="@drawable/rectangel_black_button"
+                android:text="Cancel"
+                android:padding="@dimen/_10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/add"
+                android:text="Add"
+                 android:textAppearance="@style/FontRegular"
+                android:layout_marginStart="@dimen/_17dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:background="@drawable/rectangel_black_button"
+                android:textSize="20sp"
+                android:padding="@dimen/_10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

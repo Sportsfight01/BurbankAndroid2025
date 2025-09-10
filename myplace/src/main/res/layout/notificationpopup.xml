@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_roundcorner_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/orange_top_rounded_corners">
+
+        <TextView
+            android:id="@+id/coBurbankHeadingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="13dp"
+            android:text="Invitation List"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAppearance="@style/FontMedium"
+            />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="@dimen/_24dp"
+            android:layout_height="@dimen/_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:background="@drawable/invitation_close" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:divider="@null">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/noInvitation"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="No new invitation(s)found."
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+
+</LinearLayout>

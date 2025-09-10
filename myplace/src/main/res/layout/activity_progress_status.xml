@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_detail_screen" />
+
+
+    <LinearLayout
+        android:id="@+id/noDataLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/noDataTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="My Home Progress details not available"
+            android:textColor="@color/black"
+            android:textAppearance="@style/FontBold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/dataLayout"
+        android:background="@color/appColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:id="@+id/mainProgressLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <common.ProgressWheel
+                    android:id="@+id/wheelprogress"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:barWidth="17dp"
+                    android:layout_centerHorizontal="true"
+                    app:marginBtwText= "15dp"
+                    app:countText=""
+                    app:rimColor="#d1cdce"
+                    app:definitionText=""
+                    app:countTextColor="@color/white"
+                    app:defTextColor="@color/white"
+                    app:progressColor="@color/white"
+                    app:defTextSize="15sp"
+                    app:countTextSize="22sp"
+                    app:percentage="90"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:visibility="invisible"
+                    android:padding="2dp"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_drawable"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/progressTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/progressBar1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="120dp"
+                    android:text="YOUR NEW HOME IS"
+                    android:textAppearance="@style/FontBold"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                     />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/progressBar1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="80dp"
+                    android:text="0%"
+                    android:textAppearance="@style/FontBold"
+                    android:textColor="@color/black"
+                    android:textSize="28sp"
+                     />
+
+                <TextView
+                    android:id="@+id/progressTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/progressBar1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="65dp"
+                    android:text="ON IT'S WAY"
+                    android:textAppearance="@style/FontBold"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                     />
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mLLyAdministartion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewAdmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:text="ADMINISTRATION"
+                        android:textColor="@color/white"
+                        android:textAppearance="@style/FontBold" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <common.ProgressWheel
+                            android:id="@+id/progressBaraDMIN"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:barWidth="14dp"
+                            android:layout_centerHorizontal="true"
+                            app:marginBtwText= "15dp"
+                            app:countText=""
+                            app:rimColor="#d1cdce"
+                            app:definitionText=""
+                            app:countTextColor="@color/white"
+                            app:defTextColor="@color/white"
+                            app:progressColor="@color/black"
+                            app:defTextSize="15sp"
+                            app:countTextSize="22sp"
+                            app:percentage="90"/>
+
+                        <TextView
+                            android:id="@+id/mTxtadmin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0%"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textAppearance="@style/FontBold" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/administartionBreakdown"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_corner_progress_btn"
+                        android:text="Breakdown"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mLLyFrameStage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewFrame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="FRAME STAGE"
+                        android:textAppearance="@style/FontMedium"
+                        android:textColor="@color/white"
+                         />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <common.ProgressWheel
+                            android:id="@+id/progressBarfRAME"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:barWidth="14dp"
+                            android:layout_centerHorizontal="true"
+                            app:marginBtwText= "15dp"
+                            app:countText=""
+                            app:rimColor="#d1cdce"
+                            app:definitionText=""
+                            app:countTextColor="@color/white"
+                            app:defTextColor="@color/white"
+                            app:progressColor="@color/black"
+                            app:defTextSize="15sp"
+                            app:countTextSize="22sp"
+                            app:percentage="90"/>
+
+                        <TextView
+                            android:id="@+id/mTxtframe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="0%"
+                            android:textAppearance="@style/FontMedium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                             />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/frameBreakdown"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_corner_progress_btn"
+                        android:text="Breakdown"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mLLYLockUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewLockUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="LOCK UP STAGE"
+                        android:textAppearance="@style/FontMedium"
+                        android:textColor="@color/white"
+                         />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <common.ProgressWheel
+                            android:id="@+id/progressBarLockUp"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:barWidth="14dp"
+                            android:layout_centerHorizontal="true"
+                            app:marginBtwText= "15dp"
+                            app:countText=""
+                            app:rimColor="#d1cdce"
+                            app:definitionText=""
+                            app:countTextColor="@color/white"
+                            app:defTextColor="@color/white"
+                            app:progressColor="@color/black"
+                            app:defTextSize="15sp"
+                            app:countTextSize="22sp"
+                            app:percentage="90"/>
+
+
+
+
+                        <TextView
+                            android:id="@+id/mTxtlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0%"
+                            android:textAppearance="@style/FontMedium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/lookupBreakdown"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_corner_progress_btn"
+                        android:text="Breakdown"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/mLLYFixingStage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewFixing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="FIXOUT STAGE"
+                        android:textAppearance="@style/FontMedium"
+                        android:textColor="@color/white"
+                         />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <common.ProgressWheel
+                            android:id="@+id/progressBarFixing"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:barWidth="14dp"
+                            android:layout_centerHorizontal="true"
+                            app:marginBtwText= "15dp"
+                            app:countText=""
+                            app:rimColor="#d1cdce"
+                            app:definitionText=""
+                            app:countTextColor="@color/white"
+                            app:defTextColor="@color/white"
+                            app:progressColor="@color/black"
+                            app:defTextSize="15sp"
+                            app:countTextSize="22sp"
+                            app:percentage="90"/>
+
+                        <TextView
+                            android:id="@+id/mTxtFixing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0%"
+                            android:textAppearance="@style/FontMedium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                           />
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/fixingBreakdown"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_corner_progress_btn"
+                        android:text="Breakdown"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mLLyCompletion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewCompletion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:text="FINISHING STAGE"
+                        android:textAppearance="@style/FontMedium"
+                        android:textColor="@color/white"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <common.ProgressWheel
+                            android:id="@+id/progressBarCompletion"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            app:barWidth="14dp"
+                            android:layout_centerHorizontal="true"
+                            app:marginBtwText= "15dp"
+                            app:countText=""
+                            app:rimColor="#d1cdce"
+                            app:definitionText=""
+                            app:countTextColor="@color/white"
+                            app:defTextColor="@color/white"
+                            app:progressColor="@color/black"
+                            app:defTextSize="15sp"
+                            app:countTextSize="22sp"
+                            app:percentage="90"/>
+
+
+                        <TextView
+                            android:id="@+id/mTxtCompletion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="0%"
+                            android:textAppearance="@style/FontMedium"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                             />
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/finishingBreakdown"
+                        android:layout_width="100dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/rounded_corner_progress_btn"
+                        android:text="Breakdown"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

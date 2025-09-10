@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_16dp"
+    android:background="@drawable/dialog_roundcorner_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/coBurbankHeadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:text="Invite a friend"
+        android:textColor="@color/appColor"
+        android:textSize="16sp"
+        android:textAppearance="@style/FontBold"/>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/coBurbankEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/grey_border_edittext"
+            android:cursorVisible="true"
+            android:gravity="center_vertical"
+            android:hint="Enter Email ID"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/balck_cursor"
+            android:textSize="@dimen/sixteen"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/coBurbankInformationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Information"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/coBurbankCancelButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rectangel_black_button"
+            android:padding="@dimen/_10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textSize="@dimen/_20sp"
+             android:textAppearance="@style/FontRegular"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+
+        <TextView
+            android:id="@+id/coBurbankOkButton"
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:padding="@dimen/_10dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             android:textAppearance="@style/FontRegular"
+            android:background="@drawable/orange_btn_fullcolor"
+            android:textSize="@dimen/_20sp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/coBurbankLaterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="Later"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

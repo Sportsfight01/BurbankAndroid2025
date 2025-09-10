@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/RoundedDialog"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_shape"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingStart="26dp"
+        android:paddingTop="50dp"
+        android:paddingEnd="26dp"
+        android:paddingBottom="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textAppearance="@style/FontMedium"
+            android:lineSpacingExtra="6sp"
+            android:text="Please Note"
+            android:textColor="@color/black_bg_3.1"
+            android:textSize="@dimen/header_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             android:textAppearance="@style/FontMedium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="-1sp"
+            android:text="Your progress will not be saved if "
+            android:textColor="@color/grey_text_font_3.1"
+            android:textSize="@dimen/sub_header_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+             android:textAppearance="@style/FontMedium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="-1sp"
+            android:text="you don’t sign in."
+            android:textColor="@color/grey_text_font_3.1"
+            android:textSize="@dimen/sub_header_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+             android:textAppearance="@style/FontMedium"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="-1sp"
+            android:text="Some features will not be available."
+            android:textColor="@color/grey_text_font_3.1"
+            android:textSize="@dimen/sub_header_size" />
+
+        <TextView
+            android:id="@+id/tv_continue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ll_already"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rectangle_orange_bg"
+             android:textAppearance="@style/FontMedium"
+            android:gravity="center"
+            android:text="Continue"
+            android:textColor="@color/white_3.1"
+            android:textSize="@dimen/button_text_size" />
+
+        <TextView
+            android:id="@+id/tv_sigIn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/disable_rectangle_new"
+             android:textAppearance="@style/FontMedium"
+            android:gravity="center"
+            android:text="Sign in"
+            android:textColor="@color/white_3.1"
+            android:textSize="@dimen/button_text_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/fl"
+    android:padding="@dimen/_10dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/circle_map_icon"
+    android:contentDescription="@null">
+
+    <TextView
+        android:textSize="14sp"
+        android:textColor="#FFFF"
+        android:includeFontPadding="false"
+        android:id="@+id/singleClusterMarkerSizeTextView"
+        tools:text=""
+        android:textAppearance="@style/FontMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>

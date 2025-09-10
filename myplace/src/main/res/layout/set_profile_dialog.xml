@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_16dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile Details"
+         android:textAppearance="@style/FontExtraBold"
+        android:textAllCaps="true"
+        android:textColor="@color/fontColorOrange"
+        android:textSize="18sp"
+         />
+
+    <common.CustomEditText
+        android:maxLength="30"
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTextSize"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grey_border_edittext"
+        android:cursorVisible="true"
+        android:text="@string/email_Id" />
+
+    <common.CustomEditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:maxLength="30"
+        android:layout_height="@dimen/editTextSize"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grey_border_edittext"
+        android:cursorVisible="true"
+        android:text="@string/email_Id" />
+
+    <common.CustomEditText
+
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/editTextSize"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:layout_marginRight="@dimen/_5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/grey_border_edittext"
+        android:cursorVisible="true"
+        android:maxLength="30"
+        android:text="@string/email_Id" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+    <CheckBox
+        android:id="@+id/fingerPrintCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
+        android:padding="5dp"
+        android:text="Use FingurePrint Authentication ?"
+        android:textColor="@color/black"
+        android:visibility="gone" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="2"
+        android:paddingStart="@dimen/_15dp"
+        android:paddingEnd="@dimen/_15dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/skipProfileButton"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_15dp"
+             android:textAppearance="@style/FontMedium"
+            android:background="@drawable/rectangel_black_button"
+            android:stateListAnimator="@null"
+            android:text="skip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen"
+            android:visibility="visible" />
+
+
+        <Button
+            android:id="@+id/saveProfileButton"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/button_height"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/orange_rectangel_save"
+            android:stateListAnimator="@null"
+            android:text="Save"
+             android:textAppearance="@style/FontMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteen"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_set_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/twenty"
+    android:paddingRight="@dimen/twenty"
+    tools:context="com.dmss.burbankappold.SetPassword">
+
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1" />
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4" />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/validateEmailHeadingTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Login to MyPlace"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty"
+            android:textAppearance="@style/FontBold" />
+
+        <common.CustomEditText
+            android:id="@+id/jobNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextSize"
+            android:background="@drawable/shaded_round_corner"
+            android:cursorVisible="false"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/hintTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Validate EmailId"
+            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/FontRegular"
+            android:textSize="16sp"
+             />
+
+        <common.CustomEditText
+            android:id="@+id/emailId"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextSize"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/blurr_background"
+            android:cursorVisible="true" />
+
+        <common.CustomEditText
+            android:visibility="gone"
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/editTextSize"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/blurr_background"
+            android:cursorVisible="true" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/orange_btn_fullcolor"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1" />
+
+
+</LinearLayout>

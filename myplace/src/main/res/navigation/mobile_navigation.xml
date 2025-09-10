@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.dmss.burbankappold.dashboard.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_progressDetailsFragment"
+            app:destination="@id/progressDetailsFragment" />
+
+        <action
+            android:id="@+id/action_nav_home_to_photo_fragmnet"
+            app:destination="@id/nav_photos" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/progressDetailsFragment"
+        android:name="com.dmss.burbankappold.dashboard.ui.home.ProgressDetailsFragment"
+        tools:layout="@layout/fragment_progress_details" />
+
+   <!-- <fragment
+        android:id="@+id/nav_details"
+        android:name="com.dmss.burbankappold.dashboard.ui.details.DetailsFragment"
+        tools:layout="@layout/fragment_my_details" />-->
+    <fragment
+        android:id="@+id/nav_details"
+        android:name="com.dmss.burbankappold.dashboard.ui.mycontacts.MyContactsFragment"
+        tools:layout="@layout/mycontacts_fragment" />
+    <fragment
+        android:id="@+id/nav_documents"
+        android:name="com.dmss.burbankappold.dashboard.ui.documents.DocumentsFragment"
+        tools:layout="@layout/fragment_documents" />
+
+    <fragment
+        android:id="@+id/nav_photos"
+        android:name="com.dmss.burbankappold.dashboard.ui.photos.PhotosFragment"
+        tools:layout="@layout/fragment_photos">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_finance"
+        android:name="com.dmss.burbankappold.dashboard.ui.finanace.FinanceFragment"
+        tools:layout="@layout/fragment_finance">
+        <action android:id="@+id/nav_finance_detail_view"
+            app:destination="@+id/financeDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/photosViewFragment"
+        android:name="com.dmss.burbankappold.dashboard.ui.photos.PhotosViewFragment"
+        android:label="fragment_photos_view"
+        tools:layout="@layout/fragment_photos_view" />
+
+    <fragment
+        android:id="@+id/photoDetailsFragment"
+        android:name="com.dmss.burbankappold.dashboard.ui.photos.PhotoDetailsFragment"
+        android:label="fragment_photos_view"
+        tools:layout="@layout/fragment_photos_view" >
+        <action android:id="@+id/nav_photo_view"
+            app:destination="@+id/photosViewFragment"/>
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/financeDetailsFragment"
+        android:name="com.dmss.burbankappold.dashboard.ui.finanace.FinanceDetailsFragment"
+        tools:layout="@layout/fragment_finance_details" />
+
+</navigation>

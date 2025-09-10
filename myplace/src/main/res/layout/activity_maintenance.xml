@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaintenanceActivity"
+    android:background="@drawable/myplace_bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:background="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="A house is made of walls and beams,\na home is made of love and dreams."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/dateMTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Tuesday,March 2017"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/welcomeDescMTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Welcome Paul and Natalie"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp" />
+
+
+
+        <TextView
+            android:id="@+id/maintenanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="Welcome Paul and Natalie Paul and Natalie"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+
+
+
+        <TextView
+            android:id="@+id/maintenanceDescTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Paul and Natalie"
+            android:lineSpacingExtra="3dp"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:gravity="center"
+            android:layout_marginTop="40dp" />
+
+    </LinearLayout>
+</RelativeLayout>

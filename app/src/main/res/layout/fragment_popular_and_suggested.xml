@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    tools:context=".ui.mydisplay.PopularAndSuggestedFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/ns_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:visibility="visible"
+        tools:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_suggested"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:textAppearance="@style/FontMedium"
+                android:paddingStart="@dimen/_16dp"
+                android:paddingTop="@dimen/_5dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingBottom="@dimen/_5dp"
+                android:text="@string/new_displays"
+                android:textColor="@color/orange_bg_3.1"
+                android:textSize="@dimen/_18sp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_15dp"
+               />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_suggested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_suggested"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/layout_suggestion_display_header" />
+
+
+            <TextView
+                android:id="@+id/tv_popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recycler_suggested"
+                 android:textAppearance="@style/FontMedium"
+                android:paddingStart="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:paddingEnd="@dimen/_5dp"
+                android:paddingBottom="@dimen/_5dp"
+                android:paddingTop="@dimen/_5dp"
+                android:text="@string/popular_home_designs"
+                android:textColor="@color/orange_bg_3.1"
+                android:textSize="@dimen/_18sp"
+               />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_popular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_popular"
+                android:numColumns="2"
+                tools:listitem="@layout/layout_popular_home_design" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

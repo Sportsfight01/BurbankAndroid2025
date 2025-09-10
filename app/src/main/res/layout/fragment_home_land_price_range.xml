@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/body_bg_3.1"
+    android:clickable="true"
+    tools:context=".ui.homeandlandoprice.HomeLandPriceRangeFragment">
+
+    <include layout="@layout/homeland_tool" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_top"
+        android:layout_marginTop="@dimen/_30dp">
+
+        <TextView
+            android:id="@+id/tv_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/FontMedium"
+            android:text="WHAT'S YOUR PRICE RANGE?"
+            android:textAllCaps="true"
+            android:textColor="@color/black_bg_3.1"
+            android:textSize="@dimen/header_text" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_first"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_16dp"
+            android:paddingEnd="@dimen/_16dp">
+            <!-- <com.google.android.material.slider.RangeSlider
+                 android:id="@+id/slider"
+                 app:thumbRadius="@dimen/_15dp"
+                 app:thumbColor="@color/white"
+                 android:valueFrom="0.0"
+                 android:valueTo="1300.0"
+                 app:thumbStrokeColor="@color/fontColorOrange"
+                 app:tickColorInactive ="@color/headingGrey"
+                 android:theme="@style/MyMaterialTheme"
+                 android:layout_marginTop="20dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" />-->
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                android:id="@+id/seekbar"
+                android:paddingStart="@dimen/_10dp"
+                android:paddingEnd="@dimen/_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:bar_color="@color/light_grey_disabled_bg_3.1"
+                app:bar_highlight_color="@color/grey_text_font_3.1"
+                app:corner_radius="10"
+                app:data_type="_integer"
+                app:left_thumb_image="@drawable/range_seek"
+                app:right_thumb_image="@drawable/range_seek" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10dp"
+                android:paddingEnd="@dimen/_10dp"
+                >
+                <TextView
+                    android:id="@+id/tv_minprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text=""
+                    android:textColor="@color/orange_bg_3.1"
+                    android:textSize="@dimen/_10sdp"/>
+                <TextView
+                    android:id="@+id/tv_maxprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text=""
+                    android:textColor="@color/orange_bg_3.1"
+                    android:textSize="@dimen/_12sdp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textAppearance="@style/FontMedium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:textColor="@color/grey_text_font_3.1"
+                android:textSize="20sp"
+                tools:text="$390K to $480K" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/priceRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="7"
+                tools:itemCount="7"
+                tools:listitem="@layout/layout_bar_graph_item" />
+
+            <LinearLayout
+                android:id="@+id/ll_bar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:paddingStart="@dimen/_10dp"
+                android:paddingEnd="@dimen/_10dp"
+                android:visibility="visible"
+                android:weightSum="7">
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_lines"
+                    android:gravity="center|top"
+                    android:backgroundTint="@color/price_range_fourth"
+                    android:lineSpacingExtra="3sp"
+                    android:minHeight="@dimen/_bargraph"
+                    android:padding="@dimen/_5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/second"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_lines"
+                    android:backgroundTint="@color/price_range_third"
+                    android:gravity="center|top"
+                    android:minHeight="@dimen/_bargraph"
+                    android:padding="@dimen/_5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/third"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_lines"
+                    android:backgroundTint="@color/price_range_second"
+                    android:gravity="center|top"
+                    android:minHeight="@dimen/_bargraph"
+                    android:padding="@dimen/_5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/fourth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_lines"
+                    android:backgroundTint="@color/price_range_main"
+                    android:gravity="center|top"
+                    android:minHeight="@dimen/_bargraph"
+                    android:padding="@dimen/_5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    tools:text="8" />
+
+                <TextView
+                    android:id="@+id/fifth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_lines"
+                    android:backgroundTint="@color/price_range_second"
+                    android:gravity="center|top"
+                    android:minHeight="@dimen/_bargraph"
+                    android:padding="@dimen/_5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    tools:text="6" />
+
+                <TextView
+                    android:id="@+id/sixth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_lines"
+                    android:backgroundTint="@color/price_range_third"
+                    android:gravity="center|top"
+                    android:minHeight="@dimen/_bargraph"
+                    android:padding="@dimen/_5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    tools:text="5" />
+
+                <TextView
+                    android:id="@+id/seventh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|top"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bar_lines"
+                    android:backgroundTint="@color/price_range_fourth"
+                    android:gravity="center|top"
+                    android:minHeight="@dimen/_bargraph"
+                    android:padding="@dimen/_5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    tools:text="4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/bottom_view"
+            layout="@layout/layout_bottom_next_previous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
