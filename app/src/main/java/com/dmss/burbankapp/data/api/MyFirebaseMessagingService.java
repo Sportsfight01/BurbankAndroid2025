@@ -41,23 +41,9 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         System.out.println("remoteMessage:: "+remoteMessage);
-  /*      if (remoteMessage.getNotification() != null) {
-            String title = remoteMessage.getNotification().getTitle();
-            String message = remoteMessage.getNotification().getBody();
-            String ImageUrl = String.valueOf(remoteMessage.getNotification().getImageUrl());
-            HashMap<String,String> map= new HashMap<String,String>();
-            map.put("title",title);
-            map.put("message",message);
-            map.put("ImageUrl",ImageUrl);
 
-            showCustomNotification(map);
-        } else*/
         if (remoteMessage.getData() != null) {
-            // Optional: Fallback to data
-
-
             showCustomNotification(remoteMessage.getData());
-
         }
     }
 
@@ -65,15 +51,12 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         System.out.println("showCustomNotification:: "+map);
         String title = map.get("title");
         String message = map.get("body");
-//        String body_message = map.get("body");
-
         String url = map.get("ImageUrl");
         String PakageIdLandBank = map.get("HandLPackageId");
         String HouseSize = map.get("HouseSize");
         String HouseName = map.get("HouseName");
         String stateId = map.get("StateId");
         String stateName = map.get("State");
-
 //        String action_type = map.get("action_type");
         String State = map.get("State");
         String ModuleType = map.get("ModuleType");
@@ -86,16 +69,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         System.out.println("ImageUrl::"+url);
         int SELECTED_ITEM=0;
 
-     /*   if (ModuleType.equalsIgnoreCase( "NewHomes_Main")) {
-            SELECTED_ITEM=0;
-        }
-        else if(ModuleType.equalsIgnoreCase( "HomeAndLand_Main")){
-            SELECTED_ITEM=1;
-
-        }else{
-            SELECTED_ITEM=2;
-
-        }*/
         if(isMultiple.equalsIgnoreCase("true")){
 
             intent = new Intent(this, MainActivity.class);
