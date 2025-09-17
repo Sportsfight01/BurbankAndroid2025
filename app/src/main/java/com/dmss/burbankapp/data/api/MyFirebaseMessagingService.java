@@ -93,8 +93,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         intent.putExtra("StateId", stateId);
         intent.putExtra("ModuleType", ModuleType);
         CustomSharedPreferences myPreference = new CustomSharedPreferences(this);
-
-         myPreference.setStateID(Integer.parseInt(stateId));
+        myPreference.setStateID(Integer.parseInt(stateId));
         myPreference.selectedState(stateName);
 
 
