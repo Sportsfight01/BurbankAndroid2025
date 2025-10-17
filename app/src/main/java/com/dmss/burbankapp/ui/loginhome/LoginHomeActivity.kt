@@ -260,7 +260,7 @@ class LoginHomeActivity : BaseActivity(), FacebookHelper.OnFbSignInListener {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        changeStatusBarColor(ContextCompat.getColor(this, R.color.white))
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
         binding = ActivityLoginHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         myPreference = CustomSharedPreferences(this)

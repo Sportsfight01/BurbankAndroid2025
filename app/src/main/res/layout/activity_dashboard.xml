@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/header_footer_bg_3.1"
+    android:background="@color/app_bg"
     tools:context=".ui.dashboard.DashboardActivity">
 
     <RelativeLayout
@@ -21,13 +21,14 @@
             android:id="@+id/rl_tool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="@dimen/_10dp"
-            android:paddingRight="@dimen/_10dp">
+           >
 
             <RelativeLayout
                 android:id="@+id/rl_tool1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -42,6 +43,7 @@
                         android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:layout_gravity="center"
+                        android:tint="@color/black_bg_3.1"
                         android:src="@drawable/back_png_grey" />
 
                     <LinearLayout
@@ -68,7 +70,7 @@
                              android:textAppearance="@style/FontMedium"
                             android:gravity="start"
                             android:text=""
-                            android:textColor="@color/dark_grey"
+                            android:textColor="@color/black_bg_3.1"
                             android:textSize="16sp" />
 
 
@@ -109,12 +111,20 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/rl_profile_bottom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/rl_tool1"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_alignParentEnd="true">
                 <include layout="@layout/dashboard_profile_width_dadge"></include>
             </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@+id/rl_profile_bottom"/>
         </RelativeLayout>
 
         <RelativeLayout
@@ -123,7 +133,7 @@
             android:layout_height="match_parent"
             android:layout_above="@+id/navigation"
             android:layout_below="@+id/rl_tool"
-            android:background="@color/white">
+            android:background="@color/app_bg">
 
             <RelativeLayout
                 android:id="@+id/rl_content"
@@ -162,8 +172,8 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginLeft="@dimen/_45dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="@dimen/_25dp"
                             android:orientation="horizontal">
 
                             <TextView
@@ -188,7 +198,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="1dp"
-                            android:layout_marginLeft="@dimen/_45dp"
+                            android:layout_marginLeft="@dimen/_25dp"
 
                              android:textAppearance="@style/FontMedium"
                             android:text="@string/what_would_you_like_to_do_today"
@@ -237,7 +247,7 @@
                                 android:layout_gravity="center"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/home_design_orange"
-                                android:tint="@color/grey_text_font_3.1" />
+                                app:tint="@color/orange_bg_3.1" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -256,6 +266,7 @@
                                 android:layout_gravity="center"
                                 android:layout_marginTop="12dp"
                                 android:gravity="center"
+                                android:textAppearance="@style/FontRegular"
                                 android:includeFontPadding="false"
                                 android:text="@string/browse_our"
                                 android:textColor="@color/grey_text_font_3.1"
@@ -269,6 +280,8 @@
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="@string/amazing_designs"
+                                android:textAppearance="@style/FontRegular"
+
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="12sp"
 
@@ -301,7 +314,7 @@
                                 android:layout_gravity="center"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/home_andland_orange"
-                                android:tint="@color/grey_text_font_3.1" />
+                                app:tint="@color/orange_bg_3.1" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -322,6 +335,8 @@
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="@string/find_a_home_amp"
+                                android:textAppearance="@style/FontRegular"
+
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="12sp" />
 
@@ -333,6 +348,8 @@
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="@string/land_package"
+                                android:textAppearance="@style/FontRegular"
+
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="12sp"
 
@@ -365,7 +382,7 @@
                                 android:layout_gravity="center"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/display_homes_orange"
-                                android:tint="@color/grey_text_font_3.1" />
+                                app:tint="@color/orange_bg_3.1" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -386,6 +403,8 @@
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="Find one of our "
+                                android:textAppearance="@style/FontRegular"
+
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="12sp" />
 
@@ -397,6 +416,7 @@
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="designer displays"
+                                android:textAppearance="@style/FontRegular"
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="12sp"
 

@@ -24,10 +24,10 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:background="?android:attr/selectableItemBackground"
-                 android:textAppearance="@style/FontMedium"
+                 android:textAppearance="@style/FontSemiBold"
                 android:padding="@dimen/_5dp"
                 android:text="PACKAGES"
-                android:textColor="@color/grey_text_font_3.1"
+                android:textColor="@color/orange_bg_3.1"
                 android:textSize="18sp"
                 android:visibility="visible"/>
 
@@ -87,7 +87,7 @@
                     android:text="Previous"
                     android:textAllCaps="false"
                     android:textColor="@color/white_3.1"
-                    android:textSize="@dimen/_12sdp"
+                    android:textSize="@dimen/_14sdp"
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
 
@@ -131,7 +131,7 @@
                     android:text="Next"
                     android:textAllCaps="false"
                     android:textColor="@color/white_3.1"
-                    android:textSize="@dimen/_12sdp"
+                    android:textSize="@dimen/_14sdp"
                     tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>

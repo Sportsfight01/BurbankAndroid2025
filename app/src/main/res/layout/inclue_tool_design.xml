@@ -4,7 +4,7 @@
     android:id="@+id/rl_parent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white_3.1">
+    android:background="@color/body_bg_3.1">
 
     <RelativeLayout
         android:id="@+id/rl_header"
@@ -20,7 +20,7 @@
             android:layout_height="@dimen/back_icon_height_width"
             android:layout_alignParentTop="true"
             android:src="@drawable/back_png_grey"
-          />
+            app:tint="@color/black_bg_3.1" />
 
         <LinearLayout
             android:id="@+id/ll_container"
@@ -173,6 +173,10 @@
 
 
     </RelativeLayout>
-
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/black"
+    android:layout_below="@+id/rl_header"/>
 
 </RelativeLayout>

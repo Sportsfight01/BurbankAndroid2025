@@ -200,7 +200,7 @@ class ChooseOptionsActivity : BaseActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_choose_options)
-        changeStatusBarColor(ContextCompat.getColor(this, R.color.white))
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 //        checkAndRequestNotificationPermission()
         deviceId= AppConstants.getDeviceId(this)

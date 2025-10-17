@@ -396,8 +396,8 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
         listItemBinding.next.visibility = View.GONE
         binding.bodyPrevious.visibility = View.VISIBLE
         binding.bodyNext.visibility = View.VISIBLE
-        listItemBinding.barLineTvcar.background=resources.getDrawable(R.color.white_3_1)
-        listItemBinding.baLineBath.background=resources.getDrawable(R.color.white_3_1)
+//        listItemBinding.barLineTvcar.background=resources.getDrawable(R.color.white_3_1)
+//        listItemBinding.baLineBath.background=resources.getDrawable(R.color.white_3_1)
 
 //        swipeListner()
 
@@ -562,7 +562,7 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
                     )
                 )
                 binding.savedesign.background =
-                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_orange_bg)
+                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
                 isButtonEnabled = true
             }
 
@@ -598,7 +598,7 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
                             )
                         )
                         binding.savedesign.background =
-                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_orange_bg)
+                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
                         isButtonEnabled = true
 
 

@@ -199,7 +199,7 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         dashboardProfileWidthDadgeBinding = DashboardProfileWidthDadgeBinding.bind(binding.root)
         setContentView(binding.root)
-        changeStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimary))
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
         /*try {
             LocalBroadcastManager.getInstance(this).registerReceiver(
                 mReceiver,

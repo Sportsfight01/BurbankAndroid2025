@@ -590,15 +590,25 @@
                         android:layout_toEndOf="@+id/iv_homedesign_notification"
                         android:src="@drawable/design_bottom_svg"
                         />
-
                     <TextView
+                        android:id="@+id/tv_home"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/iv_home_design"
+                        android:textAppearance="@style/FontRegular"
+                        android:text="Home"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_18sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
                          android:textAppearance="@style/FontMedium"
-                        android:text="HomeDesigns"
+                        android:text="Designs"
+                        android:layout_toEndOf="@+id/tv_home"
                         android:textColor="@color/grey_text_font_3.1"
                         android:textSize="@dimen/_18sp" />
 
@@ -663,7 +673,7 @@
                                 android:layout_height="wrap_content"
                                 android:lineSpacingExtra="3sp"
                                 android:text="RECENT SEARCH"
-                                android:textAppearance="@style/FontRegular"
+                                android:textAppearance="@style/FontMedium"
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="17sp" />
 
@@ -679,7 +689,7 @@
                                 android:id="@+id/tv_my_collection_recent_text"
                                 android:lineSpacingExtra="3sp"
                                 android:text=""
-                                 android:textAppearance="@style/FontMedium"
+                                 android:textAppearance="@style/FontRegular"
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="17sp" />
                             <LinearLayout
@@ -861,17 +871,28 @@
                         android:src="@drawable/homeland_bottom_svg" />
 
                     <TextView
+                        android:id="@+id/tv_hr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/iv_homeandland"
-                         android:textAppearance="@style/FontMedium"
-                        android:text="House&amp;Land"
+                         android:textAppearance="@style/FontRegular"
+                        android:text="House&amp;"
                         android:textAllCaps="false"
                         android:textColor="@color/grey_text_font_3.1"
                         android:textSize="@dimen/_18sp" />
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_toEndOf="@+id/tv_hr"
+                        android:textAppearance="@style/FontMedium"
+                        android:text="Land"
+                        android:textAllCaps="false"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_18sp" />
                     <com.dmss.burbankapp.utils.customviews.SpinnerImage
                         android:id="@+id/iv_arrow_homeandland"
                         android:layout_width="wrap_content"
@@ -931,7 +952,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                 android:textAppearance="@style/FontRegular"
+                                 android:textAppearance="@style/FontMedium"
                                 android:text="RECENT SEARCH"
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="17sp" />
@@ -951,7 +972,7 @@
                                 android:id="@+id/tv_home_land_region"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                 android:textAppearance="@style/FontRegular"
+                                 android:textAppearance="@style/FontMedium"
                                 android:lineSpacingExtra="3sp"
                                 android:text="Region  "
                                 android:textColor="@color/orange_bg_3.1"
@@ -984,7 +1005,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                     android:textAppearance="@style/FontRegular"
+                                     android:textAppearance="@style/FontMedium"
                                     android:lineSpacingExtra="3sp"
                                     android:text="Price Range"
                                     android:textColor="@color/orange_bg_3.1"
@@ -1183,16 +1204,26 @@
                         android:visibility="visible" />
 
                     <TextView
+                        android:id="@+id/tv_display"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@+id/iv_mydisplay"
-                         android:textAppearance="@style/FontMedium"
-                        android:text="DisplayHomes"
+                         android:textAppearance="@style/FontRegular"
+                        android:text="Display"
                         android:textColor="@color/grey_text_font_3.1"
                         android:textSize="@dimen/_18sp" />
-
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="0dp"
+                        android:layout_toEndOf="@+id/tv_display"
+                        android:textAppearance="@style/FontMedium"
+                        android:text="Homes"
+                        android:textColor="@color/grey_text_font_3.1"
+                        android:textSize="@dimen/_18sp" />
                     <com.dmss.burbankapp.utils.customviews.SpinnerImage
                         android:id="@+id/iv_arrow_mydisplay"
                         android:layout_width="wrap_content"

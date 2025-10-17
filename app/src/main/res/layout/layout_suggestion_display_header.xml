@@ -35,7 +35,7 @@
     <RelativeLayout
         android:id="@+id/rl_content"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="90dp"
         android:padding="@dimen/_10dp"
         app:layout_constraintEnd_toEndOf="@+id/rl_parent"
         app:layout_constraintStart_toStartOf="@+id/rl_parent"
@@ -62,10 +62,10 @@
 
             <ImageView
                 android:id="@+id/iv_design"
-                android:layout_width="@dimen/_20dp"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/_20dp"
-                android:background="@drawable/icon_designs"
-                app:tint="@color/grey_text_font_3.1" />
+                app:tint="@color/grey_text_font_3.1"
+                android:src="@drawable/icon_designs"/>
 
             <TextView
                 android:id="@+id/tv_designs"

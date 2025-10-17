@@ -27,7 +27,8 @@
         android:layout_alignParentEnd="true"
         android:src="@drawable/close_icon"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black_bg_3.1" />
 
     <TextView
         android:id="@+id/tv_recent_home_land"
@@ -77,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40dp"
         android:layout_marginTop="@dimen/_10dp"
-        android:background="@drawable/disable_rectangle_new"
+        android:background="@drawable/rectangel_black"
          android:textAppearance="@style/FontMedium"
         android:gravity="center"
         android:text="Show Designs"

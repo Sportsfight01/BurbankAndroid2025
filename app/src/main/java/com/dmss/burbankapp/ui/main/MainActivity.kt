@@ -138,7 +138,7 @@ class MainActivity : BaseActivity(),
         var isUserLoggedIn = myPreference.getUserLogin()
         println("isUserLoggedIn MAIN ACTIVITY:: "+isUserLoggedIn)
         setContentView(binding.root)
-        changeStatusBarColor(ContextCompat.getColor(this, R.color.colorPrimary));
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
         AppConstants.HouseCount = 0
         AppConstants.newHomeJsonObjectsList.clear()
         AppConstants.isRecentDialogShowed = false

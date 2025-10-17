@@ -30,7 +30,7 @@ class SplashActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        changeStatusBarColor(ContextCompat.getColor(this, R.color.dark_grey))
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
         customSharedPreferences = CustomSharedPreferences(this)

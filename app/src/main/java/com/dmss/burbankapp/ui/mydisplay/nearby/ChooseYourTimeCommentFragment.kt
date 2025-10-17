@@ -70,7 +70,7 @@ class ChooseYourTimeCommentFragment : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = FragmentChooseYourTimeCommentBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        changeStatusBarColor(Color.WHITE)
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
         initUI()
     }
 

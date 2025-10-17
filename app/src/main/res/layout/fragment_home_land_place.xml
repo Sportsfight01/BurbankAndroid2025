@@ -11,7 +11,7 @@
         android:id="@+id/rl_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white">
+        android:background="@color/app_bg">
 
         <ImageView
             android:id="@+id/iv_back"
@@ -22,7 +22,8 @@
             android:layout_centerVertical="true"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/_10dp"
-            android:src="@drawable/back_png_grey" />
+            android:src="@drawable/back_png_grey"
+            app:tint="@color/black_bg_3.1" />
 
         <TextView
             android:id="@+id/tv_tool"
@@ -155,7 +156,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/fav_header"
-        android:background="@color/white_3.1"
+        android:background="@color/app_bg"
         android:paddingTop="@dimen/_5dp"
         android:paddingLeft="@dimen/_10sp"
 
@@ -225,5 +226,11 @@
         android:text="No Favourites Packages found"
         android:textSize="@dimen/_20sp"
         android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_bg_3.1"
+        android:layout_below="@+id/fav_header"/>
 
 </RelativeLayout>

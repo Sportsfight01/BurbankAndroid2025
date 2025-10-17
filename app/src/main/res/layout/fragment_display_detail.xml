@@ -76,13 +76,13 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="#e6e7e8" />
+                android:background="@color/black" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_350dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="15dp"
+                android:background="@color/white"
                 android:orientation="vertical">
 
                 <com.github.chrisbanes.photoview.PhotoView
@@ -297,7 +297,7 @@
                     android:layout_height="45dp"
                     android:layout_below="@+id/enquiry"
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/rectangle_orange_bg"
+                    android:background="@drawable/rectangel_black"
                      android:textAppearance="@style/FontMedium"
                     android:gravity="center"
                     android:paddingStart="@dimen/_8dp"

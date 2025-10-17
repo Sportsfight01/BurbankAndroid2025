@@ -38,7 +38,7 @@ class SignUpActivity : BaseActivity() {
     lateinit var signUpViewModel: SignUpViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        changeStatusBarColor(ContextCompat.getColor(this, R.color.white))
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

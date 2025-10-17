@@ -10,7 +10,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:layout_width="@dimen/_15dp"
         android:layout_height="@dimen/_15dp"
-        app:tint="@color/dark_grey" />
+        app:tint="@color/black" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

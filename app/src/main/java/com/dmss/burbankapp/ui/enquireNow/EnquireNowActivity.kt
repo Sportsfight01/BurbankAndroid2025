@@ -9,6 +9,8 @@ import android.webkit.CookieManager
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.annotation.RequiresApi
+import androidx.core.content.ContextCompat
+import com.dmss.burbankapp.R
 import com.dmss.burbankapp.data.local.CustomSharedPreferences
 import com.dmss.burbankapp.databinding.ActivityEnquireNowBinding
 import com.dmss.burbankapp.ui.base.BaseActivity
@@ -33,7 +35,9 @@ class EnquireNowActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityEnquireNowBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        changeStatusBarColor(Color.WHITE)
+//        changeStatusBarColor(Color.WHITE)
+        changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
+
         binding.ivBack.setOnClickListener {
             onBackPressed()
         }

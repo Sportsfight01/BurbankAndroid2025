@@ -217,7 +217,7 @@ class DisplayDetailFragment : Fragment() {
                     )
                 )
                 binding.savedesign.background =
-                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_skip)
+                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
                 isButtonEnabled = true
             }
 
@@ -253,7 +253,7 @@ class DisplayDetailFragment : Fragment() {
                             )
                         )
                         binding.savedesign.background =
-                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_skip)
+                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
                         isButtonEnabled = true
 
 

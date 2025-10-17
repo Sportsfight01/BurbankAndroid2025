@@ -380,9 +380,9 @@ class AppUtils {
                     "NO PACKAGES"
                 }
                 1 -> {
-                    "SKIP TO 1 PACKAGE >"
+                    "SKIP TO 1 PACKAGE"
                 }
-                else -> "SKIP TO $count PACKAGES >"
+                else -> "SKIP TO $count PACKAGES"
             }
 
             return packageName
@@ -411,7 +411,7 @@ class AppUtils {
             packageTextView.setTextColor(
                 ContextCompat.getColor(
                     packageTextView.context,
-                    R.color.grey_text_font_3_1
+                    R.color.orange_bg_3_1
                 )
             )
             packageTextView.isEnabled = false
@@ -453,7 +453,7 @@ class AppUtils {
                 packageTextView.setTextColor(
                     ContextCompat.getColor(
                         packageTextView.context,
-                        R.color.grey_text_font_3_1
+                        R.color.orange_bg_3_1
                     )
                 )
                 nextRelativeView.background = ContextCompat.getDrawable(
@@ -472,9 +472,9 @@ class AppUtils {
                     "NO DESIGNS"
                 }
                 1 -> {
-                    "SKIP TO 1 DESIGN >"
+                    "SKIP TO 1 DESIGN"
                 }
-                else -> "SKIP TO $count DESIGNS >"
+                else -> "SKIP TO $count DESIGNS"
             }
 
             return packageName

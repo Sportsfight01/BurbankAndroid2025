@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/white_3.1"
-        android:paddingTop="@dimen/_5dp"
+        android:paddingTop="0dp"
         >
     <include layout="@layout/homeland_tool" />
     <LinearLayout

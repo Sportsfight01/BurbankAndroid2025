@@ -387,7 +387,7 @@ class HomeLandFullScreenFragment : Fragment(), OnMapReadyCallback,
                     )
 
                     binding.savedesign.background =
-                        ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_skip)
+                        ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
                     isButtonEnabled = true
 
 
@@ -429,7 +429,7 @@ class HomeLandFullScreenFragment : Fragment(), OnMapReadyCallback,
                     )
 
                     binding.savedesign.background =
-                        ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_skip)
+                        ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
                     isButtonEnabled = true
                 }
             }
@@ -509,7 +509,7 @@ class HomeLandFullScreenFragment : Fragment(), OnMapReadyCallback,
                             binding.savedesign.background =
                                 ContextCompat.getDrawable(
                                     requireContext(),
-                                    R.drawable.rectangel_skip
+                                    R.drawable.rectangel_black
                                 )
                             isButtonEnabled = true
 
@@ -526,7 +526,7 @@ class HomeLandFullScreenFragment : Fragment(), OnMapReadyCallback,
                             binding.savedesign.background =
                                 ContextCompat.getDrawable(
                                     requireContext(),
-                                    R.drawable.rectangel_skip
+                                    R.drawable.rectangel_black
                                 )
                             isButtonEnabled = true
 

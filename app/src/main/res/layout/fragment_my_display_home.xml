@@ -147,7 +147,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1dp"
         android:layout_below="@+id/header"
-        android:background="@color/orange_bg_3.1" />
+        android:background="@color/black_bg_3.1" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"
