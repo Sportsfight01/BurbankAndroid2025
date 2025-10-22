@@ -36,7 +36,8 @@
             android:layout_height="25dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:src="@drawable/close_icon" />
+            android:src="@drawable/close_icon"
+            app:tint="@color/black_bg_3.1" />
 
     </RelativeLayout>
 
@@ -78,7 +79,7 @@
                     android:layout_alignParentLeft="true"
                     android:text=""
                     android:textColor="@color/orange_bg_3.1"
-                    android:textSize="@dimen/_10sdp"/>
+                    android:textSize="@dimen/_12sdp"/>
                 <TextView
                     android:id="@+id/tv_maxprice"
                     android:layout_width="wrap_content"
@@ -265,7 +266,8 @@
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/storey_grey" />
+                        android:src="@drawable/storey_grey"
+                        android:tint="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -295,10 +297,10 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                             android:textAppearance="@style/FontMedium"
+                            android:textAppearance="@style/FontMedium"
                             android:gravity="center"
                             android:text="1"
-                            android:textColor="@color/black"
+                            android:textColor="@color/black_bg_3.1"
                             android:textSize="10sp" />
 
                         <View
@@ -312,7 +314,7 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                             android:textAppearance="@style/FontMedium"
+                             android:textAppearance="@style/FontSemiBold"
                             android:gravity="center"
                             android:text="2"
                             android:textColor="@color/black"
@@ -357,7 +359,8 @@
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/bed_grey" />
+                        android:src="@drawable/bed_grey"
+                        app:tint="@color/black_bg_3.1"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -387,7 +390,7 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                             android:textAppearance="@style/FontMedium"
+                             android:textAppearance="@style/FontSemiBold"
                             android:gravity="center"
                             android:text="3"
                             android:textColor="@color/black"
@@ -404,7 +407,7 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                             android:textAppearance="@style/FontMedium"
+                             android:textAppearance="@style/FontSemiBold"
                             android:gravity="center"
                             android:text="4"
                             android:textColor="@color/black"
@@ -421,7 +424,7 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                             android:textAppearance="@style/FontMedium"
+                             android:textAppearance="@style/FontSemiBold"
                             android:gravity="center"
                             android:text="5+"
                             android:textColor="@color/black"
@@ -466,7 +469,8 @@
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/car_grey" />
+                        android:src="@drawable/car_grey"
+                        app:tint="@color/black_bg_3.1"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -557,7 +561,8 @@
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
                         android:layout_centerVertical="true"
-                        android:background="@drawable/bath_grey" />
+                        android:src="@drawable/bath_grey"
+                        app:tint="@color/black_bg_3.1"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -670,7 +675,8 @@
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="14dp"
                         android:padding="5dp"
-                        android:src="@drawable/drop_down" />
+                        android:src="@drawable/drop_down"
+                        android:tint="@color/black_bg_3.1"/>
                 </RelativeLayout>
 
                 <LinearLayout

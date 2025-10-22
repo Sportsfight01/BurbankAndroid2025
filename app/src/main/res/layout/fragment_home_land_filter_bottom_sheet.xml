@@ -27,6 +27,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginTop="10dp"
                 android:text="Done"
+                android:textAppearance="@style/FontMedium"
                 android:textColor="@color/orange_bg_3.1"
                 android:textSize="19sp" />
         </RelativeLayout>

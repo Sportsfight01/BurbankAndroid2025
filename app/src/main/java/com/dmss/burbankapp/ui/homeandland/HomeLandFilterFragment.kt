@@ -253,19 +253,19 @@ class HomeLandFilterFragment(var filter: IUpdateFilterData) : DialogFragment(),
         binding.tvStoreyOne.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvStoreyTwo.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvStoreyAll.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         view.setTextColor(
@@ -309,19 +309,19 @@ class HomeLandFilterFragment(var filter: IUpdateFilterData) : DialogFragment(),
         binding.tvBathroomsTwo.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvBathroomsThree.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvBathroomsAll.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         view.setTextColor(
@@ -365,19 +365,19 @@ class HomeLandFilterFragment(var filter: IUpdateFilterData) : DialogFragment(),
         binding.tvCarSpacesOne.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvCarSpacesTwo.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvCarSpacesAll.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         view.setTextColor(
@@ -445,25 +445,25 @@ class HomeLandFilterFragment(var filter: IUpdateFilterData) : DialogFragment(),
         binding.tvBedroomThree.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvBedroomFour.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvBedroomFive.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         binding.tvBedroomAll.setTextColor(
             ContextCompat.getColor(
                 AppController.getInstance(),
-                R.color.box_grey
+                R.color.black_bg_3_1
             )
         )
         view.setTextColor(
