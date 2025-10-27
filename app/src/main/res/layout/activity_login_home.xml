@@ -124,7 +124,7 @@
                         android:id="@+id/ll_google"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/rectangle_grey_line"
+                        android:background="@drawable/rectangel_white"
                         android:orientation="horizontal"
                         android:paddingStart="13dp"
                         android:paddingEnd="13dp">
@@ -203,7 +203,7 @@
                     android:id="@+id/ll_continue_email"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/email_border_bg"
+                    android:background="@drawable/rectangel_black"
                     android:orientation="horizontal"
                     android:paddingStart="13dp"
                     android:paddingEnd="13dp">

@@ -36,7 +36,7 @@
                  android:textAppearance="@style/FontMedium"
                 android:padding="@dimen/_5dp"
                 android:text="PACKAGES"
-                android:textColor="@color/grey_text_font_3.1"
+                android:textColor="@color/orange_bg_3.1"
                 android:textSize="18sp"
                 android:visibility="visible" />
         </RelativeLayout>
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                app:layout_constraintGuide_begin="206dp" />
+                app:layout_constraintGuide_end="175dp" />
 
             <RelativeLayout
                 android:id="@+id/next"

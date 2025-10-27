@@ -160,7 +160,7 @@ class HomeAndLandStoreysFragment : Fragment(), MainActivity.OnBackPressedListene
                         bottomBinding.tvPackages.setTextColor(
                             ContextCompat.getColor(
                                 AppController.getInstance(),
-                                R.color.grey_text_font_3_1
+                                R.color.orange_bg_3_1
                             )
                         )
                         bottomBinding.tvPackages.text =
@@ -350,7 +350,7 @@ class HomeAndLandStoreysFragment : Fragment(), MainActivity.OnBackPressedListene
             bottomBinding.tvPackages.setTextColor(
                 ContextCompat.getColor(
                     AppController.getInstance(),
-                    R.color.grey_text_font_3_1
+                    R.color.orange_bg_3_1
                 )
             )
             bottomBinding.tvPackages.text =

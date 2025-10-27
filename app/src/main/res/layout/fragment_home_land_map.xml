@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:background="@color/white">
+        android:background="@color/app_bg">
 
         <ImageView
             android:id="@+id/iv_back"
@@ -22,7 +22,8 @@
             android:layout_alignParentTop="true"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:src="@drawable/back_png_grey" />
+            android:src="@drawable/back_png_grey"
+            app:tint="@color/black_bg_3.1" />
 
         <TextView
             android:id="@+id/tv_tool"
@@ -312,6 +313,12 @@
 
     </RelativeLayout>-->
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/v_line"
+        android:background="@color/black_bg_3.1"
+        android:layout_below="@+id/rl_top"/>
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map"
@@ -319,6 +326,6 @@
         android:layout_width="match_parent"
 
         android:layout_height="match_parent"
-        android:layout_below="@+id/rl_top" />
+        android:layout_below="@+id/v_line" />
 
 </RelativeLayout>

@@ -149,7 +149,7 @@ class   HomeLandBedRoomsFragment : Fragment(), MainActivity.OnBackPressedListene
                         bottomBinding.tvPackages.setTextColor(
                             ContextCompat.getColor(
                                 AppController.getInstance(),
-                                R.color.light_grey
+                                R.color.orange_bg_3_1
                             )
                         )
 
@@ -157,7 +157,7 @@ class   HomeLandBedRoomsFragment : Fragment(), MainActivity.OnBackPressedListene
                             bottomBinding.tvPackages.setTextColor(
                                 ContextCompat.getColor(
                                     AppController.getInstance(),
-                                    R.color.light_grey
+                                    R.color.orange_bg_3_1
                                 )
                             )
                             bottomBinding.tvPackages.text =

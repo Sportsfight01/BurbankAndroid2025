@@ -11,14 +11,14 @@
         android:id="@+id/rl_top"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white_3.1">
+        android:background="@color/app_bg">
 
         <RelativeLayout
             android:id="@+id/rl_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:background="@color/white_3.1"
+            android:background="@color/app_bg"
             android:paddingStart="5dp"
             android:paddingEnd="10dp"
             android:paddingBottom="@dimen/_5dp"
@@ -30,7 +30,8 @@
                 android:layout_height="@dimen/back_icon_height_width"
                 android:layout_alignParentTop="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/back_png_grey" />
+                android:src="@drawable/back_png_grey"
+                app:tint="@color/black" />
 
             <RelativeLayout
                 android:id="@+id/rl_tool"
@@ -40,7 +41,8 @@
                 android:layout_alignBottom="@+id/iv_back"
                 android:layout_marginStart="@dimen/_5dp"
                 android:layout_toEndOf="@+id/iv_back"
-                android:gravity="start|center">
+                android:gravity="start|center"
+                >
 
                 <TextView
                     android:id="@+id/tvHouse"
@@ -64,10 +66,15 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_5dp"
             android:layout_marginBottom="@dimen/_5dp"
+            android:id="@+id/ll_profile"
             android:layout_below="@+id/rl_header">
             <include layout="@layout/profile_with_badge"></include>
         </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_bg_3.1"
+        android:layout_below="@+id/ll_profile"/>
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView

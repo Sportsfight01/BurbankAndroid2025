@@ -838,7 +838,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="20dp"
                     android:visibility="visible"
-                    android:background="@color/orange_bg_3.1" />
+                    android:background="@color/light_grey_disabled_bg_3.1" />
                 <RelativeLayout
                     android:id="@+id/rl_home_and_land"
                     android:layout_width="match_parent"
@@ -1170,7 +1170,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="20dp"
                     android:visibility="visible"
-                    android:background="@color/light_orange" />
+                    android:background="@color/light_grey_disabled_bg_3.1" />
 
                 <RelativeLayout
                     android:id="@+id/rl_my_displays"
@@ -1269,7 +1269,7 @@
                     android:layout_height="1dp"
                     android:layout_marginTop="20dp"
                     android:visibility="visible"
-                    android:background="@color/orange_bg_3.1" />
+                    android:background="@color/light_grey_disabled_bg_3.1" />
                 <RelativeLayout
                     android:id="@+id/rl_app_setting"
                     android:layout_width="match_parent"

@@ -10,7 +10,7 @@
         android:id="@+id/rl_parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/app_bg"
         android:paddingLeft="14dp"
         android:paddingTop="24dp"
         android:paddingRight="24dp"
@@ -152,6 +152,8 @@
                     android:id="@+id/el_mydetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/white_3.1"
+                    android:layout_marginTop="5dp"
                     app:el_expanded="false">
                     <LinearLayout
                         android:id="@+id/ll_my_details"
@@ -354,7 +356,7 @@
                     android:visibility="visible"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@color/light_orange" />
+                    android:background="@color/light_grey_disabled_bg_3.1" />
                 <RelativeLayout
                     android:id="@+id/rl_fav"
                     android:layout_width="match_parent"
@@ -411,6 +413,8 @@
                     android:id="@+id/el_myfav"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/white_3.1"
+                    android:layout_marginTop="5dp"
                     app:el_expanded="false">
                     <LinearLayout
                         android:id="@+id/ll_myfav"
@@ -452,7 +456,7 @@
                 android:id="@+id/mydetails_line"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
-                android:background="@color/light_orange" />
+                android:background="@color/light_grey_disabled_bg_3.1" />
                 <RelativeLayout
                     android:id="@+id/rl_app_setting"
                     android:layout_width="match_parent"
@@ -507,6 +511,8 @@
                     android:id="@+id/el_appsettings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="@color/white_3.1"
+                    android:layout_marginTop="5dp"
                     app:el_expanded="false">
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
@@ -657,7 +663,7 @@
                     android:id="@+id/appsetting_viewline"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
-                    android:background="@color/light_orange" />
+                    android:background="@color/light_grey_disabled_bg_3.1" />
 
 
 
@@ -1034,7 +1040,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1px"
                                 android:layout_marginTop="10dp"
-                                android:background="#e6e7e8" />
+                                android:background="@color/black_bg_3.1" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1261,7 +1267,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1px"
                                 android:layout_marginTop="10dp"
-                                android:background="#e6e7e8" />
+                                android:background="@color/black_bg_3.1" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1292,7 +1298,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1px"
                                 android:layout_marginTop="10dp"
-                                android:background="#e6e7e8" />
+                                android:background="@color/black_bg_3.1" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -1371,7 +1377,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="1px"
                                 android:layout_marginTop="10dp"
-                                android:background="#e6e7e8" />
+                                android:background="@color/black_bg_3.1" />
 
 
                         </LinearLayout>

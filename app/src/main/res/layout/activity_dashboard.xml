@@ -231,8 +231,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/rectangle_grey_line"
                         android:orientation="vertical"
-                        android:paddingTop="@dimen/_10dp"
-                        android:paddingBottom="@dimen/_10dp">
+                        android:paddingTop="@dimen/_20dp"
+                        android:paddingBottom="@dimen/_20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -298,8 +298,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/rectangle_grey_line"
                         android:orientation="vertical"
-                        android:paddingTop="@dimen/_10dp"
-                        android:paddingBottom="@dimen/_10dp">
+                        android:paddingTop="@dimen/_20dp"
+                        android:paddingBottom="@dimen/_20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -366,8 +366,8 @@
                         android:layout_weight="1"
                         android:background="@drawable/rectangle_grey_line"
                         android:orientation="vertical"
-                        android:paddingTop="@dimen/_10dp"
-                        android:paddingBottom="@dimen/_10dp">
+                        android:paddingTop="@dimen/_20dp"
+                        android:paddingBottom="@dimen/_20dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -416,6 +416,7 @@
                                 android:gravity="center"
                                 android:includeFontPadding="false"
                                 android:text="designer displays"
+                                android:singleLine="true"
                                 android:textAppearance="@style/FontRegular"
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="12sp"

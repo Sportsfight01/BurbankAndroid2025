@@ -156,7 +156,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/fav_header"
-        android:background="@color/app_bg"
+        android:background="@color/white_3.1"
         android:paddingTop="@dimen/_5dp"
         android:paddingLeft="@dimen/_10sp"
 
@@ -171,7 +171,7 @@
             android:layout_marginStart="2dp"
             android:layout_toEndOf="@+id/iv_homedesign_notification"
             android:src="@drawable/homeland_bottom_svg"
-            android:tint="@color/grey_text_font_3.1" />
+            app:tint="@color/grey_text_font_3.1" />
 
         <TextView
             android:layout_width="wrap_content"
