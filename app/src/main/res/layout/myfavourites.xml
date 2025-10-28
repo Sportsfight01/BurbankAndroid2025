@@ -586,10 +586,9 @@
                         android:layout_width="@dimen/favourite_indicate_width_height"
                         android:layout_height="@dimen/favourite_indicate_width_height"
                         android:layout_marginStart="20dp"
-                        android:tint="@color/grey_text_font_3.1"
                         android:layout_toEndOf="@+id/iv_homedesign_notification"
                         android:src="@drawable/design_bottom_svg"
-                        />
+                        app:tint="@color/grey_text_font_3.1" />
                     <TextView
                         android:id="@+id/tv_home"
                         android:layout_width="wrap_content"
@@ -689,7 +688,7 @@
                                 android:id="@+id/tv_my_collection_recent_text"
                                 android:lineSpacingExtra="3sp"
                                 android:text=""
-                                 android:textAppearance="@style/FontRegular"
+                                 android:textAppearance="@style/FontMedium"
                                 android:textColor="@color/grey_text_font_3.1"
                                 android:textSize="17sp" />
                             <LinearLayout
@@ -715,6 +714,7 @@
                                     android:lineSpacingExtra="3sp"
                                     android:text="$110K to $275K"
                                     android:textColor="@color/grey_text_font_3.1"
+                                    android:textAppearance="@style/FontMedium"
                                     android:textSize="16sp" />
                             </LinearLayout>
 
@@ -742,7 +742,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:layout_marginStart="5dp"
-                                     android:textAppearance="@style/FontRegular"
+                                    android:textAppearance="@style/FontMedium"
                                     android:includeFontPadding="false"
                                     android:textColor="@color/grey_text_font_3.1"
                                     android:text="ALL"
@@ -760,7 +760,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:layout_marginStart="5dp"
-                                     android:textAppearance="@style/FontRegular"
+                                     android:textAppearance="@style/FontMedium"
                                     android:includeFontPadding="false"
                                     android:text="ALL"
                                     android:textColor="@color/grey_text_font_3.1"
@@ -778,7 +778,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:layout_marginStart="5dp"
-                                     android:textAppearance="@style/FontRegular"
+                                     android:textAppearance="@style/FontMedium"
                                     android:includeFontPadding="false"
                                     android:textColor="@color/grey_text_font_3.1"
                                     android:text="2"
@@ -796,7 +796,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:layout_marginStart="5dp"
-                                     android:textAppearance="@style/FontRegular"
+                                     android:textAppearance="@style/FontMedium"
                                     android:includeFontPadding="false"
                                     android:text="ALL"
                                     android:textColor="@color/grey_text_font_3.1"

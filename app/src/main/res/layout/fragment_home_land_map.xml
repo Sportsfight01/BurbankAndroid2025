@@ -36,7 +36,7 @@
             android:paddingTop="@dimen/_5dp"
             android:paddingBottom="@dimen/_5dp"
 
-            android:textColor="@color/dark_grey"
+            android:textColor="@color/black_bg_3.1"
             android:textSize="@dimen/sub_header_size"
             tools:text="North | Single | 4+ Beds | $420k - $550k " />
 

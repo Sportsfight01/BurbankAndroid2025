@@ -43,6 +43,7 @@
         android:background="@color/white_3.1"
         android:paddingLeft="@dimen/_10sp"
         android:textSize="@dimen/sub_header_size"
+        android:textColor="@color/black_bg_3.1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
