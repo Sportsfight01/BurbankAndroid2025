@@ -29,7 +29,13 @@
             android:textAllCaps="true"
             android:textColor="@color/white_3.1" />
     </LinearLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_bg_3.1"
+        android:id="@+id/header_line"
+        app:layout_constraintTop_toBottomOf="@+id/ll_container"
+        />
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cl_selection"
         android:layout_width="wrap_content"
@@ -37,7 +43,7 @@
         android:padding="@dimen/_10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ll_container">
+        app:layout_constraintTop_toBottomOf="@+id/header_line">
 
         <TextView
             android:id="@+id/tv_double"
@@ -86,7 +92,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/appColor"
+        android:background="@color/black_bg_3.1"
         android:id="@+id/line"
         app:layout_constraintTop_toBottomOf="@+id/cl_selection"
         />
@@ -118,6 +124,7 @@
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+
     </androidx.core.widget.NestedScrollView>
 
 

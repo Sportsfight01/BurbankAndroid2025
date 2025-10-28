@@ -349,7 +349,7 @@ class StarightCorridorFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItemCli
             AppConstants.breadCrumbMyCollection[FEATURE] =
                 BreadCrumbHashMapModel("", FEATURE)
             loadNextQuestionFeature(newHomesNextFeaturesModel, AppConstants.I_DONT_MIND)
-            toolBinding.tvTool.visibility = View.VISIBLE
+            toolBinding.tvTool.visibility = View.GONE
         }
 
         binding.idontWantThis.setOnClickListener {
@@ -360,7 +360,7 @@ class StarightCorridorFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItemCli
             AppConstants.breadCrumbMyCollection[FEATURE] =
                 BreadCrumbHashMapModel("", FEATURE)
             loadNextQuestionFeature(newHomesNextFeaturesModel, AppConstants.I_DONT_WANT_THIS)
-            toolBinding.tvTool.visibility = View.VISIBLE
+            toolBinding.tvTool.visibility = View.GONE
         }
 
         bottomLayoutBinding.buttonPrevious.setOnClickListener {

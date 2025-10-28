@@ -284,7 +284,7 @@ class SeparateKidsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItemClickLi
             AppConstants.toolheaderHashMap[FEATURE] = ""
             AppConstants.breadCrumbMyCollection[FEATURE] = BreadCrumbHashMapModel("", FEATURE)
             loadNextQuestionFeature(newHomesNextFeaturesModel, AppConstants.I_DONT_MIND)
-            toolBinding.tvTool.visibility = View.VISIBLE
+            toolBinding.tvTool.visibility = View.GONE
         }
 
         binding.idontWantThis.setOnClickListener {
@@ -293,7 +293,7 @@ class SeparateKidsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItemClickLi
             AppConstants.toolheaderHashMap[FEATURE] = ""
             AppConstants.breadCrumbMyCollection[FEATURE] = BreadCrumbHashMapModel("", FEATURE)
             loadNextQuestionFeature(newHomesNextFeaturesModel, AppConstants.I_DONT_WANT_THIS)
-            toolBinding.tvTool.visibility = View.VISIBLE
+            toolBinding.tvTool.visibility = View.GONE
         }
 
         bottomLayoutBinding.buttonPrevious.setOnClickListener {

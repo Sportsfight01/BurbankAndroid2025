@@ -30,12 +30,18 @@
             android:textColor="@color/white_3.1" />
     </LinearLayout>
 
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_bg_3.1"
+        android:id="@+id/header_line"
+        app:layout_constraintTop_toBottomOf="@+id/ll_container"
+        />
     <androidx.recyclerview.widget.RecyclerView
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ll_container"
+        app:layout_constraintTop_toBottomOf="@+id/header_line"
         android:id="@+id/regionsRecyclerview"
         android:layout_centerVertical="true"
         android:layout_width="match_parent"
