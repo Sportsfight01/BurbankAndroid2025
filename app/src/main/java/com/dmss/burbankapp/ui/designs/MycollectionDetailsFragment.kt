@@ -250,7 +250,7 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
                                     houseNameDetailByNameModel.isHousesModel.facadeLargeImageUrls
                                 )
                                 binding.viewPager.adapter = pageAdapter
-                                binding.dot.setViewPager(binding.viewPager)
+//                                binding.dot.setViewPager(binding.viewPager)
 
                                 val facadeNames = arrayListOf<String>()
                                 houseNameDetailByNameModel.isHousesModel.facadeLargeImageUrls.forEach {

@@ -219,7 +219,7 @@ class FavoriteDisplayDetailFragment : Fragment() {
 
                                 )
                                 binding.viewPager.adapter = pageAdapter
-                                binding.dot.setViewPager(binding.viewPager)
+//                                binding.dot.setViewPager(binding.viewPager)
 
                                 binding.tvFacade.text =
                                     (houseNameDetailByNameModel.isHousesModel.facade + " Facade")

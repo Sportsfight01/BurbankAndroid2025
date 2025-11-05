@@ -238,7 +238,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp" />
 
-                <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+              <!--  <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
                     android:id="@+id/dot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -252,7 +252,7 @@
                     app:progressMode="true"
                     app:dotsStrokeColor="@color/white_3.1"
                     app:selectedDotColor="@color/orange_bg_3.1" />
-
+-->
             </FrameLayout>
 
             <TextView

@@ -209,7 +209,7 @@ dependencies {
     implementation 'com.github.syedowaisali:crystal-range-seekbar:77d3cc9994'
 
     implementation 'com.github.chrisbanes:PhotoView:2.3.0'
-    implementation 'com.tbuonomo:dotsindicator:4.3'
+//    implementation 'com.tbuonomo:dotsindicator:4.3'
 
 }
 
