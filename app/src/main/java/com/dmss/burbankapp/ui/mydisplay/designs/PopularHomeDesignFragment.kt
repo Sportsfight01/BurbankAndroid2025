@@ -153,9 +153,12 @@ class PopularHomeDesignFragment : Fragment(),
 
         if (houseName != null && houseSize != null) {
             binding.clSelection.visibility = View.GONE
+            binding.linePhd.visibility = View.GONE
             fetchPopularHomes(houseName, houseSize.toString(), "")
         } else {
             binding.clSelection.visibility = View.VISIBLE
+            binding.linePhd.visibility = View.VISIBLE
+
             fetchPopularHomes("", "", "all")
         }
 
