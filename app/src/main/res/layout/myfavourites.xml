@@ -16,8 +16,6 @@
         android:layout_height="wrap_content"
         android:background="@color/body_bg_3.1"
         android:layout_below="@+id/rl_top"
-
-        android:paddingLeft="30dp"
         android:paddingTop="4dp"
         android:paddingRight="24dp"
         android:visibility="visible">
@@ -25,8 +23,8 @@
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/rl_top"
             android:layout_marginTop="5dp"
+            android:layout_marginLeft="24dp"
             android:layout_marginBottom="30dp">
 
             <LinearLayout
@@ -571,7 +569,6 @@
                         android:id="@+id/iv_homedesign_notification"
                         android:layout_width="@dimen/favourite_dot_width_height"
                         android:layout_height="@dimen/favourite_dot_width_height"
-                        android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:background="@drawable/orange_round"
                         android:gravity="center"
@@ -579,14 +576,15 @@
                         android:includeFontPadding="false"
                         android:text="0"
                         android:textSize="@dimen/default_text_size"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/tv_designs"
                         android:textColor="@color/white" />
 
                     <ImageView
                         android:id="@+id/iv_home_design"
                         android:layout_width="@dimen/favourite_indicate_width_height"
                         android:layout_height="@dimen/favourite_indicate_width_height"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/iv_homedesign_notification"
+                        android:layout_alignParentStart="true"
                         android:src="@drawable/design_bottom_svg"
                         app:tint="@color/grey_text_font_3.1" />
                     <TextView
@@ -594,7 +592,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/iv_home_design"
                         android:textAppearance="@style/FontRegular"
                         android:text="Home"
@@ -607,6 +605,7 @@
                         android:layout_marginStart="0dp"
                          android:textAppearance="@style/FontMedium"
                         android:text="Designs"
+                        android:id="@+id/tv_designs"
                         android:layout_toEndOf="@+id/tv_home"
                         android:textColor="@color/grey_text_font_3.1"
                         android:textSize="@dimen/_18sp" />
@@ -851,12 +850,13 @@
                         android:id="@+id/tv_homeandland_notification"
                         android:layout_width="@dimen/favourite_dot_width_height"
                         android:layout_height="@dimen/favourite_dot_width_height"
-                        android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:background="@drawable/orange_round"
                         android:gravity="center"
                          android:textAppearance="@style/FontSemiBold"
                         android:includeFontPadding="false"
+                        android:layout_toEndOf="@+id/tv_land"
+                        android:layout_marginStart="5dp"
                         android:text="0"
                         android:textSize="@dimen/default_text_size"
                         android:textColor="@color/white" />
@@ -865,17 +865,16 @@
                         android:id="@+id/iv_homeandland"
                         android:layout_width="@dimen/favourite_indicate_width_height"
                         android:layout_height="@dimen/favourite_indicate_width_height"
-                        android:layout_marginStart="20dp"
-                        android:tint="@color/grey_text_font_3.1"
-                        android:layout_toEndOf="@+id/tv_homeandland_notification"
-                        android:src="@drawable/homeland_bottom_svg" />
+                        android:layout_alignParentStart="true"
+                        android:src="@drawable/homeland_bottom_svg"
+                        app:tint="@color/grey_text_font_3.1" />
 
                     <TextView
                         android:id="@+id/tv_hr"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/iv_homeandland"
                          android:textAppearance="@style/FontRegular"
                         android:text="House&amp;"
@@ -883,6 +882,7 @@
                         android:textColor="@color/grey_text_font_3.1"
                         android:textSize="@dimen/_18sp" />
                     <TextView
+                        android:id="@+id/tv_land"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -1183,7 +1183,6 @@
                         android:id="@+id/tv_mydisplays_notification"
                         android:layout_width="@dimen/favourite_dot_width_height"
                         android:layout_height="@dimen/favourite_dot_width_height"
-                        android:layout_alignParentStart="true"
                         android:layout_centerVertical="true"
                         android:background="@drawable/orange_round"
                         android:gravity="center"
@@ -1191,30 +1190,33 @@
                         android:textSize="@dimen/default_text_size"
                          android:textAppearance="@style/FontSemiBold"
                         android:text="0"
+                        android:layout_marginStart="5dp"
+                        android:layout_toEndOf="@+id/tv_homes"
                         android:textColor="@color/white" />
 
                     <ImageView
                         android:id="@+id/iv_mydisplay"
                         android:layout_width="@dimen/favourite_indicate_width_height"
                         android:layout_height="@dimen/favourite_indicate_width_height"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@+id/tv_mydisplays_notification"
                         android:src="@drawable/display_homes_orange"
-                        android:tint="@color/grey_text_font_3.1"
-                        android:visibility="visible" />
+                        android:layout_alignParentStart="true"
+
+                        android:visibility="visible"
+                        app:tint="@color/grey_text_font_3.1" />
 
                     <TextView
                         android:id="@+id/tv_display"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="10dp"
                         android:layout_toEndOf="@+id/iv_mydisplay"
                          android:textAppearance="@style/FontRegular"
                         android:text="Display"
                         android:textColor="@color/grey_text_font_3.1"
                         android:textSize="@dimen/_18sp" />
                     <TextView
+                        android:id="@+id/tv_homes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"

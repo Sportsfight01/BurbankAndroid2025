@@ -85,7 +85,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginLeft="@dimen/_25sdp"
         android:layout_below="@+id/rl_top"
         >
         <androidx.core.widget.NestedScrollView
@@ -152,7 +151,7 @@
                     android:id="@+id/el_mydetails"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white_3.1"
+                    android:background="@color/app_bg"
                     android:layout_marginTop="5dp"
                     app:el_expanded="false">
                     <LinearLayout
@@ -413,7 +412,7 @@
                     android:id="@+id/el_myfav"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white_3.1"
+                    android:background="@color/app_bg"
                     android:layout_marginTop="5dp"
                     app:el_expanded="false">
                     <LinearLayout
@@ -511,7 +510,7 @@
                     android:id="@+id/el_appsettings"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/white_3.1"
+                    android:background="@color/app_bg"
                     android:layout_marginTop="5dp"
                     app:el_expanded="false">
                     <androidx.cardview.widget.CardView
@@ -520,7 +519,7 @@
                         app:cardElevation="10dp"
                         app:cardCornerRadius="5dp"
                         android:layout_margin="2dp"
-                        app:cardBackgroundColor="@color/white"
+                        app:cardBackgroundColor="@color/app_bg"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
                         >
