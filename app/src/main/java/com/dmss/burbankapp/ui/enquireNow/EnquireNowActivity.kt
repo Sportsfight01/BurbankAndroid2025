@@ -10,12 +10,14 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
+import com.dmss.burbankapp.BuildConfig
 import com.dmss.burbankapp.R
 import com.dmss.burbankapp.data.local.CustomSharedPreferences
 import com.dmss.burbankapp.databinding.ActivityEnquireNowBinding
 import com.dmss.burbankapp.ui.base.BaseActivity
 import com.dmss.burbankapp.ui.dashboard.DashboardActivity
 import com.dmss.burbankapp.ui.enguirenow.EnquireViewModel
+import com.dmss.burbankapp.utils.AppConstants
 import common.AppController
 
 
@@ -37,7 +39,6 @@ class EnquireNowActivity : BaseActivity() {
         setContentView(binding.root)
 //        changeStatusBarColor(Color.WHITE)
         changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
-
         binding.ivBack.setOnClickListener {
             onBackPressed()
         }
@@ -90,21 +91,33 @@ class EnquireNowActivity : BaseActivity() {
             // Handle URL loading inside the WebView
             binding.webView.webViewClient = WebViewClient()
         clearWebViewData(binding.webView)
+            // PRODUCTION
+//        val VICTORIA ="1pTObYsRpSLa10d4MGWJBQgqcx0d?"
+//        val QLD ="1gs51ik2dTDW_5LmNHMKJHAqcx0d?"
+//        val SA ="1tVwIL7lISIigrybQm7kN9wqcx0d?"
+//        val NSW ="1ewRKuUVHSDG1nbIfAUZrQgqcx0d?"
+
+            // DEVELOPMENT
+            val VICTORIA ="16EIGnKc6ReGd8wXef5sASQr78x7?"
+            val QLD ="1xNYzAlZxSpqcpWbgAES5oAr78x7?"
+            val SA ="1wk-EWPRcQairXIbos5oM7Qr78x7?"
+            val NSW ="1ncdi4qLFQBm_5tVINWrJEwr78x7?"
             // Load a URL
             if (!TextUtils.isEmpty(stateName)) {
                 var loadUrl = ""
                 if (stateName.contentEquals("victoria", true)) {
-                    loadUrl = "https://share.hsforms.com/1pTObYsRpSLa10d4MGWJBQgqcx0d?firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
+                    loadUrl = AppConstants.ENQUIRY_BASE_URL+VICTORIA+"firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
 
                 } else if (stateName.contentEquals("queensland", true)) {
-                    loadUrl = "https://share.hsforms.com/1gs51ik2dTDW_5LmNHMKJHAqcx0d?firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
+                    loadUrl =  AppConstants.ENQUIRY_BASE_URL+QLD+"firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
 
                 } else if (stateName.contentEquals("south-australia", true)) {
-                    loadUrl = "https://share.hsforms.com/1tVwIL7lISIigrybQm7kN9wqcx0d?firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
+                    loadUrl =  AppConstants.ENQUIRY_BASE_URL+SA+"firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
 
                 } else if (stateName.contentEquals("NSW", true) || stateName.contentEquals("NSW & ACT", true)) {
 
-                    loadUrl = "https://share.hsforms.com/1ewRKuUVHSDG1nbIfAUZrQgqcx0d?firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
+                    loadUrl =  AppConstants.ENQUIRY_BASE_URL+NSW+"firstname=$mFirstName&lastname=$mLastName&email=$mEmail&message=&phone=$mPhoneNumber&where_would_you_like_to_live_nsw_=&housename=$mHouseName $mHouseSize&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mADDRESS"
+
                 }
                 println("loadUrl:: $loadUrl")
                 binding.webView.loadUrl(loadUrl)

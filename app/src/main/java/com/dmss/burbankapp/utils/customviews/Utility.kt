@@ -261,7 +261,7 @@ object Utility {
             .setPositiveButton(Html.fromHtml("<font color='${activity.resources.getColor(R.color.orange_bg_3_1)}'>YES</font>")) { dialog, _ ->
 
 
-                LoginManager.getInstance().logOut()
+//                LoginManager.getInstance().logOut()
                 //Removing All Saved Local Data
                 val myPreference = CustomSharedPreferences(activity)
                 myPreference.setUserLoggedIn(false)

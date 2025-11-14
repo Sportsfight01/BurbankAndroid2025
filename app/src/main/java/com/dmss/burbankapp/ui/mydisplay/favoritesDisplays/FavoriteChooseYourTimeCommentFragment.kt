@@ -460,7 +460,7 @@ class FavoriteChooseYourTimeCommentFragment : Fragment() {
         var stateId: String = mPreferences.getSelectedStateID().toString()
         var webUrl= ""
 
-        if (stateName.contentEquals("victoria", true)) {
+        /*if (stateName.contentEquals("victoria", true)) {
             webUrl = "https://share.hsforms.com/1uh3e6AmJQjm22lHMnhWv4Qqcx0d?"
         } else if (stateName.contentEquals("queensland", true)) {
             webUrl = "https://share.hsforms.com/11nt-jFEDRySaT1feMsmz_Aqcx0d?"
@@ -468,7 +468,30 @@ class FavoriteChooseYourTimeCommentFragment : Fragment() {
             webUrl = "https://share.hsforms.com/1jd9AXNTaRbOgzd1LljYw7gqcx0d?"
         } else if (stateName.contentEquals("NSW & ACT", true)) {
             webUrl = "https://share.hsforms.com/1tqvI8gtuSUCSz5rpHnbzXAqcx0d?"
+        }*/
+        // PRODUCTION
+//        val VICTORIA ="1uh3e6AmJQjm22lHMnhWv4Qqcx0d?"
+//        val QLD ="11nt-jFEDRySaT1feMsmz_Aqcx0d?"
+//        val SA ="1jd9AXNTaRbOgzd1LljYw7gqcx0d?"
+//        val NSW ="1tqvI8gtuSUCSz5rpHnbzXAqcx0d?"
+
+        // DEVELOPMENT
+        val VICTORIA ="1-TKf7PdBTD-7spKw6PJGYwr78x7?"
+        val QLD ="1bpMyjx4USeqYrbYHzKzS0Qr78x7?"
+        val SA ="1X-_VKq7JSEGwI0VfXd0q5Ar78x7?"
+        val NSW ="15Wvs5_a9S7WK6kQvEshtNwr78x7?"
+
+
+        if (stateName.contentEquals("victoria", true)) {
+            webUrl = AppConstants.ENQUIRY_BASE_URL+VICTORIA
+        } else if (stateName.contentEquals("queensland", true)) {
+            webUrl = AppConstants.ENQUIRY_BASE_URL+QLD
+        } else if (stateName.contentEquals("south-australia", true)) {
+            webUrl = AppConstants.ENQUIRY_BASE_URL+SA
+        } else if (stateName.contentEquals("NSW & ACT", true)) {
+            webUrl = AppConstants.ENQUIRY_BASE_URL+NSW
         }
+
 
         val mWebUrl=
             webUrl+"firstname=$mFirstName&lastname=$mLastName&email=$mEmail&phone=$mPhoneNumber&where_would_you_like_to_live_=SANorth&preferred_day_week=&preferred_date=$mDate&preferred_time=$mTime&description=&i_accept_burbank_s_privacy_policy_and_collection_statement_=&original_marketing_activity=MyPlace App&build_address=$mAddress&housename=$houseName"

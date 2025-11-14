@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/body_bg_3.1"
+    android:background="@color/app_bg"
     tools:context=".ui.designs.StoreysMyCollectionFragment">
 
     <RelativeLayout
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/rl_parent"
-            android:background="#f6F6F6"
+            android:background="@color/app_bg"
             android:orientation="vertical">
 
             <LinearLayout

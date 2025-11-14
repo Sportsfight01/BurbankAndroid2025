@@ -799,9 +799,13 @@ class MyFavouritesFragment: Fragment() {
                 binding.ivArrowMydisplay.reverse()
 
                 if (binding.elHomeandland.isExpanded) {
+                    binding.tvHomeandlandNotification.visibility=View.VISIBLE
                     binding.ivArrowHomeandland.reverse()
                     binding.elHomeandland.collapse()
                 } else {
+                    binding.tvMydisplaysNotification.visibility=View.VISIBLE
+                    binding.tvHomeandlandNotification.visibility=View.GONE
+                    binding.ivHomedesignNotification.visibility=View.VISIBLE
                     binding.ivArrowHomeandland.rotate()
                     binding.elHomeandland.expand()
                 }
@@ -812,7 +816,7 @@ class MyFavouritesFragment: Fragment() {
                   binding.elMycollection.collapse()
                   binding.elHomeandland.collapse()
                   binding.elAppsettings.collapse()
-              binding.elMydisplay.collapse()
+                 binding.elMydisplay.collapse()
 
 //              spin_arrow_mydetails.reverse()
               binding.ivArrowShare.reverse()
@@ -822,9 +826,14 @@ class MyFavouritesFragment: Fragment() {
               binding.ivArrowMydisplay.reverse()
 
                 if (binding.elHomedesign.isExpanded) {
+                    binding.ivHomedesignNotification.visibility=View.VISIBLE
+
                     binding.ivArrowHomeanddesign.reverse()
                     binding.elHomedesign.collapse()
                 } else {
+                    binding.tvMydisplaysNotification.visibility=View.VISIBLE
+                    binding.tvHomeandlandNotification.visibility=View.VISIBLE
+                    binding.ivHomedesignNotification.visibility=View.GONE
                     binding.ivArrowHomeanddesign.rotate()
                     binding.elHomedesign.expand()
                 }
@@ -868,9 +877,13 @@ class MyFavouritesFragment: Fragment() {
                 binding.ivArrowMydisplay.reverse()
 
                 if (binding.elMydisplay.isExpanded) {
+                    binding.tvMydisplaysNotification.visibility=View.VISIBLE
                     binding.ivArrowMydisplay.reverse()
                     binding.elMydisplay.collapse()
                 } else {
+                    binding.tvHomeandlandNotification.visibility=View.VISIBLE
+                    binding.ivHomedesignNotification.visibility=View.VISIBLE
+                    binding.tvMydisplaysNotification.visibility=View.GONE
                     binding.ivArrowMydisplay.rotate()
                     binding.elMydisplay.expand()
                 }

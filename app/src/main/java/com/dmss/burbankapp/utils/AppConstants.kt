@@ -14,7 +14,7 @@ import kotlin.collections.LinkedHashMap
 object AppConstants {
     const val WEB_BASE_URL = "https://www.burbank.com.au"
 //    const val WEB_BASE_URL = "http://10.6.45.14:8085"
-
+    const val ENQUIRY_BASE_URL = "https://share.hsforms.com/"
     val PREVIOUS_QUESTION: String = "PREVIOUS_QUESTION"
     const val GOOGLE_MAPS_APP = "com.google.android.apps.maps"
     const val HUAWEI_MAPS_APP = "com.huawei.maps.app"

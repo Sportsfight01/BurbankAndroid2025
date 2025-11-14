@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/containercolor"
+    android:background="@color/app_bg"
     tools:context=".ui.designs.BedroomsMyCollectionsFragment">
 
     <include layout="@layout/inclue_tool_design" />
@@ -13,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/rl_parent"
+        android:background="@color/app_bg"
+
         android:layout_marginTop="@dimen/_30dp">
 
         <LinearLayout
