@@ -9,6 +9,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.webkit.URLUtil
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -37,6 +39,7 @@ import com.dmss.burbankapp.ui.main.MainActivity
 import com.dmss.burbankapp.ui.mydisplay.DisplayToolbarViewModel
 import com.dmss.burbankapp.ui.view.BreadCrumbAdapter
 import com.dmss.burbankapp.ui.view.CustomProgressDialog
+import com.dmss.burbankapp.utility.ViewPageDotIndicator
 import com.dmss.burbankapp.utils.AppConstants
 import com.dmss.burbankapp.utils.AppUtils
 import com.dmss.burbankapp.utils.customviews.AppEvent
@@ -71,14 +74,7 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
     private var customProgressDialog: CustomProgressDialog? = null
     private lateinit var displayToolbarViewModel: DisplayToolbarViewModel
 
-    var images: Array<Int> = arrayOf(
-        R.drawable.rectangle_test,
-        R.drawable.rectangle_test,
-        R.drawable.rectangle_test,
-        R.drawable.rectangle_test,
-        R.drawable.rectangle_test,
-        R.drawable.rectangle_test
-    )
+
     lateinit var pageAdapter: PagerAdapter
 
     override fun breadCrumb(breadCrumb: BreadcrumbModel) {
@@ -250,7 +246,10 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
                                     houseNameDetailByNameModel.isHousesModel.facadeLargeImageUrls
                                 )
                                 binding.viewPager.adapter = pageAdapter
-                                binding.dot.setViewPager(binding.viewPager)
+//                                binding.dot.setViewPager(binding.viewPager)
+
+                               ViewPageDotIndicator(activity!!,binding.viewPager,binding.dotsLayout).setupDots(pageAdapter.count)
+
 
                                 val facadeNames = arrayListOf<String>()
                                 houseNameDetailByNameModel.isHousesModel.facadeLargeImageUrls.forEach {
@@ -365,26 +364,8 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
         initViews(newHomeListModelLocal!!,isFromFavoriteLocal!!,listIndexLocal!!)
 
     }
-      fun swipeListner() {
-        binding.rlHeader.setOnTouchListener(object :
-            OnSwipeTouchListener(AppController.getInstance()) {
 
 
-            override fun onSwipeRight() {
-                Toast.makeText(AppController.getInstance(),"onSwipeRight",Toast.LENGTH_SHORT).show()
-            }
-
-            override fun onSwipeLeft() {
-                Toast.makeText(AppController.getInstance(),"onSwipeLeft",Toast.LENGTH_SHORT).show()
-            }
-
-            override fun onSwipeBottom() {
-                Toast.makeText(AppController.getInstance(),"onSwipeBottom",Toast.LENGTH_SHORT).show()
-            }
-            override fun onSwipeTop() {
-            }
-        })
-    }
     private fun initViews(newHomeListModelLoc:NewHomeListModel,isFromFavoriteLoc:Boolean,currentIndex:Int) {
         newHomeListModel=newHomeListModelLoc
         isFromFavorite=isFromFavoriteLoc
@@ -562,7 +543,7 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
                     )
                 )
                 binding.savedesign.background =
-                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
+                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_charcoal_bg)
                 isButtonEnabled = true
             }
 
@@ -598,7 +579,7 @@ class MycollectionDetailsFragment : Fragment(), BreadCrumbAdapter.BreadcrumbItem
                             )
                         )
                         binding.savedesign.background =
-                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
+                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_charcoal_bg)
                         isButtonEnabled = true
 
 

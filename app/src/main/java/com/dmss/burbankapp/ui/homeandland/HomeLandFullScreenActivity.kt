@@ -425,7 +425,7 @@ class HomeLandFullScreenActivity : AppCompatActivity() , OnMapReadyCallback,
                     )
 
                     binding.savedesign.background =
-                        ContextCompat.getDrawable(this, R.drawable.rectangel_skip)
+                        ContextCompat.getDrawable(this, R.drawable.rectangle_charcoal_bg)
                     isButtonEnabled = true
 
 
@@ -467,7 +467,7 @@ class HomeLandFullScreenActivity : AppCompatActivity() , OnMapReadyCallback,
                     )
 
                     binding.savedesign.background =
-                        ContextCompat.getDrawable(this, R.drawable.rectangel_skip)
+                        ContextCompat.getDrawable(this, R.drawable.rectangle_charcoal_bg)
                     isButtonEnabled = true
                 }
             }
@@ -544,7 +544,7 @@ class HomeLandFullScreenActivity : AppCompatActivity() , OnMapReadyCallback,
                             binding.savedesign.background =
                                 ContextCompat.getDrawable(
                                     this,
-                                    R.drawable.rectangel_skip
+                                    R.drawable.rectangle_charcoal_bg
                                 )
                             isButtonEnabled = true
 
@@ -561,7 +561,7 @@ class HomeLandFullScreenActivity : AppCompatActivity() , OnMapReadyCallback,
                             binding.savedesign.background =
                                 ContextCompat.getDrawable(
                                     this,
-                                    R.drawable.rectangel_skip
+                                    R.drawable.rectangle_charcoal_bg
                                 )
                             isButtonEnabled = true
 

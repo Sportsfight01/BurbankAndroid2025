@@ -35,6 +35,7 @@ import com.dmss.burbankapp.ui.designs.NewHomeQuizViewModel
 import com.dmss.burbankapp.ui.enquireNow.EnquireNowActivity
 import com.dmss.burbankapp.ui.main.MainActivity
 import com.dmss.burbankapp.ui.view.CustomProgressDialog
+import com.dmss.burbankapp.utility.ViewPageDotIndicator
 import com.dmss.burbankapp.utils.AppConstants
 import com.dmss.burbankapp.utils.AppUtils
 import com.google.gson.JsonObject
@@ -219,7 +220,8 @@ class FavoriteDisplayDetailFragment : Fragment() {
 
                                 )
                                 binding.viewPager.adapter = pageAdapter
-                                binding.dot.setViewPager(binding.viewPager)
+//                                binding.dot.setViewPager(binding.viewPager)
+                                ViewPageDotIndicator(activity!!,binding.viewPager,binding.dotsLayout).setupDots(pageAdapter.count)
 
                                 binding.tvFacade.text =
                                     (houseNameDetailByNameModel.isHousesModel.facade + " Facade")
@@ -415,7 +417,7 @@ class FavoriteDisplayDetailFragment : Fragment() {
                     )
                 )
                 binding.savedesign.background =
-                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
+                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_charcoal_bg)
                 isButtonEnabled = true
             }
 
@@ -451,7 +453,7 @@ class FavoriteDisplayDetailFragment : Fragment() {
                             )
                         )
                         binding.savedesign.background =
-                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_black)
+                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_charcoal_bg)
                         isButtonEnabled = true
 
 

@@ -40,6 +40,7 @@ import com.dmss.burbankapp.ui.main.MainActivity
 import com.dmss.burbankapp.ui.mydisplay.DisplayToolbarViewModel
 import com.dmss.burbankapp.ui.view.BreadCrumbAdapter
 import com.dmss.burbankapp.ui.view.CustomProgressDialog
+import com.dmss.burbankapp.utility.ViewPageDotIndicator
 import com.dmss.burbankapp.utils.AppConstants
 import com.dmss.burbankapp.utils.AppUtils
 import com.dmss.burbankapp.utils.customviews.AppEvent
@@ -283,7 +284,8 @@ class MyCollectionDetailsActivity : AppCompatActivity() , BreadCrumbAdapter.Brea
                                     houseNameDetailByNameModel.isHousesModel.facadeLargeImageUrls
                                 )
                                 binding.viewPager.adapter = pageAdapter
-                                binding.dot.setViewPager(binding.viewPager)
+//                                binding.dot.setViewPager(binding.viewPager)
+                                ViewPageDotIndicator(this,binding.viewPager,binding.dotsLayout).setupDots(pageAdapter.count)
 
                                 val facadeNames = arrayListOf<String>()
                                 houseNameDetailByNameModel.isHousesModel.facadeLargeImageUrls.forEach {
@@ -595,7 +597,7 @@ class MyCollectionDetailsActivity : AppCompatActivity() , BreadCrumbAdapter.Brea
                     )
                 )
                 binding.savedesign.background =
-                    ContextCompat.getDrawable(requireActivity(), R.drawable.rectangle_orange_bg)
+                    ContextCompat.getDrawable(requireActivity(), R.drawable.rectangle_charcoal_bg)
                 isButtonEnabled = true
             }
 
@@ -632,7 +634,7 @@ class MyCollectionDetailsActivity : AppCompatActivity() , BreadCrumbAdapter.Brea
                             )
                         )
                         binding.savedesign.background =
-                            ContextCompat.getDrawable(requireActivity(), R.drawable.rectangle_orange_bg)
+                            ContextCompat.getDrawable(requireActivity(), R.drawable.rectangle_charcoal_bg)
                         isButtonEnabled = true
 
 

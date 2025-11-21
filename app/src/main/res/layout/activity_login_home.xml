@@ -203,7 +203,7 @@
                     android:id="@+id/ll_continue_email"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/rectangel_black"
+                    android:background="@drawable/rectangle_charcoal_bg"
                     android:orientation="horizontal"
                     android:paddingStart="13dp"
                     android:paddingEnd="13dp">

@@ -45,6 +45,7 @@ import com.dmss.burbankapp.ui.designs.NewHomeQuizViewModel
 import com.dmss.burbankapp.ui.enquireNow.EnquireNowActivity
 import com.dmss.burbankapp.ui.main.MainActivity
 import com.dmss.burbankapp.ui.view.CustomProgressDialog
+import com.dmss.burbankapp.utility.ViewPageDotIndicator
 import com.dmss.burbankapp.utils.AppConstants
 import com.dmss.burbankapp.utils.AppUtils
 import com.google.gson.JsonObject
@@ -217,7 +218,7 @@ class DisplayDetailFragment : Fragment() {
                     )
                 )
                 binding.savedesign.background =
-                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_skip)
+                    ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_charcoal_bg)
                 isButtonEnabled = true
             }
 
@@ -253,7 +254,7 @@ class DisplayDetailFragment : Fragment() {
                             )
                         )
                         binding.savedesign.background =
-                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangel_skip)
+                            ContextCompat.getDrawable(requireContext(), R.drawable.rectangle_charcoal_bg)
                         isButtonEnabled = true
 
 
@@ -448,7 +449,8 @@ class DisplayDetailFragment : Fragment() {
 
                                 )
                                 binding.viewPager.adapter = pageAdapter
-                                binding.dot.setViewPager(binding.viewPager)
+//                                binding.dot.setViewPager(binding.viewPager)
+                                ViewPageDotIndicator(activity!!,binding.viewPager,binding.dotsLayout).setupDots(pageAdapter.count)
 
                                 val facadeNames = arrayListOf<String>()
                                 houseNameDetailByNameModel.isHousesModel.facadeLargeImageUrls.forEach {

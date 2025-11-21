@@ -393,7 +393,7 @@
                     android:layout_height="45dp"
                     android:layout_below="@+id/tv_enquiry"
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/rectangel_black"
+                    android:background="@drawable/rectangle_charcoal_bg"
                      android:textAppearance="@style/FontMedium"
                     android:gravity="center"
                     android:paddingStart="@dimen/_8dp"

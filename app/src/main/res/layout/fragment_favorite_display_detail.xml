@@ -371,7 +371,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp" />
 
-                <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+              <!--  <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
                     android:id="@+id/dot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -384,8 +384,14 @@
                     app:dotsSpacing="4dp"
                     app:dotsWidthFactor="2.5"
                     app:progressMode="true"
-                    app:selectedDotColor="@color/orange_bg_3.1" />
-
+                    app:selectedDotColor="@color/orange_bg_3.1" />-->
+                <LinearLayout
+                    android:id="@+id/dotsLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center|bottom"
+                    android:padding="4dp"/>
             </FrameLayout>
 
             <TextView
@@ -430,7 +436,7 @@
                     android:layout_height="45dp"
                     android:layout_below="@+id/enquiry"
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/rectangel_black"
+                    android:background="@drawable/rectangle_charcoal_bg"
                      android:textAppearance="@style/FontMedium"
                     android:gravity="center"
                     android:paddingStart="@dimen/_8dp"
