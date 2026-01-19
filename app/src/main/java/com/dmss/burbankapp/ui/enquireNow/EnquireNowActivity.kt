@@ -10,7 +10,6 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import com.dmss.burbankapp.BuildConfig
 import com.dmss.burbankapp.R
 import com.dmss.burbankapp.data.local.CustomSharedPreferences
 import com.dmss.burbankapp.databinding.ActivityEnquireNowBinding
@@ -92,16 +91,16 @@ class EnquireNowActivity : BaseActivity() {
             binding.webView.webViewClient = WebViewClient()
         clearWebViewData(binding.webView)
             // PRODUCTION
-//        val VICTORIA ="1pTObYsRpSLa10d4MGWJBQgqcx0d?"
-//        val QLD ="1gs51ik2dTDW_5LmNHMKJHAqcx0d?"
-//        val SA ="1tVwIL7lISIigrybQm7kN9wqcx0d?"
-//        val NSW ="1ewRKuUVHSDG1nbIfAUZrQgqcx0d?"
+        val VICTORIA ="1pTObYsRpSLa10d4MGWJBQgqcx0d?"
+        val QLD ="1gs51ik2dTDW_5LmNHMKJHAqcx0d?"
+        val SA ="1tVwIL7lISIigrybQm7kN9wqcx0d?"
+        val NSW ="1ewRKuUVHSDG1nbIfAUZrQgqcx0d?"
 
             // DEVELOPMENT
-            val VICTORIA ="16EIGnKc6ReGd8wXef5sASQr78x7?"
-            val QLD ="1xNYzAlZxSpqcpWbgAES5oAr78x7?"
-            val SA ="1wk-EWPRcQairXIbos5oM7Qr78x7?"
-            val NSW ="1ncdi4qLFQBm_5tVINWrJEwr78x7?"
+//            val VICTORIA ="16EIGnKc6ReGd8wXef5sASQr78x7?"
+//            val QLD ="1xNYzAlZxSpqcpWbgAES5oAr78x7?"
+//            val SA ="1wk-EWPRcQairXIbos5oM7Qr78x7?"
+//            val NSW ="1ncdi4qLFQBm_5tVINWrJEwr78x7?"
             // Load a URL
             if (!TextUtils.isEmpty(stateName)) {
                 var loadUrl = ""

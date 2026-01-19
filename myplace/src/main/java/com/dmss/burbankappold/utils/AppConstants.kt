@@ -266,12 +266,12 @@ object AppConstants {
             ApiRepository.requestUpdateVersionCode() { isSuccess, currentVersionCode ->
                 val pInfo = activity.packageManager.getPackageInfo(activity.packageName, 0)
                 val version = pInfo.versionName
-                println("currentVersionCode:: " + currentVersionCode + " version:: "+version)
+//                println("currentVersionCode:: " + currentVersionCode + " version:: "+version)
                 currentVersionCode?.let {
                     if (version != currentVersionCode) {
-//                        showUpdateVewVersionAppDialog(activity, it)
+                        showUpdateVewVersionAppDialog(activity, it)
                         // if true
-                        callBack.invoke(false)
+                        callBack.invoke(true)
 
                     } else {
                         callBack.invoke(false)

@@ -470,16 +470,16 @@ class FavoriteChooseYourTimeCommentFragment : Fragment() {
             webUrl = "https://share.hsforms.com/1tqvI8gtuSUCSz5rpHnbzXAqcx0d?"
         }*/
         // PRODUCTION
-//        val VICTORIA ="1uh3e6AmJQjm22lHMnhWv4Qqcx0d?"
-//        val QLD ="11nt-jFEDRySaT1feMsmz_Aqcx0d?"
-//        val SA ="1jd9AXNTaRbOgzd1LljYw7gqcx0d?"
-//        val NSW ="1tqvI8gtuSUCSz5rpHnbzXAqcx0d?"
+        val VICTORIA ="1uh3e6AmJQjm22lHMnhWv4Qqcx0d?"
+        val QLD ="11nt-jFEDRySaT1feMsmz_Aqcx0d?"
+        val SA ="1jd9AXNTaRbOgzd1LljYw7gqcx0d?"
+        val NSW ="1tqvI8gtuSUCSz5rpHnbzXAqcx0d?"
 
         // DEVELOPMENT
-        val VICTORIA ="1-TKf7PdBTD-7spKw6PJGYwr78x7?"
-        val QLD ="1bpMyjx4USeqYrbYHzKzS0Qr78x7?"
-        val SA ="1X-_VKq7JSEGwI0VfXd0q5Ar78x7?"
-        val NSW ="15Wvs5_a9S7WK6kQvEshtNwr78x7?"
+//        val VICTORIA ="1-TKf7PdBTD-7spKw6PJGYwr78x7?"
+//        val QLD ="1bpMyjx4USeqYrbYHzKzS0Qr78x7?"
+//        val SA ="1X-_VKq7JSEGwI0VfXd0q5Ar78x7?"
+//        val NSW ="15Wvs5_a9S7WK6kQvEshtNwr78x7?"
 
 
         if (stateName.contentEquals("victoria", true)) {
