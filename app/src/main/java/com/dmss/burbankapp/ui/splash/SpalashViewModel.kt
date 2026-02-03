@@ -12,6 +12,7 @@ import com.dmss.burbankapp.data.apiUtils.Resource
 import com.dmss.burbankapp.data.local.entity.DatabaseHelper
 import com.dmss.burbankapp.data.model.AppVersionModel
 import com.dmss.burbankapp.data.model.DeviceResponseModel
+import com.dmss.burbankapp.data.model.PromotionsResponse
 import com.dmss.burbankapp.data.model.UserLoginModel
 import com.dmss.burbankappold.dashboard.DashboardNewActivity
 import com.google.gson.GsonBuilder
@@ -27,6 +28,7 @@ class SpalashViewModel(var apiHelper: ApiHelper, var dbHelper: DatabaseHelper) :
 
     var userLoginData = MutableLiveData<Resource<UserLoginModel>>()
     var deviceDetailsData = MutableLiveData<Resource<DeviceResponseModel>>()
+    var promotionsResponseData = MutableLiveData<Resource<PromotionsResponse>>()
 
     fun getUserLoginData(): LiveData<Resource<UserLoginModel>> {
         return userLoginData
@@ -34,6 +36,10 @@ class SpalashViewModel(var apiHelper: ApiHelper, var dbHelper: DatabaseHelper) :
     }
     fun getDeviceDetailsData(): LiveData<Resource<DeviceResponseModel>> {
         return deviceDetailsData
+
+    }
+    fun getPromotionsResponseData(): LiveData<Resource<PromotionsResponse>> {
+        return promotionsResponseData
 
     }
     public suspend fun checkVersionCodeAPi():Double{
@@ -86,6 +92,19 @@ class SpalashViewModel(var apiHelper: ApiHelper, var dbHelper: DatabaseHelper) :
                 )
             }
 
+        }
+    }
+    fun getPromotionData(stateId:String){
+        viewModelScope.launch {
+            promotionsResponseData.postValue(Resource.loading(null))
+            try{
+                val loginData = apiHelper.getPromotionsetails(stateId)
+                promotionsResponseData.postValue(Resource.success(loginData))
+            }catch (e:Exception){
+                promotionsResponseData.postValue(
+                    e.message?.let { Resource.error(it, null) }
+                )
+            }
         }
     }
     fun sendDeviceDetailsData(deviceToke:String,deviceId:String,Latitude:String,Longitude:String,State:String) {

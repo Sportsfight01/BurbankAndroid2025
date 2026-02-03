@@ -28,6 +28,8 @@ class ApiHelperImpl(private val apiService: ApiService) : ApiHelper {
         jsonObject: JsonObject
     )= apiService.SaveOrUpdateDeviceDetails(jsonObject)
 
+    override suspend fun getPromotionsetails(stateId: String)=apiService.getPromotionsDetails(stateId)
+
     override suspend fun getHomeAndLandQuizDesign(
         page: String,
         body: JsonObject

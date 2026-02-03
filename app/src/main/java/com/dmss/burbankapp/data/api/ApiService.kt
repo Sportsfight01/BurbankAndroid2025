@@ -133,6 +133,11 @@ interface ApiService {
         @Query("StateId") stateId: Int
     ): NewHomeQuizModel
 
+    @GET("Common/GetPromotions")
+    suspend fun getPromotionsDetails(
+        @Query("state") stateId: String
+    ): PromotionsResponse
+
     @POST("NewHomes/NewHomesNextFeatures")
     suspend fun fetchNewHomesNextFeature(
         @Body jsonObject: MyCollectionQuizQuestionRequest

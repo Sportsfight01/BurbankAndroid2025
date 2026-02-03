@@ -13,6 +13,7 @@ interface ApiHelper {
     suspend fun updateProfileImage(body: JsonObject): UpdateProfilePicModel
     suspend fun forgetPassword(body: String): ForgetPasswordModel
     suspend fun SaveOrUpdateDeviceDetails(jsonData: JsonObject): DeviceResponseModel
+    suspend fun getPromotionsetails(stateId: String): PromotionsResponse
 
     suspend fun getAllPackages(StateId: String): AllPackagesModel
     suspend fun getAllStates(): StatesResponseModel

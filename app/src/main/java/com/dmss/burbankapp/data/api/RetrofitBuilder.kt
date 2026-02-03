@@ -35,7 +35,8 @@ object RetrofitBuilder {
     // private const val BASE_URL = "http://dev.burbank.com.au/api/api/"
 
     // using from v3 (version 3.7)
-     const val BASE_URL = "https://www.burbank.com.au/api-v2/api/"
+//     const val BASE_URL = "https://www.burbank.com.au/api-v2/api/"
+    const val BASE_URL = "http://10.6.45.14:8085/api/api/"
 
     val gson: Gson = GsonBuilder()
         .setLenient()

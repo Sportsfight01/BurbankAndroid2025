@@ -11,6 +11,7 @@ import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
 import android.os.Looper
 import android.text.Html
 import android.text.Layout
@@ -33,6 +34,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.Priority
 import com.bumptech.glide.load.DataSource
@@ -50,7 +53,10 @@ import com.dmss.burbankapp.data.local.entity.DatabaseBuilder
 import com.dmss.burbankapp.data.local.entity.DatabaseHelperImpl
 import com.dmss.burbankapp.data.model.*
 import com.dmss.burbankapp.databinding.*
+import com.dmss.burbankapp.ui.adapters.PromotionsSlidingAdapter
+import com.dmss.burbankapp.ui.adapters.SlidingAdapter
 import com.dmss.burbankapp.ui.base.BaseActivity
+import com.dmss.burbankapp.ui.enquireNow.EnquireNowActivity
 import com.dmss.burbankapp.ui.login.ChooseOptionsActivity
 import com.dmss.burbankapp.ui.loginhome.LoginHomeActivity
 import com.dmss.burbankapp.ui.main.MainActivity
@@ -59,12 +65,16 @@ import com.dmss.burbankapp.ui.splash.SpalashViewModel
 import com.dmss.burbankapp.ui.view.CircleTransform
 import com.dmss.burbankapp.utility.ExpandableLayout
 import com.dmss.burbankapp.utility.ImagePickerActivity
+import com.dmss.burbankapp.utility.ViewPageDotIndicator
 import com.dmss.burbankapp.utils.AppConstants
 import com.dmss.burbankapp.utils.AppUtils
 import com.dmss.burbankapp.utils.customviews.AppEvent
 import com.dmss.burbankapp.utils.customviews.SpinnerImage
 import com.dmss.burbankapp.utils.customviews.Utility
 import com.dmss.burbankapp.viewmodel.ProfilePicViewModel
+import com.dmss.burbankappold.dashboard.DashboardNewActivity
+import com.dmss.burbankappold.databinding.ActivityDashboardNewBinding
+import com.dmss.burbankappold.databinding.DashboardBinding
 import com.dmss.burbankappold.network.ApiRepository
 import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
@@ -96,7 +106,7 @@ import kotlin.collections.ArrayList
 
 class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
     ShareListAdapter.ShareAccountItemClick {
-    lateinit var binding: ActivityDashboardBinding
+    lateinit var binding: DashboardnewBinding
     lateinit var profileLayoutBinding: ProfileLayoutBinding;
     lateinit var dashboardProfileWidthDadgeBinding: DashboardProfileWidthDadgeBinding
     lateinit var spalashViewModel: SpalashViewModel
@@ -111,6 +121,7 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
     private lateinit var profileProgress: ProgressBar
     private val CAMERA_REQUEST_CODE = 100
     var REQUEST_CODE_LOCATION_PERMISSION = 12
+    lateinit var pageAdapter: PagerAdapter
 
 
     lateinit var shareAdapter: ShareListAdapter
@@ -147,6 +158,10 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
     var minimumPriceForPriceRange: Double? = null
     var maximumPriceForPriceRange: Double? = null
     var recentSearchJsonModel: SearchJsonModel?=null
+
+    private lateinit var viewPager: ViewPager
+    private val autoScrollPeriodMs = 3000L
+    private val handler = Handler(Looper.getMainLooper())
 
 
     fun showUpdateVewVersionAppDialog( message: String) {
@@ -196,7 +211,7 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         makeFullScreen()
-        binding = ActivityDashboardBinding.inflate(layoutInflater)
+        binding = DashboardnewBinding.inflate(layoutInflater)
         dashboardProfileWidthDadgeBinding = DashboardProfileWidthDadgeBinding.bind(binding.root)
         setContentView(binding.root)
         changeStatusBarColor(ContextCompat.getColor(this, R.color.app_bg))
@@ -279,12 +294,11 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
             )
         }
         binding.rlProfile.setOnClickListener {
-            var isUserLoggedIn = myPreference.getUserLogin()
+           /* var isUserLoggedIn = myPreference.getUserLogin()
             if (isUserLoggedIn) {
                 Utility.logoutDialog(this)
-            }
+            }*/
 
-/*
             var isUserLoggedIn = myPreference.getUserLogin()
             if (isUserLoggedIn) {
                 val userId: Int = myPreference.getUserId()
@@ -299,7 +313,7 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
                     this,
                     "Please login to view/edit profile"
                 )
-            }*/
+            }
 
 
         }
@@ -323,11 +337,18 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
 
 
         }
+        binding.enquiryNow.setOnClickListener {
+            startActivity(
+                Intent(
+                    this@DashboardActivity,
+                    EnquireNowActivity::class.java
+                ).putExtra("SELECTED ITEM", 9)
+            )
+        }
         binding.llStateSelection.setOnClickListener {
             showStateDialog();
         }
         var isUserLoggedIn = myPreference.getUserLogin()
-        println("isUserLoggedIn Dashboard Activity:: "+isUserLoggedIn)
         if (!isUserLoggedIn) {
             binding.profileProgress.visibility = View.GONE
             dashboardProfileWidthDadgeBinding.tvFavorites.background = resources.getDrawable(R.drawable.disable_gery)
@@ -337,7 +358,59 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
         }
         binding.profileProgress.visibility = View.GONE
     }
+fun renderImageSlides(images:List<PromotionItem>){
+   /* var images: ArrayList<String> = arrayListOf(
+      "https://fastly.picsum.photos/id/127/200/300.jpg?hmac=H0aErkmw8FxF1Tp7uFj4cV-aVMxDDjOVKTwGwS6REXw",
+        "https://fastly.picsum.photos/id/796/200/300.jpg?hmac=tubV2vVJFyJ_KIav5eG2iKDmpKoctbrojgEFaflH_l4",
+        "https://fastly.picsum.photos/id/371/200/200.jpg?hmac=VShu_HdkBA6-hi8lkHlFMbkqxiu0BgA4mvEKoJke228",
+        "https://fastly.picsum.photos/id/560/200/300.jpg?hmac=Qw6Gj4Q7nEunQocIfP9eSZ12CmRwQjYRMHvKIsnf08Y",
+        "https://fastly.picsum.photos/id/244/200/300.jpg?hmac=wik1JUmLjSI1ujhC7YXckSJhpxTId-Ul5HF5mcALqC8",
+        "https://fastly.picsum.photos/id/235/200/300.jpg?hmac=CYa1eIuRJqKgRcWJs37--g8W4vCLpTZI_NDWcIRcyvk"
+    )*/
+    pageAdapter = PromotionsSlidingAdapter(
+        this,
+        images
+    ) {
+        val url = it
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
 
+    }
+    binding.viewPager.adapter = pageAdapter
+//                                binding.dot.setViewPager(binding.viewPager)
+    ViewPageDotIndicator(this,binding.viewPager,binding.dotsLayout).setupDots(pageAdapter.count)
+    binding.viewPager.addOnPageChangeListener(object :
+        ViewPager.OnPageChangeListener {
+        override fun onPageScrolled(
+            position: Int,
+            positionOffset: Float,
+            positionOffsetPixels: Int
+        ) {
+
+        }
+
+        override fun onPageSelected(position: Int) {
+
+        }
+
+        override fun onPageScrollStateChanged(state: Int) {
+
+        }
+
+    })
+    startAutoScroll()
+
+    binding.viewPager.offscreenPageLimit = 1
+
+    // Pause auto-scroll when the user is interacting, resume afterwards
+    binding.viewPager.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
+        override fun onPageScrollStateChanged(state: Int) {
+            if (state == ViewPager.SCROLL_STATE_DRAGGING) stopAutoScroll()
+            else if (state == ViewPager.SCROLL_STATE_IDLE) startAutoScroll()
+        }
+    })
+
+}
     private fun getUserFavoritesDisplays() {
         displayHomeViewModel.getUserFavoritesDisplays()
     }
@@ -1172,11 +1245,19 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
             }).submit()
     }
 
+    override fun onStop() {
+        super.onStop()
+
+        stopAutoScroll()
+
+    }
     override fun onResume() {
         super.onResume()
         com.dmss.burbankappold.utils.AppConstants.validateVersionCode(this) {
 
         }
+
+        startAutoScroll()
 
         AppConstants.selectedmaximumPriceForPriceRange=-1.0
         AppConstants.totalmaximumPrice=0
@@ -1249,6 +1330,43 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
 
     @RequiresApi(Build.VERSION_CODES.N)
     private fun setupObserver() {
+
+        spalashViewModel.getPromotionsResponseData().observe(this, Observer {
+            when (it.status) {
+                Status.SUCCESS -> {
+                    dismissProgressDialog()
+                    println("getPromotionsResponseData:: " + it.data!!.data)
+
+//                    val imagesList: ArrayList<String> =
+//                        ArrayList(it.data.data.mapNotNull { item -> item.image })
+
+                    val imagesList: ArrayList<String> =
+                        ArrayList(it.data.data.map { item -> item.image })
+
+                    val promotionsItems= it.data.data
+
+                    println("imagesList:: ${imagesList.size}")
+                    if(imagesList!=null && imagesList.size>0 ) {
+                        if(imagesList.size>1 ){
+                            binding.dotsLayout.visibility=View.VISIBLE
+                        }else{
+                            binding.dotsLayout.visibility=View.GONE
+
+                        }
+                        binding.noPromotions.visibility=View.GONE
+                        binding.viewPager.visibility=View.VISIBLE
+
+                        renderImageSlides(promotionsItems)
+                    }else{
+                        binding.noPromotions.visibility=View.VISIBLE
+                        binding.viewPager.visibility=View.GONE
+                        binding.dotsLayout.visibility=View.GONE
+                    }
+
+
+                }
+            }
+        })
         spalashViewModel.getUserLoginData().observe(this, Observer {
             when (it.status) {
                 Status.SUCCESS -> {
@@ -1595,6 +1713,9 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
                                 }
                             }
                         }
+                        val selectedStateName = myPreference.getSelectedState()
+                        showProgressDialog()
+                        spalashViewModel.getPromotionData(""+selectedStateName)
 
                     } else {
                         AppConstants.HOME_AND_LAND_NOTIFICATION = "0"
@@ -2343,6 +2464,30 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
                     token.continuePermissionRequest()
                 }
             }).check()
+    }
+
+
+    private val autoScrollRunnable = object : Runnable {
+        override fun run() {
+            val adapter = binding.viewPager.adapter ?: return
+            val count = adapter.count
+            if (count <= 1) return
+
+            val next = (binding.viewPager.currentItem + 1) % count
+            binding.viewPager.setCurrentItem(next, true)
+
+            // schedule next tick
+            handler.postDelayed(this, autoScrollPeriodMs)
+        }
+    }
+
+    private fun startAutoScroll() {
+        handler.removeCallbacks(autoScrollRunnable)
+        handler.postDelayed(autoScrollRunnable, autoScrollPeriodMs)
+    }
+
+    private fun stopAutoScroll() {
+        handler.removeCallbacks(autoScrollRunnable)
     }
 
 
