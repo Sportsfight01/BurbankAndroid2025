@@ -2,12 +2,14 @@ package com.dmss.burbankappold.dashboard.ui.documents
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dmss.burbankappold.BaseFragment
@@ -42,11 +44,21 @@ class DocumentsFragment : BaseFragment() {
         super.onCreate(savedInstanceState)
         if (documentsAdapter == null){
             documentsAdapter = DocumentsAdapter {clickType, document ->
-                println("getDocUrl:: "+getDocUrl(document.url))
+//                println("getDocUrl:: "+getDocUrl(document.url))
                 when(clickType){
                     1 ->{
-                        startActivity(Intent(requireContext(), WebViewActivity::class.java)
-                            .putExtra(BundleKey.URL, getDocUrl(document.url)))
+                        if(document.url.contains(".pdf")) {
+                            startActivity(
+                                Intent(requireContext(), WebViewActivity::class.java)
+                                    .putExtra(BundleKey.URL, getDocUrl(document.url))
+                            )
+                        }else{
+
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(document.url))
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                            startActivity(intent)
+
+                        }
                     }
                 }
             }
