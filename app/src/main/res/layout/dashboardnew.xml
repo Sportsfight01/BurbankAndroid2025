@@ -90,14 +90,15 @@
                     android:id="@+id/rl_profile"
                     android:layout_width="@dimen/profile_pic"
                     android:layout_height="@dimen/profile_pic"
+                    android:layout_marginEnd="@dimen/_10sdp"
                     android:layout_alignParentEnd="true">
 
                     <ImageView
                         android:id="@+id/iv_profile"
-                        android:layout_width="@dimen/profile_pic"
-                        android:layout_height="@dimen/profile_pic"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
                         android:layout_centerInParent="true"
-                        android:src="@mipmap/logo_myplace"
+                        android:src="@drawable/dashboard_profile"
                         app:civ_border_color="@android:color/transparent"
                         app:civ_border_width="0dp" />
 
@@ -105,12 +106,28 @@
                         android:id="@+id/profile_progress"
                         android:layout_width="@dimen/profile_pic"
                         android:layout_height="@dimen/profile_pic"
+                        android:visibility="gone"
                         android:layout_centerHorizontal="true"
                         android:indeterminateTint="@color/white"
                         android:indeterminateTintMode="src_atop" />
                 </RelativeLayout>
             </RelativeLayout>
-
+            <TextView
+                android:id="@+id/profile_notification"
+                android:layout_width="@dimen/_15sp"
+                android:layout_height="@dimen/_15sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="3dp"
+                android:background="@drawable/black_round"
+                android:gravity="center"
+                android:layout_marginEnd="20dp"
+                android:includeFontPadding="false"
+                android:text="0"
+                android:textAppearance="@style/FontMedium"
+               android:layout_above="@+id/rl_profile"
+                android:textColor="@color/white_3.1"
+                android:textSize="10sp"
+                android:visibility="visible" />
             <RelativeLayout
                 android:id="@+id/rl_profile_bottom"
                 android:layout_width="wrap_content"

@@ -341,7 +341,7 @@ class DashboardActivity : BaseActivity(), StateListAdapter.IUpdateState,
             startActivity(
                 Intent(
                     this@DashboardActivity,
-                    EnquireNowActivity::class.java
+                    DashboardEnquiryNow::class.java
                 ).putExtra("SELECTED ITEM", 9)
             )
         }
@@ -1713,7 +1713,7 @@ fun renderImageSlides(images:List<PromotionItem>){
                                 }
                             }
                         }
-                        val selectedStateName = myPreference.getSelectedState()
+                        val selectedStateName = myPreference.getStateID()
                         showProgressDialog()
                         spalashViewModel.getPromotionData(""+selectedStateName)
 

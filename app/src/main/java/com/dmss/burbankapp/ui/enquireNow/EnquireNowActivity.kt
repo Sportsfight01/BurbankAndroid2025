@@ -1,5 +1,6 @@
 package com.dmss.burbankapp.ui.enquireNow
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.os.Build
@@ -49,6 +50,7 @@ class EnquireNowActivity : BaseActivity() {
     }
 
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onStart() {
         super.onStart()
         preferences = CustomSharedPreferences(AppController.getInstance())

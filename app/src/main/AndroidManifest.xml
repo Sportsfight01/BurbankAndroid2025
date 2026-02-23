@@ -103,7 +103,9 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBvt-9Ll47skCwDaPHsTmfBgYKz9hEp1pk" />
-
+        <activity
+            android:name=".ui.dashboard.DashboardEnquiryNow"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MapsActivity"
             android:exported="false"

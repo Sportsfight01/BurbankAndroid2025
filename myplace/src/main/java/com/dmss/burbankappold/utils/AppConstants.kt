@@ -269,9 +269,9 @@ object AppConstants {
 //                println("currentVersionCode:: " + currentVersionCode + " version:: "+version)
                 currentVersionCode?.let {
                     if (version != currentVersionCode) {
-                        showUpdateVewVersionAppDialog(activity, it)
+//                        showUpdateVewVersionAppDialog(activity, it)
                         // if true
-                        callBack.invoke(true)
+                        callBack.invoke(false)
 
                     } else {
                         callBack.invoke(false)
